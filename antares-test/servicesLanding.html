@@ -1,0 +1,656 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/all.css" type="text/css"/>
+	<link rel="stylesheet" href="sass/fonts.css" type="text/css"/>
+	<link rel="shortcut icon" href="./favicon.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/4d9105e594.js"></script>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<title>Antares design</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="layout">
+				<div class="logo animated fadeInDown">
+					<h1>
+						<a href="index.html">
+							<img src="./images/logo.png" alt="logo">
+						</a>
+						<span>antares design</span>
+					</h1>
+				</div>
+				<div class="hamburger-menu">
+			    <input id="menu__toggle" type="checkbox" />
+			    <label class="menu__btn animated fadeInUp" for="menu__toggle">
+			      <span></span>
+			    </label>
+
+			    <ul class="menu__box">
+					<li class="mailBurger">
+						<a href="mailto:office@antares-design.pro">office@antares-design.pro</a>
+					</li>
+					<li><a class="menu__item" href="index.html#serv">Услуги</a></li>
+					<li><a class="menu__item" href="index.html#aboutUs">О нас</a></li>
+					<li><a class="menu__item" href="projects.html">Проекты</a></li>
+					<li><a class="menu__item" href="index.html#contactForm">Контакты</a></li>
+					<li class="socialHead">
+						<a href="https://www.instagram.com/antares.webdesign/" target="_blank">Instagram</a>
+						<a href="https://www.behance.net/antaresdesign" target="_blank">Behance</a>
+					</li>
+			    </ul>
+			  </div>
+				<nav class="animated fadeInUp">
+					<ul>
+						<li><a href="index.html#serv">Услуги</a></li>
+						<li><a href="index.html#aboutUs">О нас</a></li>
+						<li><a href="projects.html">Проекты</a></li>
+						<li><a href="index.html#contactForm">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="mail animated fadeIn">
+					<a href="mailto:office@antares-design.pro">office@antares-design.pro</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="b-popup" id="popup1" >
+				<div class="b-popup-content">
+					<a  href="javascript:PopUpHide()" id="hide1">&#10006;</a>
+					<p>Заполните форму</p>
+					<form id="headForm" >
+						<input type="text" name="name" id="name" onkeyup="checkParams()" value="" placeholder="Контактное лицо (ФИО)*" required>
+						<input type="tel" name="phone" id="phone" onkeyup="checkParams()" value="" placeholder="Телефон*" required>
+						<input type="email" name="mail" id="mail" onkeyup="checkParams()" value="" placeholder="Email*" required>
+						<textarea name="about"   placeholder="Расскажите о проекте"></textarea>
+						<fieldset class="file">
+							<label for="fileFF"><input id="fileFF" type="file" name="fileFF[]"><img src="./images/fileIco.png" alt="">
+								<span id="fl_nm">Прикрепить файл</span>
+							</label>
+						</fieldset>
+						<fieldset class="box">
+							<input id="check1" type="checkbox" name="check" value="check" required disabled>
+							<label for="check1"></label>
+							<p class="confid" >Нажимая на кнопку, вы соглашаетесь с <a href="politika.html">Политикой конфиденциальности</a></p>
+						</fieldset>
+						<input  type="submit" value="Отправить"  id="submit" disabled> <!-- The button that causes the popup -->
+					</form>
+				</div>
+			</div>
+			<div class="a-popup" id="popup2"> <!-- Translucent background behind the popup -->
+				<div class="a-popup-content"> <!-- PopUp content -->
+					<a  href="javascript:PopUpHide2()" id="hide2">&#10006;</a> <!-- The button that closes the popup -->
+					<p>Спасибо за заявку!</p>
+					<span>Наш менеджер свяжется с Вами <br> в ближайшее время!</span>
+				</div>
+			</div>
+			<div class="layout">
+				<div id="content">
+					<div class="landing">
+						<div class="textLand animated fadeInLeft" >
+							<h2>Landing Page</h2>
+							<p>Мы профессионально разрабатываем и продвигаем Landing Page.
+								 Основная цель нашей работы — окупить инвестиции клиента! Для
+								 этого мы создаем продукты и решения, которые на голову выше
+								 большинства аналогов наших конкурентов и приносят реальную
+								 прибыль нашим клиентам.
+							</p>
+							<input  type="button" name="button" onclick="showPopup()" value="Оставить заявку">
+						</div>
+						<div class="imagesboxServices">
+							<img class="face animated fadeInRight"  src="./images/faceServices.png" alt="img">
+							<img class="spotServices animated fadeInRight" src="./images/bg-spot-services.png" alt="img">
+						</div>
+					</div>
+					<div class="advantages animated a_up">
+						<h4>Наши ключевые преимущества</h4>
+						<div class="advant">
+							<img src="./images/advantages-1.png" alt="img">
+							<img src="./images/advantages-2.png" alt="img">
+							<img src="./images/advantages-3.png" alt="img">
+							<img src="./images/advantages-4.png" alt="img">
+							<img src="./images/advantages-5.png" alt="img">
+							<img src="./images/advantages-6.png" alt="img">
+							<img src="./images/advantages-7.png" alt="img">
+							<img src="./images/advantages-8.png" alt="img">
+							<img src="./images/advantages-9.png" alt="img">
+						</div>
+					</div>
+					<h4 class="animated a_up">Этапы реализации лендинга</h4>
+					<div class="stages animated a_up">
+						<div class="stg">
+							<div class="txtStages">
+								<span>Этап 1</span>
+								<div class="right">
+									<h5>Вы оставляете заявку</h5>
+									<p>Связаться с нами можно оставив
+										заявку на нашем сайте или написав
+										нам напрямую на почту
+										hello.antaresdesign@gmail.com</p>
+								</div>
+							</div>
+						</div>
+						<div class="stg">
+							<div class="txtStages">
+								<span>Этап 2</span>
+								<div class="right">
+									<h5>Брифинг</h5>
+									<p>От вас 15 минут на заполнение брифа
+										(небольшого опросника), после чего
+										мы с Вами свяжемся и уточним необходимые
+										подробности.</p>
+								</div>
+							</div>
+						</div>
+						<div class="stg">
+							<div class="txtStages">
+								<span>Этап 3</span>
+								<div class="right">
+									<h5>Договор</h5>
+									<p>Формируем обязательства юридически,
+										после чего с Вашей стороны происходит
+										оплата наших услуг в течении 1-3 дней.</p>
+								</div>
+							</div>
+						</div>
+						<div class="stg">
+							<div class="txtStages">
+								<span>Этап 4</span>
+								<div class="right">
+									<h5>Анализ бизнес направления</h5>
+									<p> Проводим маркетинговое исследование,
+										анализируем конкурентов, интересы целевой
+										аудитории, особенности ниши и прочее. </p>
+								</div>
+							</div>
+						</div>
+						<div class="stg">
+							<div class="txtStages">
+								<span>Этап 5</span>
+								<div class="right">
+									<h5>Техническое задание</h5>
+									<p>Составление, согласование и утверждение
+										технического задания на разработку сайта.</p>
+								</div>
+							</div>
+						</div>
+						<div class="stg">
+							<div class="txtStages">
+								<span>Этап 6</span>
+								<div class="right">
+									<h5>Дизайн</h5>
+									<p>Визуальное оформление блоков и графических
+										элементов сайта с учетом трендов и фирменного
+										стиля.</p>
+								</div>
+							</div>
+						</div>
+						<div class="stg">
+							<div class="txtStages">
+								<span>Этап 7</span>
+								<div class="right">
+									<h5>Верстка и программирование</h5>
+									<p>Кроссбраузерная и адаптивная верстка с органично
+										встроенной анимацией важных элементов.</p>
+								</div>
+							</div>
+						</div>
+						<div class="stg">
+							<div class="txtStages">
+								<span>Этап 8</span>
+								<div class="right">
+									<h5>Внесение итоговых правок</h5>
+									<p>Проводим внутреннее тестирование и устранение
+										ошибок, после чего Вы озвучиваете финальные
+										пожелания по доработке.</p>
+								</div>
+							</div>
+						</div>
+						<div class="stg">
+							<div class="txtStages">
+								<span>Этап 9</span>
+								<div class="right">
+									<h5>Посадка на движок</h5>
+									<p>Посадка статической верстки на систему управления
+										контентом CMS (панель администратора).</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sliderServices-land animated a_up">
+						<ul class="stages-mob-land">
+							<li>
+								<div class="stg">
+									<div class="txtStages">
+										<span>Этап 1</span>
+										<div class="right">
+											<h5>Вы оставляете заявку</h5>
+											<p>Связаться с нами можно оставив
+												заявку на нашем сайте или написав
+												нам напрямую на почту
+												hello.antaresdesign@gmail.com</p>
+										</div>
+									</div>
+								</div>
+								<div class="stg">
+									<div class="txtStages">
+										<span>Этап 2</span>
+										<div class="right">
+											<h5>Брифинг</h5>
+											<p>От вас 15 минут на заполнение брифа
+												(небольшого опросника), после чего
+												мы с Вами свяжемся и уточним необходимые
+												подробности.</p>
+										</div>
+									</div>
+								</div>
+								<div class="stg">
+									<div class="txtStages">
+										<span>Этап 3</span>
+										<div class="right">
+											<h5>Договор</h5>
+											<p>Формируем обязательства юридически,
+												после чего с Вашей стороны происходит
+												оплата наших услуг в течении 1-3 дней.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="stg">
+									<div class="txtStages">
+										<span>Этап 4</span>
+										<div class="right">
+											<h5>Анализ бизнес направления</h5>
+											<p> Проводим маркетинговое исследование,
+												анализируем конкурентов, интересы целевой
+												аудитории, особенности ниши и прочее. </p>
+										</div>
+									</div>
+								</div>
+								<div class="stg">
+									<div class="txtStages">
+										<span>Этап 5</span>
+										<div class="right">
+											<h5>Техническое задание</h5>
+											<p>Составление, согласование и утверждение
+												технического задания на разработку сайта.</p>
+										</div>
+									</div>
+								</div>
+								<div class="stg">
+									<div class="txtStages">
+										<span>Этап 6</span>
+										<div class="right">
+											<h5>Дизайн</h5>
+											<p>Визуальное оформление блоков и графических
+												элементов сайта с учетом трендов и фирменного
+												стиля.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="stg">
+									<div class="txtStages">
+										<span>Этап 7</span>
+										<div class="right">
+											<h5>Верстка и программирование</h5>
+											<p>Кроссбраузерная и адаптивная верстка с органично
+												встроенной анимацией важных элементов.</p>
+										</div>
+									</div>
+								</div>
+								<div class="stg">
+									<div class="txtStages">
+										<span>Этап 8</span>
+										<div class="right">
+											<h5>Внесение итоговых правок</h5>
+											<p>Проводим внутреннее тестирование и устранение
+												ошибок, после чего Вы озвучиваете финальные
+												пожелания по доработке.</p>
+										</div>
+									</div>
+								</div>
+								<div class="stg">
+									<div class="txtStages">
+										<span>Этап 9</span>
+										<div class="right">
+											<h5>Посадка на движок</h5>
+											<p>Посадка статической верстки на систему управления
+												контентом CMS (панель администратора).</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<h4 class="animated a_up">Стоимость разработки</h4>
+					<div class="price animated a_up">
+						<div class="priceCard">
+							<p>Стандарт</p>
+							<ul>
+								<li>Адаптированная под бизнес структура </li>
+								<li>Дизайн функциональных страниц
+									<span class="question">
+										<img src="./images/question.png" alt="">
+										<span class="text">Оригинальный дизайн формы заказа, корзины и страницы оплаты</span>
+									</span>
+								</li>
+								<li>Уникальный дизайн</li>
+								<li>Профессиональная верстка </li>
+								<li>Адаптация под мобильные устройства</li>
+								<li>Подключение аналитики и онлайн чата</li>
+								<li>Базовое наполнение текстом</li>
+								<li>Настройка целей конверсии</li>
+								<li>Домен и размещение на хостинге</li>
+								<li>Гарантия 3 мес.</li>
+							</ul>
+							<div class="inp">
+								<span>от 800$</span>
+								<input type="button" value="Заказать" id="stand">
+							</div>
+						</div>
+						<div class="priceCard">
+							<p>Премиум</p>
+							<ul>
+								<li>Адаптированная под бизнес структура</li>
+								<li>Дизайн функциональных страниц
+									<span class="question">
+										<img src="./images/question.png" alt="">
+										<span class="text">Оригинальный дизайн формы заказа, корзины и страницы оплаты</span>
+									</span>
+								</li>
+								<li>Уникальный дизайн</li>
+								<li>Профессиональная верстка</li>
+								<li>Адаптация под мобильные устройства</li>
+								<li>Анимации элементов</li>
+								<li>Подключение аналитики и онлайн чата</li>
+								<li>Модуль онлайн-оплаты</li>
+								<div id="more">
+									<li>Базовая интеграция с CRM
+										<span class="question">
+											<img src="./images/question.png" alt="">
+											<span class="text">Интеграция лидформ сайта с вашей CRM системой</span>
+										</span>
+									</li>
+									<li>Написание продающих тестов</li>
+									<li>Настройка целей конверсии</li>
+									<li>Домен и размещение на хостинге</li>
+									<li>Гарантия 6 мес.</li>
+								</div>
+							</ul>
+									<div id="show-more">
+										Показать ещё
+									</div>
+							<div class="inp">
+								<span>от 1250$</span>
+								<input type="button" value="Заказать" id="premium">
+							</div>
+						</div>
+						<div class="priceCard">
+							<p class="vip">VIP</p>
+							<ul>
+								<li>Адаптированная под бизнес структура</li>
+								<li>Дизайн функциональных страниц
+									<span class="question">
+										<img src="./images/question.png" alt="">
+										<span class="text">Оригинальный дизайн формы заказа, корзины и страницы оплаты</span>
+									</span>
+								</li>
+								<li>Premium дизайн
+									<span class="question">
+										<img src="./images/question.png" alt="">
+										<span class="text">Дизайн разрабатывает арт-директор Antares Design</span>
+									</span>
+								</li>
+								<li>Рекламные баннеры
+									<span class="question">
+										<img src="./images/question.png" alt="">
+										<span class="text">Рисуем и адаптируем для 10 размеров баннер для рекламной кампании</span>
+									</span>
+								</li>
+								<li>Профессиональная верстка</li>
+								<li>Адаптация под мобильные устройства</li>
+								<li>Анимации элементов</li>
+								<li>Подключение аналитики и онлайн чата</li>
+								<div id="moreVip">
+									<li>Модуль онлайн-оплаты</li>
+									<li>Установка на CMS систему</li>
+									<li>Верстка с технологией Pixel Perfect
+										<span class="question">
+											<img src="./images/question.png" alt="">
+											<span class="text">Фирменная верстка с точностью до одного пиксля</span>
+										</span>
+									</li>
+									<li>Расширенная интеграция с CRM
+										<span class="question">
+											<img src="./images/question.png" alt="">
+											<span class="text">Интеграция лидформ сайта с вашей CRM сестемой и другие настройки по желанию заказчика</span>
+										</span>
+									</li>
+									<li>Расширенный функционал по запросу</li>
+									<li>Написание продающих тестов</li>
+									<li>Настройка целей конверсии</li>
+									<li>Домен и размещение на хостинге</li>
+									<li>Гарантия 1 год</li>
+								</div>
+							</ul>
+									<div id="show-moreVip">
+										Показать ещё
+									</div>
+							<div class="inp">
+								<span>от 1800$</span>
+								<input type="button" value="Заказать" id="VIP">
+							</div>
+						</div>
+					</div>
+					<div class="price-mob animated a_up">
+						<div class="priceCard">
+							<p>Стандарт</p>
+							<ul>
+								<li>Адаптированная под бизнес структура </li>
+								<li class="question">Дизайн функциональных страниц
+										<img src="./images/question.png" alt="">
+										<span class="text">Оригинальный дизайн формы заказа, корзины и страницы оплаты</span>
+								</li>
+								<li>Уникальный дизайн</li>
+								<li>Профессиональная верстка </li>
+								<li>Адаптация под мобильные устройства</li>
+								<li>Подключение аналитики и онлайн чата</li>
+								<li>Базовое наполнение текстом</li>
+								<li>Настройка целей конверсии</li>
+								<li>Домен и размещение на хостинге</li>
+								<li>Гарантия 3 мес.</li>
+							</ul>
+							<div class="inp">
+								<span>от 800$</span>
+								<input type="button" value="Заказать" id="stand-mob">
+							</div>
+						</div>
+						<div class="priceCard">
+							<p>Премиум</p>
+							<ul>
+								<li>Адаптированная под бизнес структура</li>
+								<li class="question">Дизайн функциональных страниц
+										<img src="./images/question.png" alt="">
+										<span class="text">Оригинальный дизайн формы заказа, корзины и страницы оплаты</span>
+								</li>
+								<li>Уникальный дизайн</li>
+								<li>Профессиональная верстка</li>
+								<li>Адаптация под мобильные устройства</li>
+								<li>Анимации элементов</li>
+								<li>Подключение аналитики и онлайн чата</li>
+								<li>Модуль онлайн-оплаты</li>
+								<div id="more-mob">
+									<li class="question">Базовая интеграция с CRM
+											<img src="./images/question.png" alt="">
+											<span class="text">Интеграция лидформ сайта с вашей CRM системой</span>
+									</li>
+									<li>Написание продающих тестов</li>
+									<li>Настройка целей конверсии</li>
+									<li>Домен и размещение на хостинге</li>
+									<li>Гарантия 6 мес.</li>
+								</div>
+							</ul>
+									<div id="show-more-mob">
+										Показать ещё
+									</div>
+							<div class="inp">
+								<span>от 1250$</span>
+								<input type="button" value="Заказать" id="premium-mob">
+							</div>
+						</div>
+						<div class="priceCard">
+							<p class="vip">VIP</p>
+							<ul>
+								<li>Адаптированная под бизнес структура</li>
+								<li class="question">Дизайн функциональных страниц
+										<img src="./images/question.png" alt="">
+										<span class="text">Оригинальный дизайн формы заказа, корзины и страницы оплаты</span>
+								</li>
+								<li class="question">Premium дизайн
+										<img src="./images/question.png" alt="">
+										<span class="text">Дизайн разрабатывает арт-директор Antares Design</span>
+								</li>
+								<li class="question">Рекламные баннеры
+										<img src="./images/question.png" alt="">
+										<span class="text">Рисуем и адаптируем для 10 размеров баннер для рекламной кампании</span>
+								</li>
+								<li>Профессиональная верстка</li>
+								<li>Адаптация под мобильные устройства</li>
+								<li>Анимации элементов</li>
+								<li>Подключение аналитики и онлайн чата</li>
+								<div id="moreVip-mob">
+									<li>Модуль онлайн-оплаты</li>
+									<li>Установка на CMS систему</li>
+									<li class="question">Верстка с технологией Pixel Perfect
+											<img src="./images/question.png" alt="">
+											<span class="text">Фирменная верстка с точностью до одного пиксля</span>
+									</li>
+									<li class="question">Расширенная интеграция с CRM
+											<img src="./images/question.png" alt="">
+											<span class="text">Интеграция лидформ сайта с вашей CRM сестемой и другие настройки по желанию заказчика</span>
+									</li>
+									<li>Расширенный функционал по запросу</li>
+									<li>Написание продающих тестов</li>
+									<li>Настройка целей конверсии</li>
+									<li>Домен и размещение на хостинге</li>
+									<li>Гарантия 1 год</li>
+								</div>
+							</ul>
+									<div id="show-moreVip-mob">
+										Показать ещё
+									</div>
+							<div class="inp">
+								<span>от 1800$</span>
+								<input type="button" value="Заказать" id="VIP-mob">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="priceForm" id="popup-price-stand" >
+				<div class="b-popup-content">
+					<a  href="javascript:PopUpHide()" id="hide1">&#10006;</a>
+					<p>Заполните форму</p>
+					<form id="form-price-stand">
+						<input type="text" name="name" id="name-price-stand" onkeyup="checkParamspricestand()" value="" placeholder="Контактное лицо (ФИО)*" required>
+						<input type="tel" name="phone" id="phone-price-stand" onkeyup="checkParamspricestand()" value="" placeholder="Телефон*" required>
+						<input type="email" name="mail" id="mail-price-stand" onkeyup="checkParamspricestand()" value="" placeholder="Email*" required>
+						<input type="text" name="rate" class="rate"  value="Landing Page (стандарт)" readonly style="color:#FF3300;">
+						<fieldset class="box">
+							<input id="check-price-stand" type="checkbox" name="check" value="check1" required>
+							<label for="check-price-stand"></label>
+							<p class="confid" >Нажимая на кнопку, вы соглашаетесь с <a href="politika.html">Политикой конфиденциальности</a></p>
+						</fieldset>
+						<input  type="submit" value="Отправить"  id="submit-price-stand" disabled> <!-- The button that causes the popup -->
+					</form>
+				</div>
+			</div>
+			<div class="priceForm" id="popup-price-premium" >
+				<div class="b-popup-content">
+					<a  href="javascript:PopUpHide()" id="hide1">&#10006;</a>
+					<p>Заполните форму</p>
+					<form id="form-price-premium">
+						<input type="text" name="name" id="name-price-premium" onkeyup="checkParamspricestand()" value="" placeholder="Контактное лицо (ФИО)*" required>
+						<input type="tel" name="phone" id="phone-price-premium" onkeyup="checkParamspricestand()" value="" placeholder="Телефон*" required>
+						<input type="email" name="mail" id="mail-price-premium" onkeyup="checkParamspricestand()" value="" placeholder="Email*" required>
+						<input type="text" name="rate" class="rate"  value="Landing Page (премиум)" readonly style="color:#FF3300;">
+						<fieldset class="box">
+							<input id="check-price-premium" type="checkbox" name="check" value="check2" required>
+							<label for="check-price-premium"></label>
+							<p class="confid" >Нажимая на кнопку, вы соглашаетесь с <a href="politika.html">Политикой конфиденциальности</a></p>
+						</fieldset>
+						<input  type="submit" value="Отправить"  id="submit-price-premium" disabled>
+					</form>
+				</div>
+			</div>
+			<div class="priceForm" id="popup-price-VIP" >
+				<div class="b-popup-content">
+					<a  href="javascript:PopUpHide()" id="hide1">&#10006;</a>
+					<p>Заполните форму</p>
+					<form id="form-price-VIP" >
+						<input type="text" name="name" id="name-price-VIP" onkeyup="checkParamspricestand()" value="" placeholder="Контактное лицо (ФИО)*" required>
+						<input type="tel" name="phone" id="phone-price-VIP" onkeyup="checkParamspricestand()" value="" placeholder="Телефон*" required>
+						<input type="email" name="mail" id="mail-price-VIP" onkeyup="checkParamspricestand()" value="" placeholder="Email*" required>
+						<input type="text" name="rate" class="rate"  value="Landing Page (VIP)" readonly style="color:#FF3300;">
+						<fieldset class="box">
+							<input id="check-price-VIP" type="checkbox" name="check" value="check3" required>
+							<label for="check-price-VIP"></label>
+							<p class="confid" >Нажимая на кнопку, вы соглашаетесь с <a href="politika.html">Политикой конфиденциальности</a></p>
+						</fieldset>
+						<input  type="submit" value="Отправить"  id="submit-price-VIP" disabled>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="callFormBox" id="callFormBox" >
+				<div class="b-popup-content">
+					<a  href="javascript:PopUpHide()" id="hide0">&#10006;</a>
+					<p>Введите номер телефона</p>
+					<form id="callForm"  >
+						<input type="tel" name="phoneCall" id="phone-callForm" value="" placeholder="+38XXXXXXXXXX" onchange="ValidPhone()" onkeyup="ValidPhone()" required>
+						<p id="messagePhone" >  </p>
+						<input  type="submit" value="Перезвоните мне"  id="submit-callForm" disabled>
+					</form>
+				</div>
+			</div>
+			<button type="button" name="button" class="callButton" id="callButton"><i class="fas fa-phone"></i></button>
+			<div class="layout">
+				<div class="logoFoot">
+					<a href="index.html">
+						<img src="./images/logo.png" alt="logo">
+					</a>
+				</div>
+				<div class="navFoot">
+					<ul>
+						<li><a href="index.html#serv">Услуги</a></li>
+						<li><a href="index.html#aboutUs">О нас</a></li>
+						<li><a href="projects.html">Проекты</a></li>
+						<li><a href="politika.html">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+				<div class="socialFoot">
+					<a href="https://t.me/antaresfighter"><i class="fab fa-telegram-plane"></i></a>
+					<a href="https://www.instagram.com/antares.webdesign/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.behance.net/antaresdesign"><i class="fab fa-behance"></i></a>
+				</div>
+			</div>
+			<div class="copyright">
+				<span>Antares Design @2020</span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

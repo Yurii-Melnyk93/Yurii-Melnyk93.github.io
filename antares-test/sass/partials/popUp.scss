@@ -1,0 +1,738 @@
+
+.b-popup{
+  display: none;
+  position: absolute;
+  z-index: 15;
+  .b-popup-content{
+      position: absolute;
+      top: 50px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 490px;
+      height: 510px;
+      padding:10px 88px;
+      background-color: #F2F2F2;
+      border-radius:5px;
+      box-shadow: 0px 0px 10px #000;
+      box-sizing: border-box;
+      @media (min-width: 320px) and (max-width: 767px) {
+        width: 80%;
+        max-width: 490px;
+        height: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding:10px 30px;
+        overflow: scroll;
+      }
+      p {
+        margin-top: 32px;
+        margin-bottom: 23px;
+        font-family: 'Gilroy Bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 34px;
+        color: #000000;
+        text-align: center;
+      }
+      input {
+          width: 100%;
+          border-radius: 0;
+          font-family: 'Gilroy Medium';
+          margin-top: 12px;
+          display: block;
+          background-color: #F2F2F2;
+          color: #000000;
+          font-size: 14px;
+          line-height: 18px;
+          border: none;
+          border-bottom: 1px solid #000000;
+          height: 30px;
+          &::placeholder {
+            color: #000000;
+            opacity: 0.6;
+          }
+          @media (min-width: 320px) and (max-width: 767px) {
+            font-size: 12px;
+            line-height: 14px;
+            height: 25px;
+            margin: 10px 0;
+          }
+      }
+      textarea {
+        font-family: 'Gilroy Medium';
+        margin-top: 12px;
+        margin-bottom: 20px;
+        height: 56px;
+        width: 100%;
+        resize: none;
+        border: none;
+        border-bottom: 1px solid #000000;
+        background-color: #F2F2F2;
+        color: #000000;
+        &::placeholder {
+          color: #000000;
+          opacity: 0.6;
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+          font-size: 12px;
+          line-height: 14px;
+          height: 25px;
+          margin: 10px 0;
+        }
+      }
+    .file{
+      width:auto;
+      margin-bottom: 28px;
+    }
+    #fileFF{display:none;}
+    .file label{
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+    position: relative;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0;
+    color:#000000;
+    font-family: 'Gilroy Medium';
+    font-weight: normal;
+    img {
+      position: relative;
+      margin-right: 10px;
+    }
+    }
+    .box {
+      position: relative;
+      input[type=checkbox]:checked + label:before {
+        content: '';
+        background-image: url('../images/check.png');
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      #check1 {
+        display: none;
+      }
+      label {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 27px;
+        font-size: 13px;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          margin-right: 10px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: #F2F2F2;
+          border: 2px solid #FF3300;
+          box-sizing: border-box;
+          border-radius: 4px;
+        }
+      }
+          .confid {
+            display: inline-block;
+            margin: 0;
+            margin-left: 26px;
+            margin-top: -4px;
+            text-align: left;
+            width: auto;
+            position: relative;
+            font-family: 'Gilroy Medium';
+            font-weight: normal;
+            color: #000000;
+            font-size: 12px;
+            line-height: 15px;
+            a {
+              color: #000000;
+              font-family: 'Gilroy Bold';
+              font-weight: bold;
+              font-size: 12px;
+              line-height: 15px;
+            }
+      }
+    }
+
+      #submit {
+        cursor: pointer;
+        margin: 0;
+        -webkit-appearance: none;
+        -moz-appearance:none;
+        color: #FFFFFF;
+        border: 1.5px solid #FF3300;
+        background-color: #FF3300;
+        box-sizing: border-box;
+        border-radius: 120px;
+        width: 265px;
+        height: 50px;
+        font-family: 'Gilroy Medium';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 24px auto 32px auto;
+        &:hover {
+          background: #FFFFFF;
+          border: 1.5px solid #ffffff;
+          color: #FF3300;
+          transition: 0.5s;
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+          font-size: 12px;
+          line-height: 14px;
+          width: 160px;
+          height: 40px;
+        }
+    }
+  }
+}
+#hide1 {
+	text-decoration: none;
+	color: #000;
+	position: absolute;
+	top: 14px;
+	right: 17px;
+	font-size: 12px;
+}
+
+ /*Add this class in your CCS*/
+  .none {
+    width:100%;
+    min-height:100%;
+    background-color: rgba(77, 77, 77, 0.7);
+    overflow:hidden;
+    position: fixed;
+    top:0px;
+  }
+
+
+
+
+  // Thanks popUp
+  .a-popup{
+    display: none;
+    position: absolute;
+    z-index: 16;
+    .a-popup-content{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 330px;
+        height: 180px;
+        padding:52px 16px;
+        background-color: #F2F2F2;
+        border-radius:5px;
+        box-shadow: 0px 0px 10px #000;
+        box-sizing: border-box;
+        @media (min-width: 320px) and (max-width: 767px) {
+          width: 280px;
+
+          padding:52px 10px;
+        }
+        p {
+          margin-bottom: 6px;
+          font-family: 'Gilroy Bold';
+          font-style: normal;
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 34px;
+          color: #000000;
+          text-align: center;
+        }
+        span {
+          margin: 0 auto;
+          display: block;
+          position: relative;
+
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          font-family: 'Gilroy Medium';
+          color: #000000;
+          text-align: center;
+        }
+
+    }
+  }
+  #hide2 {
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    top: 14px;
+    right: 17px;
+    font-size: 12px;
+  }
+
+   /*Add this class in your CCS*/
+    .none2 {
+      width:100%;
+      min-height:100%;
+      background-color: rgba(77, 77, 77, 0.7);
+      overflow:hidden;
+      position: fixed;
+      top:0px;
+    }
+
+
+
+/////////////////////  //
+
+
+    .priceForm{
+      display: none;
+      position: absolute;
+      z-index: 15;
+      .b-popup-content{
+          position: absolute;
+          top: 50px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 490px;
+          height: 510px;
+          padding:10px 88px;
+          background-color: #F2F2F2;
+          border-radius:5px;
+          box-shadow: 0px 0px 10px #000;
+          box-sizing: border-box;
+          @media (min-width: 320px) and (max-width: 767px) {
+            width: 80%;
+            max-width: 490px;
+            height: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            padding:10px 30px;
+            overflow: scroll;
+          }
+          p {
+            margin-top: 32px;
+            margin-bottom: 23px;
+            font-family: 'Gilroy Bold';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 34px;
+            color: #000000;
+            text-align: center;
+          }
+          .rate {
+            font-family: 'Gilroy Medium';
+            font-style: normal;
+            border: none;
+            display: block;
+            background-color: #F2F2F2;
+            height: 19px;
+            font-size: 14px;
+            line-height: 18px;
+            margin: 20px 0;
+          }
+          input {
+              width: 100%;
+              border-radius: 0;
+              font-family: 'Gilroy Medium';
+              margin-top: 12px;
+              display: block;
+              background-color: #F2F2F2;
+              color: #000000;
+              font-size: 14px;
+              line-height: 18px;
+              border: none;
+              border-bottom: 1px solid #000000;
+              height: 30px;
+              &::placeholder {
+                color: #000000;
+                opacity: 0.6;
+              }
+              @media (min-width: 320px) and (max-width: 767px) {
+                font-size: 12px;
+                line-height: 14px;
+                height: 25px;
+                margin: 10px 0;
+              }
+          }
+
+
+        .box {
+          position: relative;
+          input[type=checkbox]:checked + label:before {
+            content: '';
+            background-image: url('../images/check.png');
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+          #check-price-stand  {
+            display: none;
+          }
+          #check-price-premium {
+            display: none;
+          }
+          #check-price-VIP {
+            display: none;
+          }
+          label {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-left: 27px;
+            font-size: 13px;
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              margin-right: 10px;
+              position: absolute;
+              left: 0;
+              top: 0;
+              background: #F2F2F2;
+              border: 2px solid #FF3300;
+              box-sizing: border-box;
+              border-radius: 4px;
+            }
+          }
+              .confid {
+                display: inline-block;
+                margin: 0;
+                margin-left: 26px;
+                margin-top: -4px;
+                text-align: left;
+                width: auto;
+                position: relative;
+                font-family: 'Gilroy Medium';
+                font-weight: normal;
+                color: #000000;
+                font-size: 12px;
+                line-height: 15px;
+                a {
+                  color: #000000;
+                  font-family: 'Gilroy Bold';
+                  font-weight: bold;
+                  font-size: 12px;
+                  line-height: 15px;
+                }
+          }
+        }
+
+          #submit-price-stand {
+           cursor: pointer;
+           margin: 0;
+           -webkit-appearance: none;
+           -moz-appearance:none;
+           color: #FFFFFF;
+           border: 1.5px solid #FF3300;
+           background-color: #FF3300;
+           box-sizing: border-box;
+           border-radius: 120px;
+           width: 265px;
+           height: 50px;
+           font-family: 'Gilroy Medium';
+           font-style: normal;
+           font-weight: bold;
+           font-size: 14px;
+           line-height: 17px;
+           margin: 24px auto 32px auto;
+           &:hover {
+             background: #FFFFFF;
+             border: 1.5px solid #ffffff;
+             color: #FF3300;
+             transition: 0.5s;
+           }
+           @media (min-width: 320px) and (max-width: 767px) {
+             font-size: 12px;
+             line-height: 14px;
+             width: 160px;
+             height: 40px;
+           }
+       }
+           #submit-price-premium {
+            cursor: pointer;
+            margin: 0;
+            -webkit-appearance: none;
+            -moz-appearance:none;
+            color: #FFFFFF;
+            border: 1.5px solid #FF3300;
+            background-color: #FF3300;
+            box-sizing: border-box;
+            border-radius: 120px;
+            width: 265px;
+            height: 50px;
+            font-family: 'Gilroy Medium';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            margin: 24px auto 32px auto;
+            &:hover {
+              background: #FFFFFF;
+              border: 1.5px solid #ffffff;
+              color: #FF3300;
+              transition: 0.5s;
+            }
+            @media (min-width: 320px) and (max-width: 767px) {
+              font-size: 12px;
+              line-height: 14px;
+              width: 160px;
+              height: 40px;
+            }
+        }
+           #submit-price-VIP {
+            cursor: pointer;
+            margin: 0;
+            -webkit-appearance: none;
+            -moz-appearance:none;
+            color: #FFFFFF;
+            border: 1.5px solid #FF3300;
+            background-color: #FF3300;
+            box-sizing: border-box;
+            border-radius: 120px;
+            width: 265px;
+            height: 50px;
+            font-family: 'Gilroy Medium';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            margin: 24px auto 32px auto;
+            &:hover {
+              background: #FFFFFF;
+              border: 1.5px solid #ffffff;
+              color: #FF3300;
+              transition: 0.5s;
+            }
+            @media (min-width: 320px) and (max-width: 767px) {
+              font-size: 12px;
+              line-height: 14px;
+              width: 160px;
+              height: 40px;
+            }
+        }
+      }
+    }
+    #hide1{
+    	text-decoration: none;
+    	color: #000;
+    	position: absolute;
+    	top: 14px;
+    	right: 17px;
+    	font-size: 12px;
+    }
+
+
+
+      // Thanks popUp
+      .a-popup{
+        display: none;
+        position: absolute;
+        z-index: 16;
+        .a-popup-content{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 330px;
+            height: 180px;
+            padding:52px 16px;
+            background-color: #F2F2F2;
+            border-radius:5px;
+            box-shadow: 0px 0px 10px #000;
+            box-sizing: border-box;
+            @media (min-width: 320px) and (max-width: 767px) {
+              width: 280px;
+
+              padding:52px 10px;
+            }
+            p {
+              margin-bottom: 6px;
+              font-family: 'Gilroy Bold';
+              font-style: normal;
+              font-weight: bold;
+              font-size: 28px;
+              line-height: 34px;
+              color: #000000;
+              text-align: center;
+            }
+            span {
+              margin: 0 auto;
+              display: block;
+              position: relative;
+
+              font-size: 12px;
+              line-height: 15px;
+              text-align: center;
+              font-family: 'Gilroy Medium';
+              color: #000000;
+              text-align: center;
+            }
+
+        }
+      }
+      #hide2 {
+        text-decoration: none;
+        color: #000;
+        position: absolute;
+        top: 14px;
+        right: 17px;
+        font-size: 12px;
+      }
+
+       /*Add this class in your CCS*/
+        .none2 {
+          width:100%;
+          min-height:100%;
+          background-color: rgba(77, 77, 77, 0.7);
+          overflow:hidden;
+          position: fixed;
+          top:0px;
+        }
+
+
+
+// callForm
+
+
+.callFormBox{
+  display: none;
+  position: absolute;
+  z-index: 15;
+  .b-popup-content{
+      position: absolute;
+      top: 50px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 490px;
+      height: 300px;
+      padding:10px 88px;
+      background-color: #F2F2F2;
+      border-radius:5px;
+      box-shadow: 0px 0px 10px #000;
+      box-sizing: border-box;
+      @media (min-width: 320px) and (max-width: 767px) {
+        width: 80%;
+        max-width: 490px;
+
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding:10px 30px;
+        overflow: scroll;
+      }
+      p {
+        margin-top: 32px;
+        margin-bottom: 23px;
+        font-family: 'Gilroy Bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 34px;
+        color: #000000;
+        text-align: center;
+      }
+      #messagePhone {
+        font-family: 'Gilroy Bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 34px;
+        color: #FF3300;
+        margin: 5px 0;
+      }
+      input {
+          width: 100%;
+          border-radius: 0;
+          font-family: 'Gilroy Medium';
+          margin-top: 12px;
+          display: block;
+          background-color: #F2F2F2;
+          color: #000000;
+          font-size: 14px;
+          line-height: 18px;
+          border: none;
+          border-bottom: 1px solid #000000;
+          height: 30px;
+          &::placeholder {
+            color: #000000;
+            opacity: 0.6;
+          }
+          @media (min-width: 320px) and (max-width: 767px) {
+            font-size: 12px;
+            line-height: 14px;
+            height: 25px;
+            width: 50%;
+            margin: 10px auto;
+          }
+      }
+
+
+      #submit-callForm {
+        cursor: pointer;
+        margin: 0;
+        -webkit-appearance: none;
+        -moz-appearance:none;
+        color: #FFFFFF;
+        border: 1.5px solid #FF3300;
+        background-color: #FF3300;
+        box-sizing: border-box;
+        border-radius: 120px;
+        width: 265px;
+        height: 50px;
+        font-family: 'Gilroy Medium';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 24px auto 32px auto;
+        &:disabled{
+          opacity: 0.5;
+        }
+        &:hover {
+          background: #FFFFFF;
+          border: 1.5px solid #ffffff;
+          color: #FF3300;
+          transition: 0.5s;
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+          font-size: 12px;
+          line-height: 14px;
+          width: 160px;
+          height: 40px;
+        }
+    }
+  }
+}
+#hide0 {
+	text-decoration: none;
+	color: #000;
+	position: absolute;
+	top: 14px;
+	right: 17px;
+	font-size: 12px;
+}
+
+ /*Add this class in your CCS*/
+  .none {
+    width:100%;
+    min-height:100%;
+    background-color: rgba(77, 77, 77, 0.7);
+    overflow:hidden;
+    position: fixed;
+    top:0px;
+  }

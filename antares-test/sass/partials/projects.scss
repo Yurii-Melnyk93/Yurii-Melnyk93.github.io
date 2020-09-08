@@ -1,0 +1,246 @@
+#contentProjects {
+  margin-top: 140px;
+  margin-bottom: 300px;
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    margin-top: 110px;
+    margin-bottom: 200px;
+  }
+  @media (min-width: 768px) and (max-width: 811px) {
+    margin-top: 80px;
+    margin-bottom: 160px;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    height: auto;
+  }
+  .worksSlider {
+    overflow: visible;
+    position: relative;
+    .imgbox {
+      z-index: 1;
+      position: absolute;
+      right: 170px;
+      top: -170px;
+      animation-duration: 1s;
+      @media (min-width: 1024px) and (max-width: 1279px) {
+        right: 4%;
+        top: -120px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        left: 250px;
+        top: -100px;
+        width: 50%;
+      }
+      @media (min-width: 413px) and (max-width: 479px) {
+        left: 25px;
+        top: -75px;
+        width: 73%;
+      }
+      @media (min-width: 320px) and (max-width: 413px) {
+        left: 20px;
+        top: -50px;
+        width: 73%;
+      }
+      img {
+        position: relative;
+        width: 100%;
+        @media (min-width: 1024px) and (max-width: 1279px) {
+          width: 80%;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          width: 100%;
+        }
+      }
+    }
+    .works-slider {
+      position: relative;
+      z-index: 2;
+      width: auto;
+      animation-delay: 1.5s;
+      @media (min-width: 320px) and (max-width: 767px) {
+        display: none;
+      }
+      ul {
+        position: relative;
+        li {
+          box-sizing: content-box;
+          position: relative;
+          a {
+            width: 100%;
+            position: relative;
+          }
+          .txt {
+            z-index: 2;
+            position: relative;
+            width: 30%;
+            float: left;
+            margin-right: 30px;
+            margin-top: 78px;
+            animation-delay: 0.5s;
+            @media (min-width: 1280px) and (max-width: 1359px) {
+              margin-right: 20px;
+              margin-top: 78px;
+            }
+            @media (min-width: 1024px) and (max-width: 1279px) {
+              margin-right: 15px;
+              margin-top: 65px;
+            }
+            @media (min-width: 768px) and (max-width: 811px) {
+              margin-right: 10px;
+              margin-top: 45px;
+            }
+            @media (min-width: 414px) and (max-width: 479px) {
+              margin-right: 5px;
+              margin-top: 25px;
+              width: 90%;
+            }
+            @media (min-width: 320px) and (max-width: 413px) {
+              margin-right: 5px;
+              margin-top: 15px;
+              width: 90%;
+            }
+            p {
+              font-family: 'Gilroy Medium';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 44px;
+              line-height: 51px;
+              letter-spacing: 0.08em;
+              color: #000000;
+              text-transform: uppercase;
+              margin-bottom: 22px;
+              @media (min-width: 1280px) and (max-width: 1359px) {
+                font-size: 34px;
+                line-height: 43px;
+                margin-bottom: 14px;
+              }
+              @media (min-width: 1024px) and (max-width: 1279px) {
+                font-size: 29px;
+                line-height: 28px;
+                margin-bottom: 12px;
+              }
+              @media (min-width: 768px) and (max-width: 811px) {
+                font-size: 24px;
+                line-height: 23px;
+                margin-bottom: 8px;
+              }
+              @media (min-width: 320px) and (max-width: 479px) {
+                font-size: 15px;
+                line-height: 13px;
+                margin-bottom: 6px;
+              }
+            }
+            span {
+              font-family: 'Gilroy Medium';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 20px;
+              line-height: 24px;
+              color: #000000;
+              @media (min-width: 1280px) and (max-width: 1359px) {
+                font-size: 18px;
+                line-height: 22px;
+              }
+              @media (min-width: 1024px) and (max-width: 1279px) {
+                font-size: 14px;
+                line-height: 18px;
+              }
+              @media (min-width: 768px) and (max-width: 811px) {
+                font-size: 12px;
+                line-height: 16px;
+              }
+              @media (min-width: 320px) and (max-width: 479px) {
+                font-size: 8px;
+                line-height: 12px;
+              }
+            }
+          }
+          .wslider {
+            box-sizing: border-box;
+            animation-delay: 1.5s;
+            animation-duration: 1.5s;
+            border-radius: 37px;
+            float: left;
+            width: 60%;
+            @media (min-width: 320px) and (max-width: 479px) {
+              width: 100%;
+              display: block;
+              float: none;
+            }
+            img {
+              width: 100%;
+              position: relative;
+              @media (min-width: 320px) and (max-width: 479px) {
+              }
+            }
+          }
+        }
+      }
+    }
+    .works-slider-mob {
+      margin-top: 52px;
+      position: relative;
+      z-index: 2;
+      width: auto;
+
+      animation-delay: 1.5s;
+      @media (min-width: 767px) {
+        display: none;
+      }
+      @media (min-width: 320px) and (max-width: 479px) {
+        width: 100%;
+      }
+      .bxslider1-mob {
+        position: relative;
+        li {
+          box-sizing: content-box;
+          position: relative;
+          .txt {
+            z-index: 2;
+            position: relative;
+            width: 100%;
+            display: block;
+            margin-right: 30px;
+
+            animation-delay: 0.5s;
+            p {
+              font-family: 'Gilroy Medium';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 36px;
+              line-height: 42px;
+              letter-spacing: 0.08em;
+              color: #000000;
+              text-transform: uppercase;
+              margin-bottom: 22px;
+            }
+            span {
+              font-family: 'Gilroy Medium';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 19px;
+              color: #000000;
+
+            }
+          }
+          .wslider {
+            box-sizing: border-box;
+            animation-delay: 1.5s;
+            animation-duration: 1.5s;
+            border-radius: 37px;
+            display: block;
+            width: 100%;
+            margin-bottom: 52px;
+            img {
+              width: 100%;
+              position: relative;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

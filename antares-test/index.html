@@ -1,0 +1,305 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/all.css" type="text/css"/>
+	<link rel="stylesheet" href="sass/fonts.css" type="text/css"/>
+	<link rel="shortcut icon" sizes="32x32" href="./favicon.png" type="image/png">
+	<link rel="apple-touch-icon" sizes="32x32" href="./favicon.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/4d9105e594.js"></script>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<title>Antares design</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="layout">
+				<div class="logo animated fadeInDown">
+					<h1>
+						<a href="index.html">
+							<img src="./images/logo.png" alt="logo">
+						</a>
+						<span>antares design</span>
+					</h1>
+				</div>
+				<div class="hamburger-menu">
+			    <input id="menu__toggle" type="checkbox" >
+			    <label class="menu__btn animated fadeInUp" for="menu__toggle">
+			      <span></span>
+			    </label>
+
+			    <ul class="menu__box">
+					<li class="mailBurger">
+						<a href="mailto:office@antares-design.pro">office@antares-design.pro</a>
+					</li>
+					<li><a class="menu__item" href="#serv">Услуги</a></li>
+					<li><a class="menu__item" href="#aboutUs">О нас</a></li>
+					<li><a class="menu__item" href="projects.html">Проекты</a></li>
+					<li><a class="menu__item" href="#contactForm" id="mobCont">Контакты</a></li>
+					<li class="socialHead">
+						<a href="https://www.instagram.com/antares.webdesign/" target="_blank">Instagram</a>
+						<a href="https://www.behance.net/antaresdesign" target="_blank">Behance</a>
+					</li>
+			    </ul>
+			  </div>
+				<nav class="animated fadeInUp">
+					<ul>
+						<li><a href="#serv">Услуги</a></li>
+						<li><a href="#aboutUs">О нас</a></li>
+						<li><a href="projects.html">Проекты</a></li>
+						<li><a href="#contactForm" >Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="mail animated fadeIn">
+					<a href="mailto:office@antares-design.pro">office@antares-design.pro</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="b-popup" id="popup1" >
+				<div class="b-popup-content">
+					<a  href="javascript:PopUpHide()" id="hide1">&#10006;</a>
+					<p>Заполните форму</p>
+					<form id="headForm" enctype='multipart/form-data'>
+						<input type="text" name="name" id="name" onkeyup="checkParams()" value="" placeholder="Контактное лицо (ФИО)*" required>
+						<input type="tel" name="phone" id="phone" onkeyup="checkParams()" value="" placeholder="Телефон*" required>
+						<input type="email" name="mail" id="mail" onkeyup="checkParams()" value="" placeholder="Email*" required>
+						<textarea name="about"   placeholder="Расскажите о проекте"></textarea>
+						<fieldset class="file">
+							<label for="fileFF"><input id="fileFF" type="file" name="fileFF[]"><img src="./images/fileIco.png" alt="">
+								<span id="fl_nm">Прикрепить файл</span>
+							</label>
+						</fieldset>
+						<fieldset class="box">
+							<input id="check1" type="checkbox" name="check" value="check" required disabled>
+							<label for="check1"></label>
+							<p class="confid" >Нажимая на кнопку, вы соглашаетесь с <a href="politika.html" target="_blank">Политикой конфиденциальности</a></p>
+						</fieldset>
+						<input  type="submit" value="Отправить"  id="submit" disabled> <!-- The button that causes the popup -->
+					</form>
+				</div>
+			</div>
+			<div class="a-popup" id="popup2"> <!-- Translucent background behind the popup -->
+				<div class="a-popup-content"> <!-- PopUp content -->
+					<a  href="javascript:PopUpHide2()" id="hide2">&#10006;</a> <!-- The button that closes the popup -->
+					<p>Спасибо за заявку!</p>
+					<span>Наш менеджер свяжется с Вами <br> в ближайшее время!</span>
+				</div>
+			</div>
+			<div class="layout">
+				<div id="content">
+					<div class="first">
+						<div class="text animated fadeInLeft" >
+							<h2>Ваш <span>креативный</span> партнер в digital пространстве </h2>
+							<p>Мы создаем и эффективно продвигаем сайты для бизнеса</p>
+								<input type="button" name="button" onclick="showPopup()" value="Написать нам">
+						</div>
+						<div class="imagesbox">
+							<img class="elephant animated fadeInRight"  src="./images/elephant.png" alt="img">
+							<img class="spot animated fadeInRight" src="./images/bg-spot.png" alt="img">
+						</div>
+						<div class="firstSocial animated a_up" id="servSoc">
+							<a href="https://www.instagram.com/antares.webdesign/" target="_blank">Instagram</a>
+							<a href="https://www.behance.net/antaresdesign" target="_blank">Behance</a>
+						</div>
+					</div>
+					<div class="work animated a_up" id="serv">
+						<div class="development">
+							<p>Разработка</p>
+							<ul>
+								<li><a href="servicesLanding.html">Создание Landing Page</a></li>
+								<li><a href="servicesCorp.html">Создание корпоративных сайтов</a></li>
+								<li><a href="servicesInternet.html">Cоздание интернет-магазинов</a></li>
+								<li>Адаптивная верстка</li>
+							</ul>
+						</div>
+						<div class="design">
+							<p>Дизайн</p>
+							<ul>
+								<li>Редизайн сайта</li>
+								<li>Создание фирменного стиля</li>
+								<li>Создание логотипа</li>
+							</ul>
+						</div>
+						<div class="marketing" >
+							<p>Маркетинг</p>
+							<ul>
+								<li>Контексная реклама</li>
+								<li>SMM-продвижение</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="aboutUs">
+			<div class="about animated a_up" id="aboutUs">
+				<div class="layout">
+					<h3>О нашей команде в цифрах:</h3>
+					<p>230+<span>выполненных проектов</span></p>
+					<p>20+<span>специалистов в команде</span></p>
+					<p>4+<span>лет опыта работы</span></p>
+				</div>
+			</div>
+			</div>
+			<div class="layout">
+				<ul class="who animated a_up">
+					<li>
+						<div class="txtWho">
+							<h4>Кто мы такие?</h4>
+							<p><span>Antares Design -</span> это креативная дизайн студия <br class="entdesk">
+								и ваш надежный партнер в digital пространстве.<br class="entdesk">
+								В дополнение к разработке вашей онлайн-стратегии<br class="entdesk">
+								мы создаем инновационные веб-сайты, которые <br class="entdesk"> поднимут
+								вашу компанию на более высокий уровень. <br><br> Мы верим в
+								силу использования дизайна, историй <br class="entdesk"> и эмоций, чтобы
+								помочь малым и крупным брендам <br class="entdesk"> вовлекать людей в любую среду.
+							</p>
+						</div>
+						<div class="imgboxWho">
+							<img src="./images/img-who.png" alt="img">
+						</div>
+					</li>
+					<li>
+						<div class="txtWho">
+							<h4>Наши ценности</h4>
+							<p>Мы <span class="heart">❤️</span> нашу работу. Нам нравится разрабатывать и <br class="entdesk"> внедрять
+								высококачественный дизайн, ориентированный <br class="entdesk"> на человека,
+								который соответствует пожеланиям клиента <br class="entdesk"> и потребностям
+								пользователя. <br><br> Вы устали читать одни и те же описания о
+								тех компаниях, <br class="entdesk"> которые утверждают, что они отличаются от
+								других, но на <br class="entdesk"> самом деле это не так? Отлично! Поскольку мы
+								тоже устали, <br class="entdesk"> так почему бы не перейти непосредственно к той
+								части, <br class="entdesk"> где вы понимаете, как мы можем вам помочь?
+							</p>
+
+							<input id="btn" type="button" onclick="showPopup()" value="Связаться">
+
+						</div>
+						<div class="imgboxWho">
+							<img src="./images/img-values.png" alt="img">
+						</div>
+					</li>
+				</ul>
+				<div class="trust animated a_up">
+					<h4>Нам доверяют</h4>
+					<div class="imgboxTrust">
+						<img src="./images/ico-1.png" alt="img">
+						<img src="./images/ico-2.png" alt="img">
+						<img src="./images/ico-3.png" alt="img">
+						<img src="./images/ico-4.png" alt="img">
+						<img src="./images/ico-5.png" alt="img">
+						<img src="./images/ico-6.png" alt="img">
+					</div>
+					<div class="sliderTrust">
+						<ul class="bxslider2">
+							<li>
+								<img src="./images/ico-1.png" alt="img">
+								<img src="./images/ico-2.png" alt="img">
+							</li>
+							<li>
+								<img src="./images/ico-3.png" alt="img">
+								<img src="./images/ico-4.png" alt="img">
+							</li>
+							<li>
+								<img src="./images/ico-5.png" alt="img">
+								<img src="./images/ico-6.png" alt="img">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="contactForm">
+<!-- action="action_ajax_form.php" -->
+					<form class="brief animated fadeInUp" id="formBrief" >
+						<h4>Заполнить бриф</h4>
+						<fieldset class="forms animated fadeInUp">
+							<fieldset>
+								<input type="text" name="name" value="" placeholder="Ваше имя*" required>
+								<input type="tel" name="phone" value="" placeholder="Телефон*" required>
+								<input type="email" name="mail" value="" placeholder="Email*" required>
+								<input type="text" name="company" value="" placeholder="Название компании">
+							</fieldset>
+							<p>Услуги</p>
+							<select class="select" name="services" size="1">
+								<option value=""  disabled selected>Выберите тип услуги
+								<option value="Сайт-визитка">Сайт-визитка
+								<option value="Корпоративный сайт">Корпоративный сайт
+								<option value="Лендинг пейдж">Лендинг пейдж
+								<option value="Интернет-магазин">Интернет-магазин
+								<option value="Контексная реклама">Контексная реклама
+								<option value="Дизайн / Разработка фирменного стиля">Дизайн / Разработка фирменного стиля
+							</select>
+							<p>Бюджет</p>
+							<select class="select" name="cost" size="1">
+								<option value=""  disabled selected>Выберите бюджет
+								<option value="от 1000$ до 2000$">от 1000$ до 2000$
+								<option value="от 2000$ до 5000$">от 2000$ до 5000$
+								<option value="до 10 000$">до 10 000$
+								<option value="не знаю">не знаю
+							</select>
+							<p>Задача</p>
+							<input type="text" name="about" value="" placeholder="Расскажите о своей задаче">
+						</fieldset>
+							<input id="formBriefButton" type="submit" name="submit" value="Отправить" class="submit">
+							<p>Нажимая на кнопку, вы соглашаетесь с <a href="politika.html" target="_blank">Политикой конфиденциальности</a> </p>
+					</form>
+					<div class="contact animated fadeInUp">
+						<h4>Контакты</h4>
+						<div class="links animated fadeInUp">
+							<a class="mail" href="mailto:office@antares-design.pro">office@antares-design.pro</a>
+							<br>
+							<a href="https://t.me/antaresfighter" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+							<a href="https://www.instagram.com/antares.webdesign/" target="_blank"><i class="fab fa-instagram"></i></a>
+							<a href="https://www.behance.net/antaresdesign" target="_blank"><i class="fab fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="callFormBox" id="callFormBox" >
+				<div class="b-popup-content">
+					<a  href="javascript:PopUpHide()" id="hide0">&#10006;</a>
+					<p>Введите номер телефона</p>
+					<form id="callForm"  >
+						<input type="tel" name="phoneCall" id="phone-callForm" value="" placeholder="+38XXXXXXXXXX" onchange="ValidPhone()" onkeyup="ValidPhone()" required>
+						<p id="messagePhone" >  </p>
+						<input  type="submit" value="Перезвоните мне"  id="submit-callForm" disabled>
+					</form>
+				</div>
+			</div>
+			<button type="button" name="button" class="callButton" id="callButton"><i class="fas fa-phone"></i></button>
+			<div class="layout">
+				<div class="logoFoot">
+					<a href="index.html">
+						<img src="./images/logo.png" alt="logo">
+					</a>
+				</div>
+				<div class="navFoot">
+					<ul>
+						<li><a href="#serv">Услуги</a></li>
+						<li><a href="#aboutUs">О нас</a></li>
+						<li><a href="projects.html">Проекты</a></li>
+						<li><a href="politika.html">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+				<div class="socialFoot">
+					<a href="https://t.me/antaresfighter" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+					<a href="https://www.instagram.com/antares.webdesign/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.behance.net/antaresdesign" target="_blank"><i class="fab fa-behance"></i></a>
+				</div>
+			</div>
+			<div class="copyright">
+				<span>Antares Design @2020</span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
