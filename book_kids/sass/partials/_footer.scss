@@ -1,0 +1,162 @@
+footer {
+	display:block;
+	width:100%;
+	margin:0 0 0;
+	padding:0 0 0;
+	background-color: #151515;
+	text-align: center;
+	padding-top: 62px;
+	padding-bottom: 40px;
+
+
+	h2	{
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 129.34%;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 80px;
+		@media (min-width: 320px) and (max-width: 767px) {
+			font-size: 20px;
+		}
+	}
+	.contact	{
+		display: inline-flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 80px;
+		@media (min-width: 320px) and (max-width: 767px) {
+			display: block;
+			margin: 0 auto;
+			width: 50%;
+			margin-bottom: 60px;
+			text-align: left;
+		}
+		.mail	{
+			margin: 0	63px;
+			@media (min-width: 320px) and (max-width: 767px) {
+				margin: 0;
+				margin-bottom: 46px;
+			}
+			p 	{
+				margin-bottom: 15px;
+				text-align: left;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 129.34%;
+				color: #FFFFFF;
+				@media (min-width: 320px) and (max-width: 767px) {
+  				font-size: 20px;
+  			}
+			}
+			span 	{
+				text-align: left;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 129.34%;
+				color: #F2C443;
+			}
+		}
+		.phone	{
+			position: relative;
+			@media (min-width: 320px) and (max-width: 767px) {
+				margin-bottom: 46px;
+			}
+			p 	{
+				margin-bottom: 15px;
+				text-align: left;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 129.34%;
+				color: #FFFFFF;
+				@media (min-width: 320px) and (max-width: 767px) {
+  				font-size: 20px;
+  			}
+			}
+			span	{
+				text-align: left;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 129.34%;
+				color: #F2C443;
+			}
+		}
+		.social	{
+			position: relative;
+			p 	{
+				margin-bottom: 15px;
+				text-align: left;
+				font-family: 'Gilroy';
+				font-style: normal;
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 129.34%;
+				color: #FFFFFF;
+				@media (min-width: 320px) and (max-width: 767px) {
+  				font-size: 20px;
+  			}
+			}
+			.links	{
+				text-align: left;
+				.desktop	{
+					@media (min-width: 320px) and (max-width: 767px) {
+	  				display: none;
+	  			}
+				}
+				.mobile	{
+					@media (min-width: 768px)  {
+						display: none;
+					}
+				}
+				a {
+					margin-right: 15px;
+					text-align: left;
+					font-family: 'Gilroy';
+					font-style: normal;
+					font-weight: bold;
+					font-size: 18px;
+					line-height: 129.34%;
+					color: #F2C443;
+					i {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+	p 	{
+		margin-bottom: 80px;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 161.34%;
+		text-align: center;
+		color: #FFFFFF;
+		@media (min-width: 320px) and (max-width: 767px) {
+			font-size: 14px;
+		}
+	}
+	a	{
+		text-align: center;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 129.34%;
+		color: #ffffff;
+		@media (min-width: 320px) and (max-width: 767px) {
+			font-size: 18px;
+		}
+	}
+}

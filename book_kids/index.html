@@ -1,0 +1,453 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1">
+	<meta name="description" content="замовити іменну книгу для дитини" />
+	<meta name="keywords" content="именная книга для ребенка,именная сказка,чарiвний свiт,чарiвний свiт книга,подарок ребенку книга" />
+
+	<link rel="stylesheet" href="css/all.css" type="text/css"/>
+	<link rel="stylesheet" href="sass/fonts.css" type="text/css"/>
+	<link rel="shortcut icon" href="./favicon.png" type="image/png">
+
+	<script src="https://kit.fontawesome.com/4d9105e594.js"></script>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<title>Чарівний світ</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="leftBox">
+				<img src="./images/castle.png" alt="img">
+				<img src="./images/knight.png" alt="img">
+			</div>
+			<div class="rightBox">
+				<img src="./images/princess.png" alt="img">
+			</div>
+			<div class="layout">
+				<div class="headTop">
+					<div class="hamburger-menu">
+			    <input id="menu__toggle" type="checkbox" >
+			    <label class="menu__btn" for="menu__toggle">
+			      <span></span>
+			    </label>
+
+			    <ul class="menu__box">
+					<li><a class="menu__item" href="#about">Про нас</a></li>
+					<li><a class="menu__item" href="#advantages">Переваги</a></li>
+					<li><a class="menu__item" href="#order">Оплата</a></li>
+					<li><a class="menu__item" href="#reviews">Відгуки</a></li>
+					<li><a class="menu__item" href="#contact">Зв’язок з нами</a></li>
+					<li class="langMob">
+						<p>Мова:</p>
+						<ul>
+							<li ><a class="langLi" href="index_ru.html">Русский</a></li>
+							<li ><a class="langLi active" href="#">Українська</a></li>
+						</ul>
+					</li>
+			    </ul>
+			  </div>
+					<nav>
+						<ul>
+							<li>
+								<a href="#about">Про нас</a>
+							</li>
+							<li>
+								<a href="#advantages">Переваги</a>
+							</li>
+							<li>
+								<a href="#order">Оплата</a>
+							</li>
+							<li>
+								<a href="#reviews">Відгуки</a>
+							</li>
+							<li>
+								<a href="#contact">Зв’язок з нами</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="topRight">
+						<div class="lang">
+							<p>Мова:</p>
+							<ul>
+							  <li ><a class="langLi" href="index_ru.html">Русский</a></li>
+							  <li ><a class="langLi active" href="#">Українська</a></li>
+							</ul>
+						</div>
+						<a class="button" href="#form">Зробити замовлення</a>
+					</div>
+				</div>
+				<div class="headBottom">
+					<img src="./images/logoHead.svg" alt="logo">
+					<h1>Справжня книга з казками <br> про вашу дитину! </h1>
+					<h3>Це буде оригінальний і незабутній подарунок дитині, адже на обкладинці й у книзі <br>
+						 будуть її фотографії, а ще — натхненні казкові історії, головним героєм <br>
+						  яких буде сама дитина та її найближчі, найрідніші люди</h3>
+					<a class="more" href="#about">Детальнiше</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="b-popup" id="popup1" >
+				<div class="b-popup-content">
+					<img src="./images/img-1.jpg" class="hide" id="hide1" alt="img">
+				</div>
+			</div>
+			<div class="b-popup" id="popup2" >
+				<div class="b-popup-content">
+					<img src="./images/img-2.jpg" class="hide" id="hide2" alt="img">
+				</div>
+			</div>
+			<div class="b-popup" id="popup3" >
+				<div class="b-popup-content">
+					<img src="./images/img-3.jpg" class="hide" id="hide3" alt="img">
+				</div>
+			</div>
+			<div class="b-popup" id="popup4" >
+				<div class="b-popup-content">
+					<img src="./images/img-4.jpg" class="hide" id="hide4" alt="img">
+				</div>
+			</div>
+			<div class="b-popup" id="popup5" >
+				<div class="b-popup-content">
+					<img src="./images/img-5.jpg" class="hide" id="hide5" alt="img">
+				</div>
+			</div>
+			<div class="b-popup" id="popup6" >
+				<div class="b-popup-content">
+					<img src="./images/img-6.jpg" class="hide" id="hide6" alt="img">
+				</div>
+			</div>
+			<div class="b-popup" id="popup7" >
+				<div class="b-popup-content">
+					<img src="./images/img-7.jpg" class="hide" id="hide7" alt="img">
+				</div>
+			</div>
+			<div class="b-popup" id="popup8" >
+				<div class="b-popup-content">
+					<img src="./images/img-8.jpg" class="hide" id="hide8" alt="img">
+				</div>
+			</div>
+			<div class="b-popup" id="popup9" >
+				<div class="b-popup-content">
+					<img src="./images/img-9.jpg" class="hide" id="hide9" alt="img">
+				</div>
+		</div>
+			<div id="content">
+				<div class="layout">
+					<div class="about" id="about">
+						<div class="imgbox">
+							<img src="./images/img-about.jpg" alt="img">
+						</div>
+						<div class="txt">
+							<h2>Пам'ять на все життя!</h2>
+							<h3>Подаруйте дитині книгу з казками, головним героєм яких <br>
+								 буде вона сама, адже це не просто ще одна книга або<br>
+								  іграшка, яких у неї і так вистачає. Це буде подарунок на<br>
+									 довгу пам’ять!<br>
+									 <br>
+									  Минуть роки, дитина виросте. Який найсолодший спогад у<br>
+										 неї залишиться? Пам’ять про дитинство! Про улюблених<br>
+										  матусю й татуся! Про те, як ви їй читали казки, і не просто<br>
+											 казки, а казки про неї саму, в яких розповідали, <span>як сильно<br>
+											  її любите, як у неї вірите, яка вона добра, наполеглива і<br>
+												 цілеспрямована.</span> Ви тільки уявіть собі, які ніжні почуття<br>
+												  прокинуться в дитини, коли вона вже буде дорослою, яке<br>
+													 тремтіння пронизуватиме її душу…<br>
+													 <br>
+													  І у хвилини щастя або печалі й тимчасових невдач вона<br>
+														 згадає ці натхненні історії і відчує тепло та вашу любов. І<br>
+														  труднощі й перепони будуть для неї не завадами, а лише<br>
+															 сходинками на шляху до успіху.</h3>
+						</div>
+					</div>
+					<div class="gallery">
+
+						<h2>Галерея</h2>
+						<div class="firstBox">
+							<img src="./images/img-gallery-1.png"  id="g1" alt="img">
+							<img src="./images/img-gallery-2.png"  id="g2" alt="img">
+							<img src="./images/img-gallery-3.png"  id="g3" alt="img">
+						</div>
+						<div class="secondBox">
+							<img src="./images/img-gallery-4.jpg"  id="g4" alt="img">
+							<img src="./images/img-gallery-5.jpg"  id="g5" alt="img">
+							<img src="./images/img-gallery-6.png"  id="g6" alt="img">
+						</div>
+						<div class="lastBox">
+							<img src="./images/img-gallery-7.jpg"  id="g7" alt="img">
+							<img src="./images/img-gallery-8.jpg"  id="g8" alt="img">
+							<img src="./images/img-gallery-9.png"  id="g9" alt="img">
+						</div>
+						<div class="galleryMob">
+							<ul class="gallerySlider">
+								<li>
+									<img src="./images/img-gallery-1.png" id="gm1" alt="img">
+									<img src="./images/img-gallery-2.png" id="gm2" alt="img">
+									<img src="./images/img-gallery-3.png" id="gm3" alt="img">
+								</li>
+								<li>
+									<img src="./images/img-gallery-4.jpg" id="gm4" alt="img">
+									<img src="./images/img-gallery-5.jpg" id="gm5" alt="img">
+									<img src="./images/img-gallery-6.png" id="gm6" alt="img">
+								</li>
+								<li>
+									<img src="./images/img-gallery-7.jpg" id="gm7" alt="img">
+									<img src="./images/img-gallery-8.jpg" id="gm8" alt="img">
+									<img src="./images/img-gallery-9.png" id="gm9" alt="img">
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<ul class="quotes">
+						<li>
+							<div class="imgbox">
+								<img src="./images/img-quote.png" alt="">
+								<img class="photo" src="./images/img-quote-1.png" alt="">
+							</div>
+							<div class="txt">
+								<h2>Нік Вуйчич</h2>
+								<h3><span class="space"></span>«Для мене мої батьки були найбільшими героями! Вони завжди казали мені: „Ми<br>
+									 тебе любимо! Ми пишаємося тобою!“ Мої батьки зумисне повторювали мені ці<br>
+									  слова, щоб зміцнити і ствердити мою цінність. Як правильно виховати особливу<br>
+										 дитину? Насамперед вона завжди має знати, що у неї є сім’я, готова в усьому<br>
+										  підтримати її. Мої батьки мене не соромилися, вони мене підбадьорювали.<span> І я<br>
+												 думаю, що, коли батьки цілеспрямовано надихають дитину, допомагають їй щодня<br>
+												  своїми словами, — це найголовніше в житті».</span></h3>
+							</div>
+						</li>
+						<li>
+							<div class="imgbox">
+								<img src="./images/img-quote.png" alt="">
+								<img class="photo" src="./images/img-quote-2.png" alt="">
+							</div>
+							<div class="txt">
+								<h2>Володимир Довгань</h2>
+								<h3><span class="space"></span>«...І в цей момент, несподівано для себе, на рівні своєї суперсвідомості, я спитав:
+									 „Мам, а який я у тебе?“ Вона, не замислюючись, відповіла:<span> „Ти у мене неймовірна
+									  дитина. Ти надзвичайний!“</span> Цих слів було достатньо для того, щоб моє життя
+										 склалося вдало.<br>
+										   <span class="space"></span> Сьогодні, ставши фахівцем в галузі психології управління, я точно знаю, що ці
+											  слова змінили все моє життя. Саме вони були тією рятівною соломинкою в
+												 найважчі, найкритичніші хвилини мого життя. Чіпляючись за неї, я витягав себе із
+												  болота невдач. Я точно знаю, що моя мама не звернула на це уваги, вона
+													 сказала це щиро і зовсім спонтанно. Вона навіть не могла собі уявити, що така
+													  коротка фраза змінить все моє життя на краще. Що<span> саме ці слова додаватимуть
+														 мені сили, надії, впевненості й рухати мене вперед».</span></h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="advantages" id="advantages">
+					<div class="layout">
+						<h2>Зробивши замовлення, ви отримуєте:</h2>
+						<ul class="advImg">
+							<li>
+								<img src="./images/img-advantages-1.png" alt="img">
+								<h3>Великий формат книги — А4</h3>
+							</li>
+							<li>
+								<img src="./images/img-advantages-2.png" alt="img">
+								<h3>Товсті крейдовані 72 сторінки з казками і фотографіями</h3>
+							</li>
+							<li>
+								<img src="./images/img-advantages-3.png" alt="img">
+								<h3>Фотографія дитини на обкладинці, на звороті обкладинки - загальне сімейне фото</h3>
+							</li>
+							<li>
+								<img src="./images/img-advantages-4.png" alt="img">
+								<h3>Усі казки перед друком ви зможете прочитати</h3>
+							</li>
+							<li>
+								<img src="./images/img-advantages-5.png" alt="img">
+								<h3>До кожної казці зможете самі підібрати фотографію</h3>
+							</li>
+							<li>
+								<img src="./images/img-advantages-6.png" alt="img">
+								<h3>Безкоштовна доставка Новою поштою</h3>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="layout">
+					<div class="order" id="order">
+					<h2>Як зробити замовлення</h2>
+					<h3>Передовсім слід заповнити анкету, вказавши необхідні дані, потім надіслати фотографії для <br>
+						 обкладинки окремим листом на електронну пошту. Після отримання анкети ми з зв’яжемося<br>
+						  вами і обговоримо деталі замовлення. Або ж ви можете залишити контактний номер<br>
+							 телефону, і ми зв’яжемося з вами, відправимо анкету й відповімо на всі ваші запитання.</h3>
+
+						<form class="form" id="form">
+							<section id="firstStep">
+								<h4>Контактні дані одержувача </h4>
+								<h3>ПІБ  <span>*</span> </h3>
+								<input type="text" name="fio" id="name" required onchange="checkParams1()" onkeydown="checkParams1()" value="" placeholder="ПІБ" >
+								<h3>E-mail <span>*</span> <p id="messageMail" >  </p> </h3>
+								<input type="email" name="mail" id="mail" required onchange="checkParams1(); ValidMailUa()" onkeydown="checkParams1(); ValidMailUa()" value="" placeholder="Електронна пошта">
+								<h3>Контактний телефон <span>*</span> <p id="messagePhone" >  </p> </h3>
+								<input type="tel" name="phone" id="phone" required onchange="checkParams1(); ValidPhoneUa()" onkeydown="checkParams1(); ValidPhoneUa()" value="" placeholder="Телефон">
+
+								<h3>Адреса доставки (найближче відділення Нової Пошти) <span>*</span> </h3>
+								<input type="text" name="adress" id="adress" required onchange="checkParams1()" onkeydown="checkParams1()" value="" placeholder="Адреса доставки">
+								<input type="submit" value="Відправити" class="submit" id="submit" disabled>
+								<!-- <a href="#form"><button type="button"   id="step1" name="button"  disabled>Наступний крок 2/3</button></a> -->
+							</section>
+							<!-- <section id="secondStep">
+								<div class="back1" id="back1">
+									<img src="./images/backArrow.png" alt="">
+									<p>Повернутися до кроку 1</p>
+								</div>
+								<h3>Мова книги <span>*</span> </h3>
+								<div class="langRadio">
+									<input id="radio-1" type="radio" name="lang" value="Украинский">
+									<label for="radio-1">
+										<span> </span>Українська
+									</label>
+									<input id="radio-2" type="radio" name="lang" value="Русский" checked="checked">
+									<label for="radio-2">
+										<span>&nbsp;</span>Русский
+									</label>
+								</div>
+								<h3>Ім'я дитини в книзі' <span>*</span> </h3>
+								<input type="text" name="childName" id="childName" onchange="checkParams2()" onkeydown="checkParams2()" value="" placeholder="Введіть ім'я дитини" >
+								<h3>Назва книги  <span class="gray">(наприклад, Чарівній світ Ілоночки и т.п.)</span> <span>*</span> </h3>
+								<input type="text" name="bookName" id="bookName" onchange="checkParams2()" onkeydown="checkParams2()" value="" placeholder="Введіть назву книги">
+								<h3>Пестливі імена дитини </h3>
+								<input type="text" name="affectionateName" value="" placeholder="Не обов'язково">
+								<h3>Вік дитини <span>*</span> </h3>
+								<input type="text" name="childAge" id="childAge" onchange="checkParams2()" onkeydown="checkParams2()" value="" placeholder="Введіть вік">
+								<h3>Дата народження <span>*</span> </h3>
+								<input type="text" name="bornData" id="bornData" onchange="checkParams2()" onkeydown="checkParams2()" value="" placeholder="Введіть дату народження дитини">
+								<h3>Місце проживання дитини <span class="gray">(назв. міста, насел. пункту)</span> <span>*</span> </h3>
+								<input type="text" name="childAdress" id="childAdress" onchange="checkParams2()" onkeydown="checkParams2()" value="" placeholder="Введіть місце проживання дитини">
+								<h3>Ім'я мами <span>*</span> </h3>
+								<input type="text" name="momName" id="momName" onchange="checkParams2()" onkeydown="checkParams2()" value="" placeholder="Введіть ім'я мами">
+								<h3>Ім'я тата <span>*</span> </h3>
+								<span class="after">У випадку якщо тато не проживає разом з дитиною - просто напишіть «ні»</span>
+								<input type="text" name="dadName" id="dadName" onchange="checkParams2()" onkeydown="checkParams2()" value="" placeholder="Введіть ім'я тата">
+								<a href="#form"><button  type="button"  id="step2" name="button" disabled>Наступній крок 3/3</button></a>
+							</section>
+							<section id="lastStep">
+								<div class="back2" id="back2">
+									<img src="./images/backArrow.png" alt="">
+									<p>Повернутіся до кроку 2</p>
+								</div>
+								<h3>Імена рідних братів  </h3>
+								<input type="text" name="brotherName" value="" placeholder="Не обов'язково">
+								<h3>Імена рідних сестер </h3>
+								<input type="text" name="sisterName" value="" placeholder="Не обов'язково">
+								<h3>Імена бабусь та дідусів  </h3>
+								<span class="after">Напишіть, будь ласка , імена бабусь та дідусів парами</span>
+								<input type="text" name="grandparentName" value="" placeholder="Не обов'язково">
+								<h3>Двоюрідні брати/сестри/кращі друзі дитини  </h3>
+								<input type="text" name="cousinName" value="" placeholder="Не обов'язково">
+								<h3>Улюблена іграшка дитини  </h3>
+								<input type="text" name="favoriteToy" value="" placeholder="Не обов'язково">
+								<h3>Улюблений домашній вихованець <span class="gray">(собака, кішка, папуга + кличка вихованця...) </span> </h3>
+								<input type="text" name="favoritePet" value="" placeholder="Не обов'язково">
+								<h3>Пам'ятний напис </h3>
+								<span class="after">Приклад: <br>
+									<br>
+									 Люба ......! Тобі вже виповнилося 5 років. На такий серйозний,
+									  дорослий день народження ми вирішили подарувати тобі цю чудову
+										 книжку з казками. Сподіваємося, що всі історії тобі сподобаються.
+										  Впевнені, що дуже скоро, коли ти навчишся читати сама, ти будеш
+											 перечитувати їх знову і знову. І коли у тебе будуть свої дітки,
+											  це буде перша книга казок, яку ти їм читатимеш. Рости розумницею,
+												 здоровою і щасливою дівчинкою. Ми тебе дуже любимо! Для нас ти —
+												  найкраща дівчинка на Землі!<br>
+													<br>
+													 Для любої зірочки ….. від........ </span>
+								<textarea name="commemorativeInscription" placeholder="Введіть текст тут" ></textarea>
+								<input type="submit" value="Відправити" class="submit" id="submit" disabled>
+							</section> -->
+						</form>
+					</div>
+				</div>
+				<div class="delivery">
+					<div class="price">
+						<h2>Вартість книги та термін виготовлення:</h2>
+						<p>Ціна <span>- 770 грн.</span></p>
+						<p>Термін виготовлення книги<span> 4-5 робочих днів</span></p>
+					</div>
+					<h2>Спосіб оплати та доставки</h2>
+					<h3>Оплатити книгу ви можете переказом грошей на карту «ПриватБанку»<br>
+						 або післяплатою у разі отримання через транспортну компанію «Нова Пошта»<br>
+						  <span>(сплативши також відсоток за переказ коштів).</span><br>
+							 Книги ми відправляємо компанією «Нова Пошта». Безкоштовно!</h3>
+				</div>
+				<div class="layout">
+					<div class="reviews" id="reviews">
+						<h2>Відгуки про нас</h2>
+						<h3>Ми разом зі СказіПро першими почали робити іменні книги для дітей і ось <br>
+							  уже 10 років створюємо книги для ваших улюблених малюків</h3>
+							 <div class="imgbox">
+							 	<img src="./images/img-rev-1.png" alt="img">
+								<img src="./images/img-rev-2.png" alt="img">
+								<img src="./images/img-rev-3.png" alt="img">
+								<img src="./images/img-rev-4.png" alt="img">
+							 </div>
+							 <a class="button" href="https://www.kidstaff.com.ua/kid_temafeedback-3233351.html" target="_blank">Більше відгуків на kidstaff</a>
+					</div>
+				</div>
+				<div class="thanks">
+					<h2>Подяка</h2>
+					<h3>Хочемо висловити величезну подяку Господу Богу, Вадиму Фаткулліну, Тетяні Маркіновій,<br>
+						Володимиру Довганю, Юлії Дворецькій-Федорчук, Світлані Шахановій і нашим батькам.</h3>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="callFormBox" id="callFormBox" >
+				<div class="b-popup-content">
+					<a  href="javascript:PopUpHide()" id="hide0">&#10006;</a>
+					<p>Введіть номер телефону</p>
+					<form id="callForm"  >
+						<input type="tel" name="phoneCall" id="phone-callForm" value="" placeholder="+38XXXXXXXXXX" onchange="callPhoneUa()" onkeyup="callPhoneUa()" required>
+						<p id="callMessageUa" >  </p>
+						<input  type="submit" value="Зателефонуйте мені"  id="submit-callForm" disabled>
+					</form>
+				</div>
+		</div>
+		<button type="button" name="button" class="callButton" id="callButton"><i class="fas fa-phone"></i></button>
+		<div class="a-popup" id="popup2"> <!-- Translucent background behind the popup -->
+			<div class="a-popup-content"> <!-- PopUp content -->
+				<a  href="javascript:PopUpHide2()" id="hide2">&#10006;</a> <!-- The button that closes the popup -->
+				<p>Дякуємо за заявку!</p>
+				<span>Наш менеджер зв'яжеться з Вами <br> найближчим часом!</span>
+			</div>
+		</div>
+			<div class="layout">
+				<h2>Зв'яжіться з нами і ми відповімо <br> на всі Ваші питання </h2>
+				<div class="contact" id="contact">
+					<div class="phone">
+						<p>Телефон:</p>
+						<span>+38 096 7201004</span>
+					</div>
+					<div class="mail">
+						<p>Пошта:</p>
+						<span>order@svitbook.com.ua</span>
+					</div>
+					<div class="social">
+						<p>Мессенджеры:</p>
+						<div class="links">
+							<a href="https://facebook.com/svitbook.com.ua" ><i class="fab fa-facebook-f"></i></a>
+							<a href="https://t.me/svitbook" ><i class="fab fa-telegram-plane" ></i></a>
+							<a class="desktop" href="viber://chat?number=+380676411636" ><i class="fab fa-viber" ></i></a>
+							<a class="mobile" href="viber://add?number=380676411636" ><i class="fab fa-viber" ></i></a>
+						</div>
+					</div>
+				</div>
+				<p>Всі матеріали даного сайту є власністю компанії «Чарівний світ». <br> Всі права захищені ©</p>
+				<a href="http://antares-design.pro/" target="_blank">Розробка сайту Antares Design</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
