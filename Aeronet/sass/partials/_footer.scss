@@ -1,0 +1,151 @@
+footer {
+	display:block;
+	width:100%;
+	margin:0 0 0;
+	padding:0 0 0;
+	.layout {
+		.top{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items:  center;
+			@media (min-width: 320px) and (max-width: 767px) {
+				display: block;
+				overflow: hidden;
+				width: 100%;
+			}
+			.left	{
+				display: block;
+				text-align: right;
+				width: 112px;
+				@media (min-width: 320px) and (max-width: 767px) {
+					display: block;
+					overflow: hidden;
+					width: 100%;
+					text-align: center;
+					margin: 20px 0 0 0;
+				}
+
+				h6 {
+					text-transform: uppercase;
+					color: #7f7f7f;
+					font-family: 'Poppins';
+					font-weight: normal;
+					font-size: 14px;
+					margin-bottom: 36px;
+					@media (min-width: 414px) and (max-width: 767px) {
+						font-size: 12px;
+						margin-bottom: 30px;
+					}
+					@media (min-width: 320px) and (max-width: 413px) {
+						font-size: 10px;
+						margin-bottom: 20px;
+					}
+				}
+				ul {
+					display: block;
+					li {
+						position: relative;
+						margin: 8px 0;
+						:hover {
+							color: #3e73b9;
+						}
+						a {
+							position: relative;
+							color: #272727;
+
+						}
+					}
+				}
+			}
+			.logofoot {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				margin: 0 200px;
+				@media (min-width: 1600px) and (max-width: 1919px) {
+					margin: 0 180px;
+				}
+				@media (min-width: 1440px) and (max-width: 1599px) {
+					margin: 0 160px;
+				}
+				@media (min-width: 1360px) and (max-width: 1439px) {
+					margin: 0 140px;
+				}
+				@media (min-width: 1280px) and (max-width: 1359px) {
+					margin: 0 120px;
+				}
+				@media (min-width: 1024px) and (max-width: 1279px) {
+					margin: 0 100px;
+				}
+				@media (min-width: 768px) and (max-width: 1023px) {
+					margin: 0 80px;
+				}
+				@media (min-width: 320px) and (max-width: 767px) {
+					display: none;
+				}
+				.ftrlogo {
+					margin-bottom: 20px;
+					img {
+						position: relative;
+					}
+				}
+				.mail {
+					text-transform: uppercase;
+					color: #272727;
+					text-align: center;
+				}
+			}
+			.right {
+				display: block;
+				text-align: left;
+				width: 112px;
+				@media (min-width: 320px) and (max-width: 767px) {
+					display: block;
+					overflow: hidden;
+					width: 100%;
+					text-align: center;
+					margin: 20px 0 0 0;
+				}
+				h6 {
+					text-transform: uppercase;
+					color: #7f7f7f;
+					font-family: 'Poppins';
+					font-weight: normal;
+					font-size: 14px;
+					margin-bottom: 36px;
+					@media (min-width: 414px) and (max-width: 767px) {
+						font-size: 12px;
+						margin-bottom: 30px;
+					}
+					@media (min-width: 320px) and (max-width: 413px) {
+						font-size: 10px;
+						margin-bottom: 20px;
+					}
+				}
+				ul {
+					display: block;
+					li {
+						margin: 8px 0 8px 0;
+
+					}
+					:last-child {
+						margin-top: 33px;
+						
+					}
+				}
+			}
+
+		}
+	}
+	.fbottom {
+		background-color: #5c96ff;
+		width: 100%;
+		.layout {
+			p {
+				color: #e9f1ff;
+			}
+		}
+	}
+}
