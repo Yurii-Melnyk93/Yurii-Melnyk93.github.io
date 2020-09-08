@@ -1,0 +1,88 @@
+.blog {
+  @include db;
+  @include marginsection;
+  h3 {
+    @include h3;
+  }
+  p {
+  position: relative;
+  text-align: center;
+  font-family: 'Aller';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #555555;
+  }
+  ul {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 28px 0 0 0;
+  @media (min-width: 896px) and (max-width: 970px) {
+    justify-content: space-around;
+  }
+  @media (min-width: 320px) and (max-width: 895px) {
+    justify-content: space-around;
+  }
+    li {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 461px;
+    margin-bottom: 10px;
+      .date {
+      float: left;
+      overflow: hidden;
+      width: 55px;
+      height: 55px;
+      background-color: #ececec;
+      border-radius: 50%;
+      margin-right: 10px;
+        p {
+        display: block;
+        position: relative;
+        font-size: 22px;
+        font-family: "Aller";
+        text-transform: uppercase;
+        line-height: 0.636;
+        text-align: center;
+        margin-top: 12px;
+        margin-left: 0px;
+        color: #555555;
+        }
+        .mont {
+        font-size: 14px;
+        font-family: "Aller";
+        text-transform: uppercase;
+        line-height: 0.636;
+        text-align: center;
+        margin-top: 8px;
+        }
+      }
+      h4 {
+      @include h4;
+      }
+      p {
+      font-size: 13px;
+      text-align: left;
+      font-family: 'Droid Sans';
+      font-weight: normal;
+      font-style: normal;
+      line-height: 1.692;
+      margin-left: 65px;
+      color: #555555;
+      }
+      span {
+      font-size: 11px;
+      font-family: "DroidSans";
+      line-height: 1.818;
+      text-align: left;
+      color: #6b99b6;
+      margin-left: 65px;
+      }
+    }
+  }
+}

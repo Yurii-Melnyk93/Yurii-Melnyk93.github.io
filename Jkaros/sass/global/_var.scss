@@ -1,0 +1,24 @@
+/* Brand Colors ------------------------------------------------*/
+
+	$color1: #e21a22;
+	$font-color: #6a6a6b;
+	$color2: #272727;
+
+	$placeholder: $color2;
+
+	$base-font-weight: 300;
+	$brand-font-1: '',sans-serif;
+	$brand-font-2: '',sans-serif;
+
+//burger-menu
+$burger-color:  #d4d4d4;
+
+$action-color: #477DCA !default;
+ $dark-gray: #333 !default;
+ $sliding-panel-border-color: $dark-gray;
+ $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
+ $sliding-panel-color: #fff;
+ $sliding-panel-border: 1px solid $sliding-panel-border-color;
+ $sliding-panel-background-hover: $action-color;
+ $sliding-panel-color-hover: #fff;
+ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
