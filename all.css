@@ -1200,7 +1200,7 @@ footer a {
   overflow: hidden;
 }
 .quotes li .txt h2 {
-  text-align: center;
+/*   text-align: center; */
   display: block;
   position: relative;
   font-family: "Gilroy";
@@ -1223,7 +1223,7 @@ footer a {
   }
 }
 .quotes li .txt h3 {
-  text-align: center;
+/*   text-align: center; */
   display: block;
   position: relative;
   font-family: "Gilroy";
