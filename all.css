@@ -958,6 +958,7 @@ footer a {
 @media (min-width: 320px) and (max-width: 767px) {
   .about .txt {
     margin-left: 0px;
+    width: 100%;
   }
 }
 .about .txt h2 {
