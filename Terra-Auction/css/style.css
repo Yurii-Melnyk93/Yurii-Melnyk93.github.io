@@ -1,0 +1,756 @@
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input, textarea, select {
+  vertical-align: middle;
+  color: #000;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+  color: #ebedec;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #ebedec;
+}
+
+/*@media*/
+/* @media (min-width: 1921px){} 													QHD \ UHD
+@media (min-width: 1600px) and (max-width: 1919px) {}	HD +
+@media (min-width: 1440px) and (max-width: 1599px) {}	macbook
+@media (min-width: 1360px) and (max-width: 1439px) {}	HD
+@media (min-width: 1280px) and (max-width: 1359px) {} IPAD2
+@media (min-width: 1024px) and (max-width: 1279px) {} IPAD
+@media (min-width: 896px) and (max-width: 1023px) {}	Ip Xs max horizontal
+@media (min-width: 812px) and (max-width: 895px) {}		Ip Xs horizontal
+@media (min-width: 768px) and (max-width: 811px) {}		Tablet
+@media (min-width: 736px) and (max-width: 767px) {}		Ip 6,7,8 Plus horizontal
+@media (min-width: 667px) and (max-width: 735px) {}		Ip 6,7,8 horizontal
+@media (min-width: 568px) and (max-width: 666px) {}		Ip 5 horizontal
+@media (min-width: 480px) and (max-width: 567px) {}		Ip 4 horizontal
+@media (min-width: 414px) and (max-width: 479px) {}		Ip 6,7,8
+@media (min-width: 320px) and (max-width: 413px) {}		Ip 4,5 */
+/*@media end*/
+/* wrapper */
+.row {
+  padding: 0 100px;
+}
+
+header {
+  max-width: 1440px;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+header .col {
+  padding: 15px 0;
+}
+
+header .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header .left .logo {
+  padding-right: 15px;
+}
+
+header .left .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .left .title a {
+  text-decoration: none;
+}
+
+header .left .title h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #151515;
+}
+
+header .left .title h1::after {
+  content: 'on';
+  color: #11D100;
+}
+
+header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .right nav {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 10px;
+}
+
+header .right nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+header .right nav ul li {
+  padding: 13px 0 0 0;
+  margin: 0 38px;
+}
+
+header .right nav ul li a {
+  text-decoration: none;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #151515;
+}
+
+header .right .button button {
+  width: 221px;
+  padding: 16px 20px;
+  background: #11D100;
+  border-radius: 41px;
+  border: none;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+main {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+main .bredcrumbs {
+  margin: 20px 0 30px 0;
+}
+
+main .bredcrumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+main .bredcrumbs ul li {
+  padding: 0 10px;
+}
+
+main .bredcrumbs ul li:first-child {
+  padding-left: 0;
+}
+
+main .bredcrumbs ul li a {
+  text-decoration: none;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #151515;
+}
+
+main .map {
+  padding: 0;
+}
+
+main .map .col {
+  padding: 0;
+}
+
+main .form {
+  margin: 0 auto 70px;
+  padding: 0;
+}
+
+main .form form {
+  margin-top: -56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 30px 40px;
+}
+
+main .form form .form-select {
+  padding: 0;
+  margin-top: -10px;
+  margin-right: 40px;
+  border: none;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+main .form form .found {
+  background: #11D100;
+  border-radius: 62px;
+  border: none;
+  padding: 16px 52px;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+main .card-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  padding: 0 20px;
+}
+
+main .card-container:first-child {
+  padding-left: 0px;
+}
+
+main .card-container:last-child {
+  padding-right: 0px;
+}
+
+main .card-container .card {
+  border: transparent;
+  margin-bottom: 45px;
+}
+
+main .card-container .card .imgbox {
+  border: transparent;
+  margin-bottom: 20px;
+}
+
+main .card-container .card .imgbox img {
+  width: 100%;
+}
+
+main .card-container .card .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+main .card-container .card .price span {
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151515;
+}
+
+main .card-container .card .price .sale {
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #11D100;
+}
+
+main .card-container .card .region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+main .card-container .card .region p img {
+  margin-right: 10px;
+}
+
+main .card-container .card .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .card-container .card .area span img {
+  margin-right: 10px;
+}
+
+main button {
+  display: block;
+  position: relative;
+  margin: 15px auto 100px;
+  padding: 16px 55px;
+  background: #11D100;
+  border-radius: 41px;
+  border: none;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+main .page-sale h2 {
+  padding: 0;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 50px;
+  color: #151515;
+}
+
+main .page-sale .sidebar form {
+  max-width: 280px;
+  width: 100%;
+  background: #F9F9F9;
+  border: 1px solid #ECECEC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+main .page-sale .sidebar form section {
+  padding-bottom: 30px;
+}
+
+main .page-sale .sidebar form section .form-select {
+  border: none;
+  border-bottom: 1px solid #E8E8E8;
+  background-color: transparent;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 18px;
+  color: #151515;
+  padding: 15px 0;
+}
+
+main .page-sale .sidebar form section input {
+  border: none;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 15px 0;
+  background-color: transparent;
+}
+
+main .page-sale .sidebar form section input::-webkit-input-placeholder {
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 18px;
+  color: #757575;
+}
+
+main .page-sale .sidebar form section input:-ms-input-placeholder {
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 18px;
+  color: #757575;
+}
+
+main .page-sale .sidebar form section input::-ms-input-placeholder {
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 18px;
+  color: #757575;
+}
+
+main .page-sale .sidebar form section input::placeholder {
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 18px;
+  color: #757575;
+}
+
+main .page-sale .sidebar form .sale-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .page-sale .sidebar form .sale-btn .found {
+  background: #11D100;
+  border-radius: 62px;
+  padding: 16px 85px;
+  color: #ffffff;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+main .page-sale .sidebar form .sale-btn .reset {
+  border: 1px solid #11D100;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 62px;
+  font-family: Golca;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #11D100;
+  padding: 16px 72px;
+}
+
+main .page-sale .card-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  padding: 0 20px;
+}
+
+main .page-sale .card-container:first-child {
+  padding-left: 10px;
+}
+
+main .page-sale .card-container:last-child {
+  padding-right: 0;
+}
+
+main .new-announcement h3 {
+  padding: 0;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #151515;
+  margin-bottom: 40px;
+}
+
+main .new-announcement .card-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  padding: 0 20px;
+}
+
+main .new-announcement .card-container:first-child {
+  padding-left: 0;
+}
+
+main .new-announcement .card-container:last-child {
+  padding-right: 0;
+}
+
+footer {
+  max-width: 1440px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px 0 50px;
+  background: #151515;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+
+footer .left .logo {
+  padding-right: 15px;
+}
+
+footer .left .logo img {
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+}
+
+footer .left .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 7px;
+}
+
+footer .left .title h1 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+footer .left .title h1::after {
+  content: 'on';
+  color: #11D100;
+}
+
+footer .left .copiryght {
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #A3A3A3;
+}
+
+footer .center {
+  padding: 0;
+}
+
+footer .center nav {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer .center nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0 0 80px;
+  margin-bottom: 0;
+}
+
+footer .center nav ul li {
+  padding: 0 90px 0 0;
+}
+
+footer .center nav ul li a {
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .center nav ul .btn {
+  padding: 0;
+}
+
+footer .center nav ul .btn button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+footer .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0vw;
+}
+
+footer .right .social {
+  padding: 20px 0;
+}
+
+footer .right .social .email {
+  font-family: 'Golca';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+footer .right .social .email img {
+  margin-right: 10px;
+}
+
+footer .right .social .links {
+  position: relative;
+}
+
+footer .right .social .links li {
+  float: right;
+}
+
+footer .right .social .links li img {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
