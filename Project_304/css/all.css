@@ -506,16 +506,16 @@ main .workout .table tbody tr .more {
   cursor: pointer;
 }
 
-main .workout .modal-content {
+main .modal-content {
   background: #FFFFFF;
   border-radius: 20px;
 }
 
-main .workout .modal-content .modal-header {
+main .modal-content .modal-header {
   border: none;
 }
 
-main .workout .modal-content .modal-header .modal-title {
+main .modal-content .modal-header .modal-title {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 600;
@@ -526,7 +526,7 @@ main .workout .modal-content .modal-header .modal-title {
   color: #000000;
 }
 
-main .workout .modal-content .modal-header .btn-close {
+main .modal-content .modal-header .btn-close {
   background-image: url("../images/btn-close.png");
   position: absolute;
   top: 0;
@@ -536,7 +536,27 @@ main .workout .modal-content .modal-header .btn-close {
   opacity: 1;
 }
 
-main .workout .modal-content .modal-body {
+main .modal-content .new {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 45px;
+}
+
+main .modal-content .new .form-select {
+  width: 100%;
+  border: 2px solid #E4E4E4;
+  padding: 10px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+main .modal-content .new .btn-yes {
+  width: 100% !important;
+}
+
+main .modal-content .modal-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,7 +567,11 @@ main .workout .modal-content .modal-body {
           align-items: center;
 }
 
-main .workout .modal-content .modal-body .btn-yes {
+main .modal-content .modal-body form {
+  width: 100%;
+}
+
+main .modal-content .modal-body .btn-yes {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 600;
@@ -561,7 +585,7 @@ main .workout .modal-content .modal-body .btn-yes {
   width: 40%;
 }
 
-main .workout .modal-content .modal-body .btn-no {
+main .modal-content .modal-body .btn-no {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 600;
@@ -594,6 +618,7 @@ main .trainers .trainersCard {
 
 main .trainers .trainersCard li {
   text-align: center;
+  cursor: pointer;
 }
 
 main .trainers .trainersCard li p {
