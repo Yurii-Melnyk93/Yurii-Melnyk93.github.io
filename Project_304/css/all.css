@@ -780,6 +780,16 @@ main .modalForm input {
   margin-bottom: 20px;
 }
 
+main .modalForm .clientCom {
+  border: 2px solid #E4E4E4;
+  padding: 10px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  resize: none;
+  width: 100%;
+  max-height: 100px;
+}
+
 main .modalForm .weeckend .checkselect {
   position: relative;
   display: inline-block;
