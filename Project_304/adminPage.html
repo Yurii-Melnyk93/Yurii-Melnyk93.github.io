@@ -1,0 +1,274 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1" />
+	<link rel="stylesheet" href="css/all.css" type="text/css"/>
+	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<title>FITNESS</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col col-6 left">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+						</div>
+					</div>
+					<div class="col col-6 right">
+							<a href="#" class="out">Вихід</a> 
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="row clientName">
+					<div class="col col-6 adminName">
+						<h3>Адміністратор, Олена</h3>
+					</div>
+					<div class="col col-6">
+						<button type="button" class="btn btn-yes" data-bs-toggle="modal" data-bs-target="#addClient">Додати клієнта</button>
+						<button type="button" class="btn btn-no" data-bs-toggle="modal" data-bs-target="#addCoach">Додати тренера</button>
+					</div>
+				</div>
+				<div class="modal" id="addClient" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Додати клієнта</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body modalForm">
+								<form>
+									<input type="text" name="firstName" placeholder="Ім’я">
+									<input type="text" name="lastName" placeholder="Прізвище">
+									<input type="email" name="mail" placeholder="Email">
+									<input type="submit" class="send" value="Надіслати пароль на пошту">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal" id="addCoach" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Афанасев Іван</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body modalForm">
+								<form>
+									<input type="text" name="firstName" placeholder="Ім’я">
+									<input type="text" name="lastName" placeholder="Прізвище">
+									<input type="email" name="mail" placeholder="Email">
+									<fieldset class="file">
+										<label for="fileFF"><input id="fileFF" type="file" name="fileFF[]">
+											<span id="fl"></span>
+											<span id="fl_nm">Завантажити фото</span>
+										</label>
+									</fieldset>									
+									<input type="submit" class="send" value="Надіслати пароль на пошту">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col col-6 trainers">
+						<h4>Клиенты</h4>
+					</div>
+					<div class="col col-6 trainers">
+						<h4>Тренеры</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-6 workout">
+						<div class="client">
+							<input type="search" name="searchClient" id="searchClient" class="search" placeholder="Пошук по клієнтам">
+							<table class="table">
+								<thead>
+									<tr>
+									<th scope="col">Клієнт</th>
+									<th scope="col">Зареєстрований</th>
+									<th scope="col"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Андріев Олексій</td>
+										<td>01.02.2019</td>
+										<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+									</tr>
+									<tr>
+										<td>Беспалова Марина</td>
+										<td>05.02.2020</td>
+										<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+									</tr>
+									<tr>
+										<td>Венедиктова Олена</td>
+										<td>13.02.2020</td>
+										<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+									</tr>
+									<tr>
+										<td>Гаврилів Антон</td>
+										<td>15.02.2020</td>
+										<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+									</tr>
+									<tr>
+										<td>Галицький Сергій</td>
+										<td>27.02.2020</td>
+										<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+									</tr>
+									<tr>
+										<td>Деревянко Снежана</td>
+										<td>03.03.2020</td>
+										<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+									</tr>
+								</tbody>
+							</table>	
+							<div class="modal" id="workCancel" tabindex="-1">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title">Ви дійсно хочете видалити обліковий запис?</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<button type="button" class="btn btn-yes" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#deleted">Так</button>
+											<button type="button" class="btn btn-no" data-bs-dismiss="modal" aria-label="Close">Ні</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal" id="deleted" tabindex="-1">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title">Ви успішно видалили обліковий запис!</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col col-6 workout">
+						<div class="client">
+							<input type="search" name="searchCoach" id="searchCoach" class="search" placeholder="Пошук по тренерам">
+							<table class="table">
+									<thead>
+										<tr>
+										<th scope="col">Клієнт</th>
+										<th scope="col">Зареєстрований</th>
+										<th scope="col"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Афанасев Іван</td>
+											<td class="more" data-bs-toggle="modal" data-bs-target="#workMore">Робочі години</td>
+											<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+										</tr>
+										<tr>
+											<td>Гаврилін Андрій</td>
+											<td class="more" data-bs-toggle="modal" data-bs-target="#workMore">Робочі години</td>										
+											<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+										</tr>
+										<tr>
+											<td>Агапова Олена</td>
+											<td class="more" data-bs-toggle="modal" data-bs-target="#workMore">Робочі години</td>										
+											<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+										</tr>
+										<tr>
+											<td>Осипчук Олександр</td>
+											<td class="more" data-bs-toggle="modal" data-bs-target="#workMore">Робочі години</td>										
+											<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+										</tr>
+										<tr>
+											<td>Калитвінцев Лев</td>
+											<td class="more" data-bs-toggle="modal" data-bs-target="#workMore">Робочі години</td>										
+											<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+										</tr>
+										<tr>
+											<td>Юдина Олена</td>
+											<td class="more" data-bs-toggle="modal" data-bs-target="#workMore">Робочі години</td>										
+											<td class="cancel" data-bs-toggle="modal" data-bs-target="#workCancel">Видалити з бази</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="modal" id="workMore" tabindex="-1">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title">Афанасев Іван</h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body modalForm">
+												<form>
+													<select class="form-select" aria-label="">
+														<option selected disabled>Обмеження по людям</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+													</select>	
+													<select class="form-select" aria-label="">
+														<option selected disabled>Початок робочого дня</option>
+														<option value="14:00">14:00</option>
+														<option value="16:00">16:00</option>
+														<option value="18:00">18:00</option>
+													</select>	
+													<select class="form-select" aria-label="">
+														<option selected disabled>Кінець робочого дня</option>
+														<option value="15:00">15:00</option>
+														<option value="17:00">17:00</option>
+														<option value="19:00">19:00</option>
+													</select>	
+													<div class="weeckend">
+														<div class="checkselect">
+															<label><input type="checkbox" name="day" value="Понеділок"> Понеділок</label>
+															<label><input type="checkbox" name="day" value="Вівторок"> Вівторок</label>
+															<label><input type="checkbox" name="day" value="Середа"> Середа</label>
+															<label><input type="checkbox" name="day" value="Четвер"> Четвер</label>
+															<label><input type="checkbox" name="day" value="П'ятниця"> П'ятниця</label>
+															<label><input type="checkbox" name="day" value="Субота"> Субота</label>
+															<label><input type="checkbox" name="day" value="Неділя"> Неділя</label>
+														</div>
+														
+													</div>	
+													<a href="#" id="show" class="vacation">Додати відпустку</a>
+													<fieldset id="more">
+														<input type="date" name="vacationBegin">
+														<input type="date" name="vacationEnd">						
+													</fieldset>
+													<input type="submit" class="send" value="Застосувати">
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+
+		</footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
