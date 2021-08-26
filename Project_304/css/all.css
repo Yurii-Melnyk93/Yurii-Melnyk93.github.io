@@ -237,195 +237,6 @@ header .right .out {
   color: #D10627;
 }
 
-header .modal-content {
-  background: #FFFFFF;
-  border-radius: 20px;
-}
-
-header .modal-content .modal-header {
-  border: none;
-}
-
-header .modal-content .modal-header .modal-title {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
-  text-align: center;
-  margin: 0 auto;
-  color: #000000;
-}
-
-header .modal-content .modal-header .btn-close {
-  background-image: url("../images/btn-close.png");
-  position: absolute;
-  top: 0;
-  right: -45px;
-  width: 23px;
-  height: 23px;
-  opacity: 1;
-}
-
-header .modal-content .modal-body .btn-yes {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  background: #D10627;
-  border-radius: 31px;
-  padding: 18px 0;
-  color: #FFFFFF;
-  display: block;
-  width: 60%;
-  margin: 8px auto;
-}
-
-header .modal-content .modal-body .btn-no {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  background: #7806D1;
-  border-radius: 31px;
-  padding: 18px 0;
-  color: #FFFFFF;
-  display: block;
-  width: 60%;
-  margin: 8px auto;
-}
-
-header .modal-content .modal-body .btn-In {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  background: #D10627;
-  border-radius: 31px;
-  padding: 18px 0;
-  color: #FFFFFF;
-  display: block;
-  width: 100%;
-  margin: 8px auto;
-}
-
-header .modal-content .modal-body input {
-  width: 100%;
-  border: 2px solid #E4E4E4;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 14px;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-}
-
-header .modal-content .modal-body input::-webkit-input-placeholder {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 17px;
-  color: #000000;
-}
-
-header .modal-content .modal-body input:-ms-input-placeholder {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 17px;
-  color: #000000;
-}
-
-header .modal-content .modal-body input::-ms-input-placeholder {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 17px;
-  color: #000000;
-}
-
-header .modal-content .modal-body input::placeholder {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 17px;
-  color: #000000;
-}
-
-header .modal-content .modal-body .pass {
-  width: 100%;
-  position: relative;
-}
-
-header .modal-content .modal-body .pass input {
-  border: 2px solid #E4E4E4;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 14px;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-}
-
-header .modal-content .modal-body .pass input::-webkit-input-placeholder {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 17px;
-  color: #000000;
-}
-
-header .modal-content .modal-body .pass input:-ms-input-placeholder {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 17px;
-  color: #000000;
-}
-
-header .modal-content .modal-body .pass input::-ms-input-placeholder {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 17px;
-  color: #000000;
-}
-
-header .modal-content .modal-body .pass input::placeholder {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 17px;
-  color: #000000;
-}
-
-header .modal-content .modal-body .pass .showBtn {
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
-  right: 20px;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url(/images/show.png) 0 0 no-repeat;
-}
-
-header .modal-content .modal-body .pass .password-control.view {
-  background: url(/images/show.png) 0 0 no-repeat;
-}
-
 main .entry {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -683,6 +494,18 @@ main .workout .table tbody tr .cancel {
   cursor: pointer;
 }
 
+main .workout .table tbody tr .more {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+  cursor: pointer;
+}
+
 main .workout .modal-content {
   background: #FFFFFF;
   border-radius: 20px;
@@ -775,5 +598,271 @@ main .trainers .trainersCard li {
 
 main .trainers .trainersCard li p {
   margin-bottom: 0;
+}
+
+main .contentBox .cntName {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8D8D8D;
+}
+
+main .contentBox .cnt {
+  border-bottom: 1px solid #DCDCDC;
+  padding: 10px 0;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+main .contentBox .cnt .col-4 {
+  text-align: right;
+}
+
+main .contentBox .comment {
+  margin-top: 10px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+main .modal-content {
+  background: #FFFFFF;
+  border-radius: 20px;
+  max-width: 505px;
+}
+
+main .modal-content #fileFF {
+  display: none;
+}
+
+main .modal-content #fl {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #16D106;
+}
+
+main .modal-content #fl_nm {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #7806D1;
+  cursor: pointer;
+}
+
+main .clientName .adminName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .clientName .adminName h3 {
+  margin-bottom: 0;
+}
+
+main .clientName .btn-yes {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background: #D10627;
+  border-radius: 31px;
+  padding: 18px 0;
+  color: #FFFFFF;
+  width: 40%;
+}
+
+main .clientName .btn-no {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background: #7806D1;
+  border-radius: 31px;
+  padding: 18px 0;
+  color: #FFFFFF;
+  width: 40%;
+}
+
+main .workout .client {
+  background: #F5F0F9;
+  padding: 30px;
+}
+
+main .workout .client .table thead {
+  background-color: transparent;
+}
+
+main .workout .client .table thead th {
+  color: #000000;
+}
+
+main .workout .client .table tbody tr {
+  background-color: transparent;
+}
+
+main .workout .client .table tbody tr td {
+  font-weight: bold;
+}
+
+main .modalForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .modalForm .form-select {
+  border: 2px solid #E4E4E4;
+  padding: 10px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+main .modalForm #more {
+  display: none;
+}
+
+main .modalForm input {
+  border: 2px solid #E4E4E4;
+  padding: 10px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+main .modalForm .weeckend .checkselect {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
+main .modalForm .weeckend .checkselect-control {
+  position: relative;
+  padding: 0 !important;
+}
+
+main .modalForm .weeckend .checkselect-control select {
+  border: 2px solid #E4E4E4;
+  padding: 10px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+main .modalForm .weeckend .checkselect-over {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+main .modalForm .weeckend .checkselect-popup {
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  border: 1px solid #dadada;
+  border-top: none;
+  background: #fff;
+  z-index: 9999;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .modalForm .weeckend .checkselect label {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 4px 6px 4px 25px;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.1;
+  cursor: pointer;
+}
+
+main .modalForm .weeckend .checkselect-popup input {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  margin: 0 !important;
+  padding: 0;
+}
+
+main .modalForm .weeckend .checkselect-popup label:hover {
+  background: #03a2ff;
+  color: #fff;
+}
+
+main .modalForm .weeckend .checkselect-popup fieldset {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+main .modalForm .weeckend .checkselect-popup fieldset input {
+  left: 15px;
+}
+
+main .modalForm .weeckend .checkselect-popup fieldset label {
+  padding-left: 32px;
+}
+
+main .modalForm .weeckend .checkselect-popup legend {
+  display: block;
+  margin: 0;
+  padding: 5px 8px;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.1;
+}
+
+main .modalForm .send {
+  margin-top: 20px;
+  background: #D10627;
+  border-radius: 31px;
+  border: none;
+  color: #FFFFFF;
+}
+
+main .modalForm .send:hover {
+  background: #af001d;
 }
 /*# sourceMappingURL=all.css.map */
