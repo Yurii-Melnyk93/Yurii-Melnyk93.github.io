@@ -112,31 +112,77 @@
 					</div>
 					<div class="col col-4 trainers">
 						<ul class="row trainersCard">
-							<li class="col col-6">
+							<li class="col col-6" data-bs-toggle="modal" data-bs-target="#newWorkout">
 								<img src="images/Ellipse 1.png" alt="">
 								<p class="name">Афанасев Іван</p>
 							</li>
-							<li class="col col-6">
+							<li class="col col-6" data-bs-toggle="modal" data-bs-target="#newWorkout">
 								<img src="images/Ellipse 2.png" alt="">
 								<p class="name">Гаврилін Андрій</p>
 							</li>
-							<li class="col col-6">
+							<li class="col col-6" data-bs-toggle="modal" data-bs-target="#newWorkout">
 								<img src="images/Ellipse 3.png" alt="">
 								<p class="name">Агапова Олена</p>
 							</li>
-							<li class="col col-6">
+							<li class="col col-6" data-bs-toggle="modal" data-bs-target="#newWorkout">
 								<img src="images/Ellipse 4.png" alt="">
 								<p class="name">Осипчук Олександр</p>
 							</li>
-							<li class="col col-6">
+							<li class="col col-6" data-bs-toggle="modal" data-bs-target="#newWorkout">
 								<img src="images/Ellipse 5.png" alt="">
 								<p class="name">Калитвінцев Лев</p>
 							</li>
-							<li class="col col-6">
+							<li class="col col-6" data-bs-toggle="modal" data-bs-target="#newWorkout">
 								<img src="images/Ellipse 6.png" alt="">
 								<p class="name">Юдина Олена</p>
 							</li>	
 						</ul>
+						<div class="modal" id="newWorkout" tabindex="-1">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title">Записатися на тренування</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body new">
+											<form>
+												<select class="form-select" aria-label="">
+															<option selected value="Афанасев Іван">Афанасев Іван</option>
+															<option value="Гаврилін Андрій">Гаврилін Андрій</option>
+															<option value="Агапова Олена">Агапова Олена</option>
+															<option value="Осипчук Олександр">Осипчук Олександр</option>
+															<option value="Калитвінцев Лев">Калитвінцев Лев</option>
+															<option value="Юдина Олена">Юдина Олена</option>
+														</select>	
+														<input type="date" name="dateWorkout">
+														<select class="form-select" aria-label="">
+															<option selected disabled>Кінець робочого дня</option>
+															<option value="10:00-11:00">10:00-11:00</option>
+															<option value="11:00-12:00">11:00-12:00</option>
+															<option value="12:00-13:00">12:00-13:00</option>
+															<option value="13:00-14:00">13:00-14:00</option>
+															<option value="14:00-15:00">14:00-15:00</option>
+															<option value="15:00-16:00">15:00-16:00</option>
+															<option value="16:00-17:00">16:00-17:00</option>
+															<option value="17:00-18:00">17:00-18:00</option>
+															<option value="18:00-19:00">18:00-19:00</option>
+														</select>	
+												<button type="button" class="btn btn-yes" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#deleted">Забронювати</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal" id="deleted" tabindex="-1">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title">Вітаємо! Ви успішно записалися на тренування</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+									</div>
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
