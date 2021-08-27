@@ -29,7 +29,7 @@
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						<div class="modal-body">
 							<form id="form">
-								<input type="text" name="name" id="name" placeholder="Введите ваше имя *" onkeyup="checkParams()" equired>
+								<input type="text" name="name" id="name" placeholder="Введите ваше имя *" onkeyup="checkParams()" required>
 								<input type="tel" name="phone" id="phone" placeholder="Телефон" onkeyup="checkParams()" required>
 								<input type="email" name="mail" id="mail" placeholder="Email" onkeyup="checkParams()" required>
 
@@ -70,6 +70,14 @@
 							<ul>
 								<li><a href="./auction.html">Аукцион</a></li>
 								<li><a href="./sale.html">Продажа</a></li>
+								<li>
+									<div class="dropdown lang dropbtn">Русский
+										<div class="dropdown-content">
+											<a href="#">Українська</a>
+											<a href="#">English</a>
+										</div>
+									</div>
+								</li>
 							</ul>
 						</nav>
 						<span class="button">
@@ -82,8 +90,22 @@
 							</label>
 
 							<ul class="menu__box">
+								<li class="col left">
+									<div class="logo">
+										<a href="./index.html"><img src="images/logo.png" alt="img"></a>
+									</div>
+									<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
+								</li>
 								<li><a class="menu__item" href="./auction.html">Аукцион</a></li>
 								<li><a class="menu__item" href="./sale.html">Продажа</a></li>
+								<li>
+									<div class="dropdown langMob dropbtn">Русский
+										<div class="dropdown-content">
+											<a href="#">Українська</a>
+											<a href="#">English</a>
+										</div>
+									</div>
+								</li>
 								<li><button type="button" data-bs-toggle="modal" data-bs-target=".modal">Добавить объявление</button></li>
 							</ul>
 						</div>
@@ -103,7 +125,61 @@
 					<h2>Аукцион</h2>
 				</div>
 				<div class="row">
-					<div class="col col-sm-4 col-md-3 col-xxl-3 p-0">
+					<div class="mobFilter">
+
+						<div class="accordion accordion-flush" id="accordionFlush">
+							<div class="accordion-item">
+								<h5 class="accordion-header" id="flush-headingOne">
+								<button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+									Открыть фильтр
+								</button>
+								</h5>
+								<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+								<div class="accordion-body">
+									<div class="searchMob">
+										<section>
+											<select class="form-select" aria-label="">
+												<option selected disabled>Область</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+											<select class="form-select" aria-label="">
+												<option selected disabled>Аукцион</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+											<select class="form-select" aria-label="">
+												<option selected disabled>Категория земель</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</section>
+										<section class="sale-price">
+											<p>Цена ($)</p>
+											<input type="text" name="" placeholder="От">
+											<input type="text" name="" placeholder="До">
+										</section>
+										<section class="sale-area">
+											<p>Площадь (га)</p>
+											<input type="text" name="" placeholder="От">
+											<input type="text" name="" placeholder="До">
+										</section>
+										<section class="sale-btn">
+											<input class="found" type="button" value="Поиск" >
+											<input class="reset" type="button" value="Очистить" >
+										</section>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+					<div class="col col-sm-4 col-md-3 col-xxl-3 p-0 filter">
 						<div class="row p-0">
 							<div class="sidebar">
 								<div class="search">
@@ -145,219 +221,184 @@
 							</div>
 						</div>
 					</div>
-					<div class="col col-sm-8 col-md-9 col-xxl-9">
+					<div class="col col-12 col-lg-9 col-xxl-9">
 						<div class="row p-0">
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-							<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-2.png" alt="">
+							<div class="col col-md-6 col-xl-4 card-container">
+								<a href="./sale-card.html">
+									<div class="card">
+										<div class="imgbox">
+											<img src="images/img-2.png" alt="">
+										</div>
+										<div class="price">
+											<span>Продажа</span>
+											<span class="sale">4000$</span>
+										</div>
+										<div class="region">
+											<p><img src="images/map-marker.png" alt="">Днепропетровская область</p>
+										</div>
+										<div class="area">
+											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
+										</div>
 									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">4000$</span>
+								</a>
+							</div>
+							<div class="col col-md-6 col-xl-4 card-container">
+								<a href="./sale-card.html">
+									<div class="card">
+										<div class="imgbox">
+											<img src="images/img-3.png" alt="">
+										</div>
+										<div class="price">
+											<span>Продажа</span>
+											<span class="sale">20000$</span>
+										</div>
+										<div class="region">
+											<p><img src="images/map-marker.png" alt="">Запорожская область</p>
+										</div>
+										<div class="area">
+											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
+										</div>
 									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Днепропетровская область</p>
+								</a>
+							</div>
+							<div class="col col-md-6 col-xl-4 card-container">
+								<a href="./sale-card.html">
+									<div class="card">
+										<div class="imgbox">
+											<img src="images/img-4.png" alt="">
+										</div>
+										<div class="price">
+											<span>Продажа</span>
+											<span class="sale">10000$</span>
+										</div>
+										<div class="region">
+											<p><img src="images/map-marker.png" alt="">Луганская область</p>
+										</div>
+										<div class="area">
+											<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
+										</div>
 									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
+								</a>
+							</div>
+							<div class="col col-md-6 col-xl-4 card-container">
+								<a href="./sale-card.html">
+									<div class="card">
+										<div class="imgbox">
+											<img src="images/img-2.png" alt="">
+										</div>
+										<div class="price">
+											<span>Продажа</span>
+											<span class="sale">4000$</span>
+										</div>
+										<div class="region">
+											<p><img src="images/map-marker.png" alt="">Днепропетровская область</p>
+										</div>
+										<div class="area">
+											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
+										</div>
 									</div>
-								</div>
-							</a></div>
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-								<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-3.png" alt="">
+								</a>
+							</div>
+							<div class="col col-md-6 col-xl-4 card-container">
+								<a href="./sale-card.html">
+									<div class="card">
+										<div class="imgbox">
+											<img src="images/img-3.png" alt="">
+										</div>
+										<div class="price">
+											<span>Продажа</span>
+											<span class="sale">20000$</span>
+										</div>
+										<div class="region">
+											<p><img src="images/map-marker.png" alt="">Запорожская область</p>
+										</div>
+										<div class="area">
+											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
+										</div>
 									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">20000$</span>
+								</a>
+							</div>
+							<div class="col col-md-6 col-xl-4 card-container">
+								<a href="./sale-card.html">
+									<div class="card">
+										<div class="imgbox">
+											<img src="images/img-4.png" alt="">
+										</div>
+										<div class="price">
+											<span>Продажа</span>
+											<span class="sale">10000$</span>
+										</div>
+										<div class="region">
+											<p><img src="images/map-marker.png" alt="">Луганская область</p>
+										</div>
+										<div class="area">
+											<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
+										</div>
 									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Запорожская область</p>
+								</a>
+							</div>
+							<div class="col col-md-6 col-xl-4 card-container">
+								<a href="./sale-card.html">
+									<div class="card">
+										<div class="imgbox">
+											<img src="images/img-2.png" alt="">
+										</div>
+										<div class="price">
+											<span>Продажа</span>
+											<span class="sale">4000$</span>
+										</div>
+										<div class="region">
+											<p><img src="images/map-marker.png" alt="">Днепропетровская область</p>
+										</div>
+										<div class="area">
+											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
+										</div>
 									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
+								</a>
+							</div>
+							<div class="col col-md-6 col-xl-4 card-container">
+								<a href="./sale-card.html">
+									<div class="card">
+										<div class="imgbox">
+											<img src="images/img-3.png" alt="">
+										</div>
+										<div class="price">
+											<span>Продажа</span>
+											<span class="sale">20000$</span>
+										</div>
+										<div class="region">
+											<p><img src="images/map-marker.png" alt="">Запорожская область</p>
+										</div>
+										<div class="area">
+											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
+										</div>
 									</div>
-								</div>
-							</a></div>
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-								<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-4.png" alt="">
+								</a>
+							</div>
+							<div class="col col-md-6 col-xl-4 card-container">
+								<a href="./sale-card.html">
+									<div class="card">
+										<div class="imgbox">
+											<img src="images/img-4.png" alt="">
+										</div>
+										<div class="price">
+											<span>Продажа</span>
+											<span class="sale">10000$</span>
+										</div>
+										<div class="region">
+											<p><img src="images/map-marker.png" alt="">Луганская область</p>
+										</div>
+										<div class="area">
+											<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
+										</div>
 									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">10000$</span>
-									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Луганская область</p>
-									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
-									</div>
-								</div>
-							</a></div>
+								</a>
+							</div>
+							
 						</div>
-						<div class="row p-0">
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-								<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-2.png" alt="">
-									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">4000$</span>
-									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Днепропетровская область</p>
-									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
-									</div>
-								</div>
-							</a></div>
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-								<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-3.png" alt="">
-									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">20000$</span>
-									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Запорожская область</p>
-									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
-									</div>
-								</div>
-							</a></div>
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-								<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-4.png" alt="">
-									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">10000$</span>
-									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Луганская область</p>
-									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
-									</div>
-								</div>
-							</a></div>
-						</div>
-						<div class="row p-0">
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-								<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-2.png" alt="">
-									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">4000$</span>
-									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Днепропетровская область</p>
-									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
-									</div>
-								</div>
-							</a></div>
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-								<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-3.png" alt="">
-									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">20000$</span>
-									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Запорожская область</p>
-									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
-									</div>
-								</div>
-							</a></div>
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-								<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-4.png" alt="">
-									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">10000$</span>
-									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Луганская область</p>
-									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
-									</div>
-								</div>
-							</a></div>
-						</div>
-						<div class="row p-0">	
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-								<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-2.png" alt="">
-									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">4000$</span>
-									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Днепропетровская область</p>
-									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
-									</div>
-								</div>
-							</a></div>
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-								<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-3.png" alt="">
-									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">20000$</span>
-									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Запорожская область</p>
-									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
-									</div>
-								</div>
-							</a></div>
-							<div class="col col-md-6 col-xl-4 col-xxl-3 card-container">
-								<a href="./auction-card.html"><div class="card">
-									<div class="imgbox">
-										<img src="images/img-4.png" alt="">
-									</div>
-									<div class="price">
-										<span>Продажа</span>
-										<span class="sale">10000$</span>
-									</div>
-									<div class="region">
-										<p><img src="images/map-marker.png" alt="">Луганская область</p>
-									</div>
-									<div class="area">
-										<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
-									</div>
-							</a></div>
-						</div>
-						</div>
+						
+						
+					</div>
 						<div class="row p-0">
 							<div class="col p-0">
 								<button type="button">Загрузить еще</button>
@@ -370,7 +411,7 @@
 				<div class="row"><h3>Новейшие объявления</h3></div>
 				
 				<div class="row">
-					<div class="col col-12 col-md-6 col-xxl-3 card-container">
+					<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
 						<a href="./auction-card.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-1.png" alt="">
@@ -387,7 +428,7 @@
 							</div>
 						</div>
 					</a></div>
-					<div class="col col-12 col-md-6 col-xxl-3 card-container">
+					<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
 						<a href="./auction-card.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-2.png" alt="">
@@ -404,7 +445,7 @@
 							</div>
 						</div>
 					</a></div>
-					<div class="col col-12 col-md-6 col-xxl-3 card-container">
+					<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
 						<a href="./auction-card.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-3.png" alt="">
@@ -421,7 +462,7 @@
 							</div>
 						</div>
 					</a></div>
-					<div class="col col-12 col-md-6 col-xxl-3 card-container">
+					<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
 						<a href="./auction-card.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-4.png" alt="">
@@ -444,14 +485,14 @@
 	  <footer>
 		  <div class="container-fluid">
 			  <div class="row">
-					<div class="col col-12 col-sm-4 col-lg-4 col-xl-4 col-xxl-3 left">
+					<div class="col col-12 col-sm-4 col-lg-4 col-xl-3 col-xxl-3 left">
 						<div class="logo">
 							<a href="./index.html"><img src="images/logo.png" alt="img"></a>
 						</div>
 						<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
 						<p class="copiryght">Terra Auction © 2021</p>
 					</div>
-					<div class="col col-12 col-sm-4 col-lg-6 col-xl-4 col-xxl-6 center">
+					<div class="col col-12 col-sm-4 col-lg-6 col-xl-5 col-xxl-6 center">
 						<nav>
 							<ul>
 								<li><a href="./auction.html">Аукцион</a></li>

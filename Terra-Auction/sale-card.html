@@ -33,7 +33,7 @@
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						<div class="modal-body">
 							<form id="form">
-								<input type="text" name="name" id="name" placeholder="Введите ваше имя *" onkeyup="checkParams()" equired>
+								<input type="text" name="name" id="name" placeholder="Введите ваше имя *" onkeyup="checkParams()" required>
 								<input type="tel" name="phone" id="phone" placeholder="Телефон" onkeyup="checkParams()" required>
 								<input type="email" name="mail" id="mail" placeholder="Email" onkeyup="checkParams()" required>
 
@@ -74,6 +74,14 @@
 							<ul>
 								<li><a href="./auction.html">Аукцион</a></li>
 								<li><a href="./sale.html">Продажа</a></li>
+								<li>
+									<div class="dropdown lang dropbtn">Русский
+										<div class="dropdown-content">
+											<a href="#">Українська</a>
+											<a href="#">English</a>
+										</div>
+									</div>
+								</li>
 							</ul>
 						</nav>
 						<span class="button">
@@ -86,8 +94,22 @@
 							</label>
 
 							<ul class="menu__box">
+								<li class="col left">
+									<div class="logo">
+										<a href="./index.html"><img src="images/logo.png" alt="img"></a>
+									</div>
+									<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
+								</li>
 								<li><a class="menu__item" href="./auction.html">Аукцион</a></li>
 								<li><a class="menu__item" href="./sale.html">Продажа</a></li>
+								<li>
+									<div class="dropdown langMob dropbtn">Русский
+										<div class="dropdown-content">
+											<a href="#">Українська</a>
+											<a href="#">English</a>
+										</div>
+									</div>
+								</li>
 								<li><button type="button" data-bs-toggle="modal" data-bs-target=".modal">Добавить объявление</button></li>
 							</ul>
 						</div>
@@ -162,7 +184,7 @@
 				<div class="row"><h3>Похожие объявления</h3></div>
 				
 				<div class="row">
-					<div class="col col-xxl-3 card-container">
+					<div class="col col-12 col-sm-6 col-lg-3 col-xxl-3 card-container">
 						<a href="./sale-card.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-1.png" alt="">
@@ -179,7 +201,7 @@
 							</div>
 						</div>
 					</a></div>
-					<div class="col col-xxl-3 card-container">
+					<div class="col col-12 col-sm-6 col-lg-3 col-xxl-3 card-container">
 						<a href="./sale-card.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-2.png" alt="">
@@ -196,7 +218,7 @@
 							</div>
 						</div>
 					</a></div>
-					<div class="col col-xxl-3 card-container">
+					<div class="col col-12 col-sm-6 col-lg-3 col-xxl-3 card-container">
 						<a href="./sale-card.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-3.png" alt="">
@@ -213,7 +235,7 @@
 							</div>
 						</div>
 					</a></div>
-					<div class="col col-xxl-3 card-container">
+					<div class="col col-12 col-sm-6 col-lg-3 col-xxl-3 card-container">
 						<a href="./sale-card.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-4.png" alt="">
@@ -236,14 +258,14 @@
 	  <footer>
 		  <div class="container-fluid">
 			  <div class="row">
-					<div class="col col-12 col-sm-4 col-lg-4 col-xl-4 col-xxl-3 left">
+					<div class="col col-12 col-sm-4 col-lg-4 col-xl-3 col-xxl-3 left">
 						<div class="logo">
 							<a href="./index.html"><img src="images/logo.png" alt="img"></a>
 						</div>
 						<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
 						<p class="copiryght">Terra Auction © 2021</p>
 					</div>
-					<div class="col col-12 col-sm-4 col-lg-6 col-xl-4 col-xxl-6 center">
+					<div class="col col-12 col-sm-4 col-lg-6 col-xl-5 col-xxl-6 center">
 						<nav>
 							<ul>
 								<li><a href="./auction.html">Аукцион</a></li>
