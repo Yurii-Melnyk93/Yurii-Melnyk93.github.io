@@ -820,6 +820,7 @@ main .search-form .search {
 }
 
 main .search-form .search .form-select {
+  overflow: auto;
   padding: 0;
   margin-top: -10px;
   margin-right: 40px;
@@ -1046,6 +1047,7 @@ main .page-sale .accordion-flush .accordion-body .searchMob section p {
 }
 
 main .page-sale .accordion-flush .accordion-body .searchMob section .form-select {
+  overflow: auto;
   border: none;
   border-bottom: 1px solid #E8E8E8;
   background-color: transparent;
@@ -1196,6 +1198,7 @@ main .page-sale .sidebar .search section p {
 }
 
 main .page-sale .sidebar .search section .form-select {
+  overflow: auto;
   border: none;
   border-bottom: 1px solid #E8E8E8;
   background-color: transparent;
