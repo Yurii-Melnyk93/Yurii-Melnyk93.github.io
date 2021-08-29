@@ -24,16 +24,16 @@
 				<div class="modal-dialog modal-dialog-centered">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title">Заповніть заявку</h5>
+							<h5 class="modal-title">Заполните заявку</h5>
 						</div>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						<div class="modal-body">
 							<form id="form">
-								<input type="text" name="name" id="name" placeholder="Введіть ваше ім'я *" onkeyup="checkParams()" required>
+								<input type="text" name="name" id="name" placeholder="Введите ваше имя *" onkeyup="checkParams()" required>
 								<input type="tel" name="phone" id="phone" placeholder="Телефон" onkeyup="checkParams()" required>
 								<input type="email" name="mail" id="mail" placeholder="Email" onkeyup="checkParams()" required>
 
-								<input type="submit" id="submit-btn" class="btn btn-primary" value="Відправити" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target=".modal-1"  disabled>
+								<input type="submit" id="submit-btn" class="btn btn-primary" value="Отправить" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target=".modal-1"  disabled>
 							</form>
 						</div>
 						<div class="modal-footer">
@@ -46,11 +46,13 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">Ваша заявка успішно відправлено. В найближчий час ми зв’яжемося з Вами.</h5>
+						<h5 class="modal-title">Ваша заявка успешно отправлена. 
+							В ближайшее время мы 
+							свяжемся с Вами!</h5>
 					</div>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Спасибі</button>
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Спасибо!</button>
 					</div>
 				</div>
 			</div>
@@ -59,19 +61,19 @@
 			  <div class="row">
 					<div class="col col-10 col-md-4 col-lg-6 left">
 						<div class="logo">
-							<a href="./index.html"><img src="images/logo.png" alt="img"></a>
+							<a href="./index_ru.html"><img src="images/logo.png" alt="img"></a>
 						</div>
-						<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
+						<div class="title"><a href="./index_ru.html"><h1>terra aucti</h1></a></div>
 					</div>
 					<div class="col col-2 col-md-8 col-lg-6 right">
 						<nav>
 							<ul>
-								<li><a href="./auction.html">Аукціон</a></li>
-								<li><a href="./sale.html">Продаж</a></li>
+								<li><a href="./auction_ru.html">Аукцион</a></li>
+								<li><a href="./sale_ru.html">Продажа</a></li>
 								<li>
-									<div class="dropdown lang dropbtn">Українська
+									<div class="dropdown lang dropbtn">Русский
 										<div class="dropdown-content">
-											<a href="./index_ru.html">Русский</a>
+											<a href="./index.html">English</a>
 											<a href="./index_en.html">English</a>
 										</div>
 									</div>
@@ -79,7 +81,7 @@
 							</ul>
 						</nav>
 						<span class="button">
-							<button type="button" data-bs-toggle="modal" data-bs-target=".modal">ДОДАТИ ОГОЛОШЕННЯ</button>
+							<button type="button" data-bs-toggle="modal" data-bs-target=".modal">Добавить объявление</button>
 						</span>
 						<div class="hamburger-menu">
 							<input id="menu__toggle" type="checkbox" >
@@ -90,21 +92,21 @@
 							<ul class="menu__box">
 								<li class="col left">
 									<div class="logo">
-										<a href="./index.html"><img src="images/logo.png" alt="img"></a>
+										<a href="./index_ru.html"><img src="images/logo.png" alt="img"></a>
 									</div>
-									<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
+									<div class="title"><a href="./index_ru.html"><h1>terra aucti</h1></a></div>
 								</li>
-								<li><a class="menu__item" href="./auction.html">Аукціон</a></li>
-								<li><a class="menu__item" href="./sale.html">Продаж</a></li>
+								<li><a class="menu__item" href="./auction_ru.html">Аукцион</a></li>
+								<li><a class="menu__item" href="./sale_ru.html">Продажа</a></li>
 								<li>
-									<div class="dropdown langMob dropbtn">Українська
+									<div class="dropdown langMob dropbtn">Русский
 										<div class="dropdown-content">
-											<a href="./index_ru.html">Русский</a>
+											<a href="./index.html">English</a>
 											<a href="./index_en.html">English</a>
 										</div>
 									</div>
 								</li>
-								<li><button type="button" data-bs-toggle="modal" data-bs-target=".modal">ДОДАТИ ОГОЛОШЕННЯ</button></li>
+								<li><button type="button" data-bs-toggle="modal" data-bs-target=".modal">Добавить объявление</button></li>
 							</ul>
 						</div>
 					</div>
@@ -113,14 +115,14 @@
 	  </header>
 	  <main>
 		  <div class="container-fluid page-sale">
-				  <div class="row bredcrumbs">
-					  <ul>
-						  <li><a href="./index.html">Головна</a><span class="separator">></span></li>
-						  <li><a href="./sale.html">Продаж</a></li>
-					  </ul>
-				  </div>
+				<div class="row bredcrumbs">
+					<ul>
+						<li><a href="./index_ru.html">Главная</a><span class="separator">></span></li>
+						<li><a href="./auction_ru.html">Аукцион</a></li>
+					</ul>
+				</div>
 			  	<div class="row">
-					<h2>Продаж</h2>
+					<h2>Аукцион</h2>
 				</div>
 				<div class="row">
 					<div class="mobFilter">
@@ -129,7 +131,7 @@
 							<div class="accordion-item">
 								<h5 class="accordion-header" id="flush-headingOne">
 								<button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-									Відкрити фільтр
+									Открыть фильтр
 								</button>
 								</h5>
 								<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
@@ -137,59 +139,59 @@
 									<div class="searchMob">
 										<section>
 											<select class="form-select" aria-label="">
-												<option value="Аукціон" selected>Аукціон</option>
-												<option value="Продаж">Продаж</option>
+												<option selected value="Аукцион">Аукцион</option>
+												<option value="Продажа">Продажа</option>
 											</select>
 											<select class="form-select" aria-label="">
 												<option selected disabled>Область</option>
-												<option value="Автономна Республіка Крим">Автономна Республіка Крим</option>
-												<option value="Вінницька область">Вінницька область</option>
-												<option value="Волинська область">Волинська область</option>
-												<option value="Дніпропетровська область">Дніпропетровська область</option>
-												<option value="Донецька область">Донецька область</option>
-												<option value="Житомирська область">Житомирська область</option>
-												<option value="Закарпатська область">Закарпатська область</option>
-												<option value="Запорізька область">Запорізька область</option>
-												<option value="Івано-Франківська область">Івано-Франківська область</option>
-												<option value="м.Київ">м.Київ</option>
-												<option value="Київська область">Київська область</option>
-												<option value="Кіровоградська область">Кіровоградська область</option>
-												<option value="Луганська область">Луганська область</option>
-												<option value="Львівська область">Львівська область</option>
-												<option value="Миколаївська область">Миколаївська область</option>
-												<option value="Одеська область">Одеська область</option>
-												<option value="Полтавська область">Полтавська область</option>
-												<option value="Рівненська область">Рівненська область</option>
-												<option value="Сумська область">Сумська область</option>
-												<option value="Тернопільська область">Тернопільська область</option>
-												<option value="Харківська область">Харківська область</option>
-												<option value="Херсонська область">Херсонська область</option>
-												<option value="Хмельницька область">Хмельницька область</option>
-												<option value="Черкаська область">Черкаська область</option>
-												<option value="Чернівецька область">Чернівецька область</option>
-												<option value="Чернігівська область">Чернігівська область</option>
+												<option value="Автономная Республика Крым">Автономная Республика Крым</option>
+												<option value="Винницкая область">Винницкая область</option>
+												<option value="Волынская область">Волынская область</option>
+												<option value="Днепропетровская область">Днепропетровская область</option>
+												<option value="Донецкая область">Донецкая область</option>
+												<option value="Житомирская область">Житомирская область</option>
+												<option value="Закарпатская область">Закарпатская область</option>
+												<option value="Запорожская область">Запорожская область</option>
+												<option value="Ивано-Франковская область">Ивано-Франковская область</option>
+												<option value="г.Киев">г.Киев</option>
+												<option value="Киевская область">Киевская область</option>
+												<option value="Кировоградская область">Кировоградская область</option>
+												<option value="Луганская область">Луганская область</option>
+												<option value="Львовская область">Львовская область</option>
+												<option value="Николаевская область">Николаевская область</option>
+												<option value="Одесская область">Одесская область</option>
+												<option value="Полтавская область">Полтавская область</option>
+												<option value="Ровенская область">Ровенская область</option>
+												<option value="Сумская область">Сумская область</option>
+												<option value="Тернопольская область">Тернопольская область</option>
+												<option value="Харьковская область">Харьковская область</option>
+												<option value="Херсонская область">Херсонская область</option>
+												<option value="Хмельницкая область">Хмельницкая область</option>
+												<option value="Черкасская область">Черкасская область</option>
+												<option value="Черниговская область">Черниговская область</option>
+												<option value="Черновицкая область">Черновицкая область</option>
 											</select>
 											<select class="form-select" aria-label="">
-												<option selected disabled>Категорія земель</option>
-												<option value="землі сільськогосподарського призначення">землі сільськогосподарського призначення</option>
-												<option value="землі житлової та громадської забудови">землі житлової та громадської забудови</option>
-												<option value="землі промисловості, транспорту, зв'язку, енергетики, оборони та іншого призначення">землі промисловості, транспорту, зв'язку, енергетики, оборони та іншого призначення</option>
-												<option value="інші землі">інші землі</option>
+												<option selected disabled>Категория земель</option>
+												<option value="земли сельскохозяйственого назначения">земли сельскохозяйственого назначения</option>
+												<option value="земли жилой и общественной  застройки">земли жилой и общественной  застройки</option>
+												<option value="земли промышленности, энергетики и другого назначения">земли промышленности, энергетики и другого назначения</option>
+												<option value="другие земли">другие земли</option>
 											</select>
 										</section>
 										<section class="sale-price">
-											<p>Ціна ($)</p>
-											<input type="text" name="" placeholder="Від">
+											<p>Цена ($)</p>
+											<input type="text" name="" placeholder="От">
 											<input type="text" name="" placeholder="До">
 										</section>
 										<section class="sale-area">
-											<p>Площа (га)</p>
-											<input type="text" name="" placeholder="Від">
+											<p>Площадь (га)</p>
+											<input type="text" name="" placeholder="От">
 											<input type="text" name="" placeholder="До">
 										</section>
 										<section class="sale-btn">
-											<input class="found" type="button" value="Пошук" >
-											<input class="reset" type="button" value="Очистити" >
+											<input class="found" type="button" value="Поиск" >
+											<input class="reset" type="button" value="Очистить" >
 										</section>
 									</div>
 								</div>
@@ -199,65 +201,65 @@
 
 						
 					</div>
-					<div class="col col-lg-3 col-xxl-3 p-0 filter">
+					<div class="col col-sm-4 col-md-3 col-xxl-3 p-0 filter">
 						<div class="row p-0">
 							<div class="sidebar">
 								<div class="search">
 									<section>
 										<select class="form-select" aria-label="">
-											<option value="Аукціон" selected>Аукціон</option>
-											<option value="Продаж">Продаж</option>
+											<option selected value="Аукцион">Аукцион</option>
+											<option value="Продажа">Продажа</option>
 										</select>
 										<select class="form-select" aria-label="">
 											<option selected disabled>Область</option>
-											<option value="Автономна Республіка Крим">Автономна Республіка Крим</option>
-											<option value="Вінницька область">Вінницька область</option>
-											<option value="Волинська область">Волинська область</option>
-											<option value="Дніпропетровська область">Дніпропетровська область</option>
-											<option value="Донецька область">Донецька область</option>
-											<option value="Житомирська область">Житомирська область</option>
-											<option value="Закарпатська область">Закарпатська область</option>
-											<option value="Запорізька область">Запорізька область</option>
-											<option value="Івано-Франківська область">Івано-Франківська область</option>
-											<option value="м.Київ">м.Київ</option>
-											<option value="Київська область">Київська область</option>
-											<option value="Кіровоградська область">Кіровоградська область</option>
-											<option value="Луганська область">Луганська область</option>
-											<option value="Львівська область">Львівська область</option>
-											<option value="Миколаївська область">Миколаївська область</option>
-											<option value="Одеська область">Одеська область</option>
-											<option value="Полтавська область">Полтавська область</option>
-											<option value="Рівненська область">Рівненська область</option>
-											<option value="Сумська область">Сумська область</option>
-											<option value="Тернопільська область">Тернопільська область</option>
-											<option value="Харківська область">Харківська область</option>
-											<option value="Херсонська область">Херсонська область</option>
-											<option value="Хмельницька область">Хмельницька область</option>
-											<option value="Черкаська область">Черкаська область</option>
-											<option value="Чернівецька область">Чернівецька область</option>
-											<option value="Чернігівська область">Чернігівська область</option>
+											<option value="Автономная Республика Крым">Автономная Республика Крым</option>
+											<option value="Винницкая область">Винницкая область</option>
+											<option value="Волынская область">Волынская область</option>
+											<option value="Днепропетровская область">Днепропетровская область</option>
+											<option value="Донецкая область">Донецкая область</option>
+											<option value="Житомирская область">Житомирская область</option>
+											<option value="Закарпатская область">Закарпатская область</option>
+											<option value="Запорожская область">Запорожская область</option>
+											<option value="Ивано-Франковская область">Ивано-Франковская область</option>
+											<option value="г.Киев">г.Киев</option>
+											<option value="Киевская область">Киевская область</option>
+											<option value="Кировоградская область">Кировоградская область</option>
+											<option value="Луганская область">Луганская область</option>
+											<option value="Львовская область">Львовская область</option>
+											<option value="Николаевская область">Николаевская область</option>
+											<option value="Одесская область">Одесская область</option>
+											<option value="Полтавская область">Полтавская область</option>
+											<option value="Ровенская область">Ровенская область</option>
+											<option value="Сумская область">Сумская область</option>
+											<option value="Тернопольская область">Тернопольская область</option>
+											<option value="Харьковская область">Харьковская область</option>
+											<option value="Херсонская область">Херсонская область</option>
+											<option value="Хмельницкая область">Хмельницкая область</option>
+											<option value="Черкасская область">Черкасская область</option>
+											<option value="Черниговская область">Черниговская область</option>
+											<option value="Черновицкая область">Черновицкая область</option>
 										</select>
 										<select class="form-select" aria-label="">
-											<option selected disabled>Категорія земель</option>
-											<option value="землі сільськогосподарського призначення">землі сільськогосподарського призначення</option>
-											<option value="землі житлової та громадської забудови">землі житлової та громадської забудови</option>
-											<option value="землі промисловості, транспорту, зв'язку, енергетики, оборони та іншого призначення">землі промисловості, транспорту, зв'язку, енергетики, оборони та іншого призначення</option>
-											<option value="інші землі">інші землі</option>
+											<option selected disabled>Категория земель</option>
+											<option value="земли сельскохозяйственого назначения">земли сельскохозяйственого назначения</option>
+											<option value="земли жилой и общественной  застройки">земли жилой и общественной  застройки</option>
+											<option value="земли промышленности, энергетики и другого назначения">земли промышленности, энергетики и другого назначения</option>
+											<option value="другие земли">другие земли</option>
 										</select>
 									</section>
 									<section class="sale-price">
-										<p>Ціна ($)</p>
-										<input type="text" name="" placeholder="Від">
+										<p>Цена ($)</p>
+										<input type="text" name="" placeholder="От">
 										<input type="text" name="" placeholder="До">
 									</section>
 									<section class="sale-area">
-										<p>Площа (га)</p>
-										<input type="text" name="" placeholder="Від">
+										<p>Площадь (га)</p>
+										<input type="text" name="" placeholder="От">
 										<input type="text" name="" placeholder="До">
 									</section>
 									<section class="sale-btn">
-										<input class="found" type="button" value="Пошук" >
-										<input class="reset" type="button" value="Очистити" >
+										<input class="found" type="button" value="Поиск" >
+										<input class="reset" type="button" value="Очистить" >
 									</section>
 								</div>
 							</div>
@@ -266,17 +268,17 @@
 					<div class="col col-12 col-lg-9 col-xxl-9">
 						<div class="row p-0">
 							<div class="col col-md-6 col-xl-4 card-container">
-								<a href="./sale-card.html">
+								<a href="./auction-card_ru.html">
 									<div class="card">
 										<div class="imgbox">
 											<img src="images/img-2.png" alt="">
 										</div>
 										<div class="price">
-											<span>Продаж</span>
+											<span>Продажа</span>
 											<span class="sale">4000$</span>
 										</div>
 										<div class="region">
-											<p><img src="images/map-marker.png" alt="">Дніпропетровська область</p>
+											<p><img src="images/map-marker.png" alt="">Днепропетровская область</p>
 										</div>
 										<div class="area">
 											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
@@ -285,17 +287,17 @@
 								</a>
 							</div>
 							<div class="col col-md-6 col-xl-4 card-container">
-								<a href="./sale-card.html">
+								<a href="./auction-card_ru.html">
 									<div class="card">
 										<div class="imgbox">
 											<img src="images/img-3.png" alt="">
 										</div>
 										<div class="price">
-											<span>Продаж</span>
+											<span>Продажа</span>
 											<span class="sale">20000$</span>
 										</div>
 										<div class="region">
-											<p><img src="images/map-marker.png" alt="">Запорізька область</p>
+											<p><img src="images/map-marker.png" alt="">Запорожская область</p>
 										</div>
 										<div class="area">
 											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
@@ -304,17 +306,17 @@
 								</a>
 							</div>
 							<div class="col col-md-6 col-xl-4 card-container">
-								<a href="./sale-card.html">
+								<a href="./auction-card_ru.html">
 									<div class="card">
 										<div class="imgbox">
 											<img src="images/img-4.png" alt="">
 										</div>
 										<div class="price">
-											<span>Продаж</span>
+											<span>Продажа</span>
 											<span class="sale">10000$</span>
 										</div>
 										<div class="region">
-											<p><img src="images/map-marker.png" alt="">Луганська область</p>
+											<p><img src="images/map-marker.png" alt="">Луганская область</p>
 										</div>
 										<div class="area">
 											<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
@@ -323,17 +325,17 @@
 								</a>
 							</div>
 							<div class="col col-md-6 col-xl-4 card-container">
-								<a href="./sale-card.html">
+								<a href="./auction-card_ru.html">
 									<div class="card">
 										<div class="imgbox">
 											<img src="images/img-2.png" alt="">
 										</div>
 										<div class="price">
-											<span>Продаж</span>
+											<span>Продажа</span>
 											<span class="sale">4000$</span>
 										</div>
 										<div class="region">
-											<p><img src="images/map-marker.png" alt="">Дніпропетровська область</p>
+											<p><img src="images/map-marker.png" alt="">Днепропетровская область</p>
 										</div>
 										<div class="area">
 											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
@@ -342,17 +344,17 @@
 								</a>
 							</div>
 							<div class="col col-md-6 col-xl-4 card-container">
-								<a href="./sale-card.html">
+								<a href="./auction-card_ru.html">
 									<div class="card">
 										<div class="imgbox">
 											<img src="images/img-3.png" alt="">
 										</div>
 										<div class="price">
-											<span>Продаж</span>
+											<span>Продажа</span>
 											<span class="sale">20000$</span>
 										</div>
 										<div class="region">
-											<p><img src="images/map-marker.png" alt="">Запорізька область</p>
+											<p><img src="images/map-marker.png" alt="">Запорожская область</p>
 										</div>
 										<div class="area">
 											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
@@ -361,17 +363,17 @@
 								</a>
 							</div>
 							<div class="col col-md-6 col-xl-4 card-container">
-								<a href="./sale-card.html">
+								<a href="./auction-card_ru.html">
 									<div class="card">
 										<div class="imgbox">
 											<img src="images/img-4.png" alt="">
 										</div>
 										<div class="price">
-											<span>Продаж</span>
+											<span>Продажа</span>
 											<span class="sale">10000$</span>
 										</div>
 										<div class="region">
-											<p><img src="images/map-marker.png" alt="">Луганська область</p>
+											<p><img src="images/map-marker.png" alt="">Луганская область</p>
 										</div>
 										<div class="area">
 											<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
@@ -380,17 +382,17 @@
 								</a>
 							</div>
 							<div class="col col-md-6 col-xl-4 card-container">
-								<a href="./sale-card.html">
+								<a href="./auction-card_ru.html">
 									<div class="card">
 										<div class="imgbox">
 											<img src="images/img-2.png" alt="">
 										</div>
 										<div class="price">
-											<span>Продаж</span>
+											<span>Продажа</span>
 											<span class="sale">4000$</span>
 										</div>
 										<div class="region">
-											<p><img src="images/map-marker.png" alt="">Дніпропетровська область</p>
+											<p><img src="images/map-marker.png" alt="">Днепропетровская область</p>
 										</div>
 										<div class="area">
 											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
@@ -399,17 +401,17 @@
 								</a>
 							</div>
 							<div class="col col-md-6 col-xl-4 card-container">
-								<a href="./sale-card.html">
+								<a href="./auction-card_ru.html">
 									<div class="card">
 										<div class="imgbox">
 											<img src="images/img-3.png" alt="">
 										</div>
 										<div class="price">
-											<span>Продаж</span>
+											<span>Продажа</span>
 											<span class="sale">20000$</span>
 										</div>
 										<div class="region">
-											<p><img src="images/map-marker.png" alt="">Запорізька область</p>
+											<p><img src="images/map-marker.png" alt="">Запорожская область</p>
 										</div>
 										<div class="area">
 											<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
@@ -418,17 +420,17 @@
 								</a>
 							</div>
 							<div class="col col-md-6 col-xl-4 card-container">
-								<a href="./sale-card.html">
+								<a href="./auction-card_ru.html">
 									<div class="card">
 										<div class="imgbox">
 											<img src="images/img-4.png" alt="">
 										</div>
 										<div class="price">
-											<span>Продаж</span>
+											<span>Продажа</span>
 											<span class="sale">10000$</span>
 										</div>
 										<div class="region">
-											<p><img src="images/map-marker.png" alt="">Луганська область</p>
+											<p><img src="images/map-marker.png" alt="">Луганская область</p>
 										</div>
 										<div class="area">
 											<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
@@ -443,27 +445,27 @@
 					</div>
 						<div class="row p-0">
 							<div class="col p-0">
-								<button type="button">Завантажити ще</button>
+								<button type="button">Загрузить еще</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>		
 			<div class="container-fluid new-announcement">
-				<div class="row"><h3>Нові оголошення</h3></div>
+				<div class="row"><h3>Новейшие объявления</h3></div>
 				
 				<div class="row">
 					<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
-						<a href="./sale-card.html"><div class="card">
+						<a href="./auction-card_ru.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-1.png" alt="">
 							</div>
 							<div class="price">
-								<span>Продаж</span>
+								<span>Продажа</span>
 								<span class="sale">12000$</span>
 							</div>
 							<div class="region">
-								<p><img src="images/map-marker.png" alt=""> Київська область</p>
+								<p><img src="images/map-marker.png" alt=""> Киевская область</p>
 							</div>
 							<div class="area">
 								<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">6000 $/га</span>
@@ -471,16 +473,16 @@
 						</div>
 					</a></div>
 					<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
-						<a href="./sale-card.html"><div class="card">
+						<a href="./auction-card_ru.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-2.png" alt="">
 							</div>
 							<div class="price">
-								<span>Продаж</span>
+								<span>Продажа</span>
 								<span class="sale">4000$</span>
 							</div>
 							<div class="region">
-								<p><img src="images/map-marker.png" alt=""> Дніпропетровська область</p>
+								<p><img src="images/map-marker.png" alt=""> Днепропетровская область</p>
 							</div>
 							<div class="area">
 								<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
@@ -488,16 +490,16 @@
 						</div>
 					</a></div>
 					<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
-						<a href="./sale-card.html"><div class="card">
+						<a href="./auction-card_ru.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-3.png" alt="">
 							</div>
 							<div class="price">
-								<span>Продаж</span>
+								<span>Продажа</span>
 								<span class="sale">20000$</span>
 							</div>
 							<div class="region">
-								<p><img src="images/map-marker.png" alt=""> Запорізька область</p>
+								<p><img src="images/map-marker.png" alt=""> Запорожская область</p>
 							</div>
 							<div class="area">
 								<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
@@ -505,16 +507,16 @@
 						</div>
 					</a></div>
 					<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
-						<a href="./sale-card.html"><div class="card">
+						<a href="./auction-card_ru.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-4.png" alt="">
 							</div>
 							<div class="price">
-								<span>Продаж</span>
+								<span>Продажа</span>
 								<span class="sale">10000$</span>
 							</div>
 							<div class="region">
-								<p><img src="images/map-marker.png" alt=""> Луганська область</p>
+								<p><img src="images/map-marker.png" alt=""> Луганская область</p>
 							</div>
 							<div class="area">
 								<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
@@ -529,18 +531,18 @@
 			  <div class="row">
 					<div class="col col-12 col-sm-4 col-lg-4 col-xl-3 col-xxl-3 left">
 						<div class="logo">
-							<a href="./index.html"><img src="images/logo.png" alt="img"></a>
+							<a href="./index_ru.html"><img src="images/logo.png" alt="img"></a>
 						</div>
-						<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
+						<div class="title"><a href="./index_ru.html"><h1>terra aucti</h1></a></div>
 						<p class="copiryght">Terra Auction © 2021</p>
 					</div>
 					<div class="col col-12 col-sm-4 col-lg-6 col-xl-5 col-xxl-6 center">
 						<nav>
 							<ul>
-								<li><a href="./auction.html">Аукціон</a></li>
-								<li><a href="./sale.html">Продаж</a></li>
+								<li><a href="./auction_ru.html">Аукцион</a></li>
+								<li><a href="./sale_ru.html">Продажа</a></li>
 								<li class="btn">
-									<button type="button" data-bs-toggle="modal" data-bs-target=".modal">ДОДАТИ ОГОЛОШЕННЯ</button>
+									<button type="button" data-bs-toggle="modal" data-bs-target=".modal">Добавить объявление</button>
 								</li>
 							</ul>
 						</nav>

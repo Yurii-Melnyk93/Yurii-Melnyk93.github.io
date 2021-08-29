@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+    <title>TERRA AUCTION</title>
+  </head>
+  <body>
+	  <header>
+
+		   
+
+			
+		  <div class="modal" tabindex="-1">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Fill out the application</h5>
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-body">
+							<form id="form">
+								<input type="text" name="name" id="name" placeholder="Enter your name *" onkeyup="checkParams()" required>
+								<input type="tel" name="phone" id="phone" placeholder="Phone" onkeyup="checkParams()" required>
+								<input type="email" name="mail" id="mail" placeholder="Email" onkeyup="checkParams()" required>
+
+								<input type="submit" id="submit-btn" class="btn btn-primary" value="Send" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target=".modal-1"  disabled>
+							</form>
+						</div>
+						<div class="modal-footer">
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="modal modal-1" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Your application has been successfully submitted. We will be contacting you soon!</h5>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Thanks!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		  <div class="container-fluid">
+			  <div class="row">
+					<div class="col col-10 col-md-4 col-lg-6 left">
+						<div class="logo">
+							<a href="./index_en.html"><img src="images/logo.png" alt="img"></a>
+						</div>
+						<div class="title"><a href="./index_en.html"><h1>terra aucti</h1></a></div>
+					</div>
+					<div class="col col-2 col-md-8 col-lg-6 right">
+						<nav>
+							<ul>
+								<li><a href="./auction_en.html">Auction</a></li>
+								<li><a href="./sale_en.html">Sale</a></li>
+								<li>
+									<div class="dropdown lang dropbtn">English
+										<div class="dropdown-content">
+											<a href="./index.html">Українська</a>
+											<a href="./index_ru.html">Русский</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<span class="button">
+							<button type="button" data-bs-toggle="modal" data-bs-target=".modal">Add advertisemend</button>
+						</span>
+						<div class="hamburger-menu">
+							<input id="menu__toggle" type="checkbox" >
+							<label class="menu__btn" for="menu__toggle">
+							<span></span>
+							</label>
+
+							<ul class="menu__box">
+								<li class="col left">
+									<div class="logo">
+										<a href="./index_en.html"><img src="images/logo.png" alt="img"></a>
+									</div>
+									<div class="title"><a href="./index_en.html"><h1>terra aucti</h1></a></div>
+								</li>
+								<li><a class="menu__item" href="./auction_en.html">Auction</a></li>
+								<li><a class="menu__item" href="./sale_en.html">Sale</a></li>
+								<li>
+									<div class="dropdown langMob dropbtn">English
+										<div class="dropdown-content">
+											<a href="./index.html">Українська</a>
+											<a href="./index_ru.html">Русский</a>
+										</div>
+									</div>
+								</li>
+								<li><button type="button" data-bs-toggle="modal" data-bs-target=".modal">Add advertisemend</button></li>
+							</ul>
+						</div>
+					</div>
+			  </div>
+		  </div>
+	  </header>
+	  <main>
+		  <div class="container-fluid">
+			  <div class="row map">
+			  		<div class="col">
+					  <img src="images/map.png" alt="">
+				  </div>
+			  </div>
+		  </div>
+		  <div class="container-fluid">
+			  <div class="row">
+					<div class="col col-10 col-sm-6 col-lg-12 col-xl-10 search-form">
+					   <div class="search">
+						  <select class="form-select" aria-label="">
+							  <option selected disabled>Region</option>
+							  <option value="Autonomous Republic of Crimea">Autonomous Republic of Crimea</option>
+							  <option value="Cherkasy Oblast">Cherkasy Oblast</option>
+							  <option value="Chernihiv Oblast">Chernihiv Oblast</option>
+							  <option value="Chernivtsi Oblast">Chernivtsi Oblast</option>
+							  <option value="Dnipropetrovsk Oblast">Dnipropetrovsk Oblast</option>
+							  <option value="Donetsk Oblast">Donetsk Oblast</option>
+							  <option value="Ivano-Frankivsk Oblast">Ivano-Frankivsk Oblast</option>
+							  <option value="Kharkiv Oblast">Kharkiv Oblast</option>
+							  <option value="Kherson Oblast">Kherson Oblast</option>
+							  <option value="Khmelnytskyi Oblast">Khmelnytskyi Oblast</option>
+							  <option value="Kirovohrad Oblast">Kirovohrad Oblast</option>
+							  <option value="Kyiv">Kyiv</option>
+							  <option value="Kyiv Oblast">Kyiv Oblast</option>
+							  <option value="Luhansk Oblast">Luhansk Oblast</option>
+							  <option value="Lviv Oblast">Lviv Oblast</option>
+							  <option value="Mykolaiv Oblast">Mykolaiv Oblast</option>
+							  <option value="Odessa Oblast">Odessa Oblast</option>
+							  <option value="Poltava Oblast">Poltava Oblast</option>
+							  <option value="Rivne Oblast">Rivne Oblast</option>
+							  <option value="Sumy Oblast">Sumy Oblast</option>
+							  <option value="Ternopil Oblast">Ternopil Oblast</option>
+							  <option value="Vinnytsia Oblast">Vinnytsia Oblast</option>
+							  <option value="Volyn Oblast">Volyn Oblast</option>
+							  <option value="Zakarpattia Oblast">Zakarpattia Oblast</option>
+							  <option value="Zaporizhzhia Oblast">Zaporizhzhia Oblast</option>
+							  <option value="Zhytomyr Oblast">Zhytomyr Oblast</option>
+						  </select>
+						  <select class="form-select" aria-label="">
+							  <option value="Auction" selected >Auction</option>
+							  <option value="Sale">Sale</option>
+						  </select>
+						  <select class="form-select" aria-label="">
+							  <option selected disabled>Land designation</option>
+							  <option value="lands of agricultural designation">lands of agricultural designation</option>
+							  <option value="lands of housing and public development">lands of housing and public development</option>
+							  <option value="lands of industry, energy  and other designation">lands of industry, energy  and other designation</option>
+							  <option value="other lands">other lands</option>
+						  </select>
+						  <input class="found" type="button" value="Search" >
+						</div>
+					</div>
+			  </div>
+		  </div>
+		  <div class="container-fluid">
+			<div class="row">
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-1.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">12000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Kyiv Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">2,000 ha</span><span><img src="images/coins.png" alt="">6000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-2.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">4000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Dnipropetrovsk Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">4,000 ha</span><span><img src="images/coins.png" alt="">1000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-3.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">20000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Zaporizhzhia Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">4,000 ha</span><span><img src="images/coins.png" alt="">5000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-4.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">10000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Luhansk Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">2,000 ha</span><span><img src="images/coins.png" alt="">5000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-1.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">12000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Kyiv Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">2,000 ha</span><span><img src="images/coins.png" alt="">6000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-1.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">12000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Kyiv Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">2,000 ha</span><span><img src="images/coins.png" alt="">6000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-1.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">12000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Kyiv Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">2,000 ha</span><span><img src="images/coins.png" alt="">6000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-2.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">4000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Dnipropetrovsk Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">4,000 ha</span><span><img src="images/coins.png" alt="">1000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-3.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">20000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Zaporizhzhia Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">4,000 ha</span><span><img src="images/coins.png" alt="">5000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-4.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">10000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Luhansk Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">2,000 ha</span><span><img src="images/coins.png" alt="">5000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-1.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">12000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Kyiv Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">2,000 ha</span><span><img src="images/coins.png" alt="">6000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+				<div class="col col-12 col-md-6 col-lg-4 col-xxl-3 card-container">
+					<a href="./sale-card_en.html"><div class="card">
+						<div class="imgbox">
+							<img src="images/img-1.png" alt="">
+						</div>
+						<div class="price">
+							<span>Sale</span>
+							<span class="sale">12000$</span>
+						</div>
+						<div class="region">
+							<p><img src="images/map-marker.png" alt="">Kyiv Oblast</p>
+						</div>
+						<div class="area">
+							<span><img src="images/Group.png" alt="">2,000 ha</span><span><img src="images/coins.png" alt="">6000 $/ha</span>
+						</div>
+					</div></a>
+				</div>
+			</div>
+			
+		  </div>
+		  <div class="container-fluid">
+			  <div class="row">
+				  <div class="col">
+					  <button type="button">Load more</button>
+				  </div>
+			  </div>
+		  </div>
+	  </main>
+	  <footer>
+		  <div class="container-fluid">
+			  <div class="row">
+					<div class="col col-12 col-sm-4 col-lg-4 col-xl-3 col-xxl-3 left">
+						<div class="logo">
+							<a href="./index_en.html"><img src="images/logo.png" alt="img"></a>
+						</div>
+						<div class="title"><a href="./index_en.html"><h1>terra aucti</h1></a></div>
+						<p class="copiryght">Terra Auction © 2021</p>
+					</div>
+					<div class="col col-12 col-sm-4 col-lg-6 col-xl-5 col-xxl-6 center">
+						<nav>
+							<ul>
+								<li><a href="./auction_en.html">Auction</a></li>
+								<li><a href="./sale_en.html">Sale</a></li>
+								<li class="btn">
+									<button type="button" data-bs-toggle="modal" data-bs-target=".modal">Add advertisemend</button>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col col-12 col-sm-4 col-lg-2 col-xl-4 col-xxl-3 right">
+						<div class="social">
+							<p class="email"><img src="images/mail.png" alt="">info@terra.auction</p>
+							<ul class="links">
+								<li>
+									<a href="">
+										<img src="images/linkedin.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="images/bi_facebook.png" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+			  </div>
+		  </div>		
+	  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

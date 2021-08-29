@@ -11,7 +11,7 @@
 	<!-- Slick slider CSS -->
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+
 
 	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -28,16 +28,16 @@
 				<div class="modal-dialog modal-dialog-centered">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title">Заповніть заявку</h5>
+							<h5 class="modal-title">Fill out the application</h5>
 						</div>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						<div class="modal-body">
 							<form id="form">
-								<input type="text" name="name" id="name" placeholder="Введіть ваше ім'я *" onkeyup="checkParams()" required>
-								<input type="tel" name="phone" id="phone" placeholder="Телефон" onkeyup="checkParams()" required>
+								<input type="text" name="name" id="name" placeholder="Enter your name *" onkeyup="checkParams()" required>
+								<input type="tel" name="phone" id="phone" placeholder="Phone" onkeyup="checkParams()" required>
 								<input type="email" name="mail" id="mail" placeholder="Email" onkeyup="checkParams()" required>
 
-								<input type="submit" id="submit-btn" class="btn btn-primary" value="Відправити" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target=".modal-1"  disabled>
+								<input type="submit" id="submit-btn" class="btn btn-primary" value="Send" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target=".modal-1"  disabled>
 							</form>
 						</div>
 						<div class="modal-footer">
@@ -50,11 +50,11 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">Ваша заявка успішно відправлено. В найближчий час ми зв’яжемося з Вами.</h5>
+						<h5 class="modal-title">Your application has been successfully submitted. We will be contacting you soon!</h5>
 					</div>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Спасибі</button>
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Thanks!</button>
 					</div>
 				</div>
 			</div>
@@ -63,27 +63,27 @@
 			  <div class="row">
 					<div class="col col-10 col-md-4 col-lg-6 left">
 						<div class="logo">
-							<a href="./index.html"><img src="images/logo.png" alt="img"></a>
+							<a href="./index_en.html"><img src="images/logo.png" alt="img"></a>
 						</div>
-						<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
+						<div class="title"><a href="./index_en.html"><h1>terra aucti</h1></a></div>
 					</div>
 					<div class="col col-2 col-md-8 col-lg-6 right">
 						<nav>
 							<ul>
-								<li><a href="./auction.html">Аукціон</a></li>
-								<li><a href="./sale.html">Продаж</a></li>
+								<li><a href="./auction_en.html">Auction</a></li>
+								<li><a href="./sale_en.html">Sale</a></li>
 								<li>
-									<div class="dropdown lang dropbtn">Українська
+									<div class="dropdown lang dropbtn">English
 										<div class="dropdown-content">
+											<a href="./index.html">Українська</a>
 											<a href="./index_ru.html">Русский</a>
-											<a href="./index_en.html">English</a>
 										</div>
 									</div>
 								</li>
 							</ul>
 						</nav>
 						<span class="button">
-							<button type="button" data-bs-toggle="modal" data-bs-target=".modal">ДОДАТИ ОГОЛОШЕННЯ</button>
+							<button type="button" data-bs-toggle="modal" data-bs-target=".modal">Add advertisemend</button>
 						</span>
 						<div class="hamburger-menu">
 							<input id="menu__toggle" type="checkbox" >
@@ -94,21 +94,21 @@
 							<ul class="menu__box">
 								<li class="col left">
 									<div class="logo">
-										<a href="./index.html"><img src="images/logo.png" alt="img"></a>
+										<a href="./index_en.html"><img src="images/logo.png" alt="img"></a>
 									</div>
-									<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
+									<div class="title"><a href="./index_en.html"><h1>terra aucti</h1></a></div>
 								</li>
-								<li><a class="menu__item" href="./auction.html">Аукціон</a></li>
-								<li><a class="menu__item" href="./sale.html">Продаж</a></li>
+								<li><a class="menu__item" href="./auction_en.html">Auction</a></li>
+								<li><a class="menu__item" href="./sale_en.html">Sale</a></li>
 								<li>
-									<div class="dropdown langMob dropbtn">Українська
+									<div class="dropdown langMob dropbtn">English
 										<div class="dropdown-content">
+											<a href="./index.html">Українська</a>
 											<a href="./index_ru.html">Русский</a>
-											<a href="./index_en.html">English</a>
 										</div>
 									</div>
 								</li>
-								<li><button type="button" data-bs-toggle="modal" data-bs-target=".modal">ДОДАТИ ОГОЛОШЕННЯ</button></li>
+								<li><button type="button" data-bs-toggle="modal" data-bs-target=".modal">Add advertisemend</button></li>
 							</ul>
 						</div>
 					</div>
@@ -119,9 +119,9 @@
 		  <div class="container-fluid page-sale-card">
 				  <div class="row bredcrumbs">
 					  <ul>
-						  <li><a href="./index.html">Головна</a><span class="separator">></span></li>
-						  <li><a href="./auction.html">Аукціон</a><span class="separator">></span></li>
-						  <li><a href="">Київська область</a></li>
+						  <li><a href="./index_en.html">Home</a><span class="separator">></span></li>
+						  <li><a href="./sale_en.html">Sale</a><span class="separator">></span></li>
+						  <li><a href="">Kyiv Oblast</a></li>
 					  </ul>
 				  </div>
 				<div class="row content">
@@ -137,119 +137,116 @@
                             <p class="number">ID: 555322351</p>
                         </div>
                         <div class="row p-0">
-                            <p class="name">
-Ділянка 0,7 га Масківецька сільська рада</p>
+                            <p class="name">Plot 0.7 ha Maskivetska village council</p>
                         </div>
                         <div class="row p-0">
                             <div class="region">
-							    <p><img src="images/map-marker.png" alt="">Дніпропетровська область, 
-Ділянка 0,7 га Масківецька сільська рада</p>
+							    <p><img src="images/map-marker.png" alt="">Dnipropetrovsk Oblast, Plot 0.7 ha Maskivetska village council</p>
 						    </div>
                         </div>
                         <div class="row p-0">
                             <div class="area">
-                                <span><img src="images/Group.png" alt="">2,000 га</span>
-                                <span><img src="images/coins.png" alt="">5000 $/га</span>
-                                <span><img src="images/circle.png" alt="">Продаж</span>
+                                <span><img src="images/Group.png" alt="">2,000 ha</span>
+                                <span><img src="images/coins.png" alt="">5000 $/ha</span>
+                                <span><img src="images/circle.png" alt="">Sale</span>
                                 <span><img src="images/icon.png" alt="">3220284400:12:036:0061</span>
-								<span><img src="images/clock.png" alt="">23.12.2021</span>
-                                <span><img src="images/link.png" alt=""><a href="">https://prozorro.gov.ua/tender/UA-2020-11-05-000010-a</a></span>
 						</div>
                         </div>
                         <div class="row p-0">
                             <p class="price">20 000$</p>
                         </div>
                         <div class="row p-0">
-                            <button type="button" class="buy">Купити</button>
+                            <button type="button" class="buy">Buy</button>
                         </div>
                         <div class="row p-0">
                             <div class="description">
-                                <p>Опис:</p>
-                                <span>Земельна ділянка для товарного сільськогосподарського виробництва, підлягала поділу Масківецькоі сільської ради, Бармшівській район, Київська область. Земля в оренді. Орендна плата 2000 грн</span>
+                                <p>Description:</p>
+                                <span>Land plot for commercial agricultural production, subject to division Maskivetskoy village council, Barmshivsky district, Kyiv Oblast. Land for rent. Rent 2000 UAH</span>
                             </div>
                         </div>
 					</div>
 				</div>
 				<div class="row row-slider">
-					<h3>Фотографії</h3>
+					<h3>Photo</h3>
 					<ul class="slider">
-						<li><a class="example-image-link" href="images/slide.png" data-lightbox="example-set"><img src="images/slide.png" alt="" ></a></li>
-						<li><a class="example-image-link" href="images/slide.png" data-lightbox="example-set"><img src="images/slide.png" alt="" ></a></li>
-						<li><a class="example-image-link" href="images/slide.png" data-lightbox="example-set"><img src="images/slide.png" alt="" ></a></li>
-						<li><a class="example-image-link" href="images/slide.png" data-lightbox="example-set"><img src="images/slide.png" alt="" ></a></li>
-						<li><a class="example-image-link" href="images/slide.png" data-lightbox="example-set"><img src="images/slide.png" alt="" ></a></li>
+						<li><img src="images/slide.png" alt=""></li>
+						<li><img src="images/slide.png" alt=""></li>
+						<li><img src="images/slide.png" alt=""></li>
+						<li><img src="images/slide.png" alt=""></li>
+						<li><img src="images/slide.png" alt=""></li>
+						<li><img src="images/slide.png" alt=""></li>
 					</ul>
 				</div>
 			</div>		
 			<div class="container-fluid new-announcement">
-				<div class="row"><h3>Схожі оголошення</h3></div>
+				<div class="row"><h3>Similar ads</h3></div>
 				
 				<div class="row">
 					<div class="col col-12 col-sm-6 col-lg-3 col-xxl-3 card-container">
-						<a href="./auction-card.html"><div class="card">
+						<a href="./sale-card_en.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-1.png" alt="">
 							</div>
 							<div class="price">
-								<span>Продаж</span>
+								<span>Sale</span>
 								<span class="sale">12000$</span>
 							</div>
 							<div class="region">
-								<p><img src="images/map-marker.png" alt=""> Київська область</p>
+								<p><img src="images/map-marker.png" alt=""> Kyiv Oblast</p>
 							</div>
 							<div class="area">
-								<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">6000 $/га</span>
+								<span><img src="images/Group.png" alt="">2,000 ha</span><span><img src="images/coins.png" alt="">6000 $/ha</span>
 							</div>
 						</div>
 					</a></div>
 					<div class="col col-12 col-sm-6 col-lg-3 col-xxl-3 card-container">
-						<a href="./auction-card.html"><div class="card">
+						<a href="./sale-card_en.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-2.png" alt="">
 							</div>
 							<div class="price">
-								<span>Продаж</span>
+								<span>Sale</span>
 								<span class="sale">4000$</span>
 							</div>
 							<div class="region">
-								<p><img src="images/map-marker.png" alt=""> Дніпропетровська область</p>
+								<p><img src="images/map-marker.png" alt=""> Dnipropetrovsk Oblast</p>
 							</div>
 							<div class="area">
-								<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">1000 $/га</span>
+								<span><img src="images/Group.png" alt="">4,000 ha</span><span><img src="images/coins.png" alt="">1000 $/ha</span>
 							</div>
 						</div>
 					</a></div>
 					<div class="col col-12 col-sm-6 col-lg-3 col-xxl-3 card-container">
-						<a href="./auction-card.html"><div class="card">
+						<a href="./sale-card_en.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-3.png" alt="">
 							</div>
 							<div class="price">
-								<span>Продаж</span>
+								<span>Sale</span>
 								<span class="sale">20000$</span>
 							</div>
 							<div class="region">
-								<p><img src="images/map-marker.png" alt=""> Запорізька область</p>
+								<p><img src="images/map-marker.png" alt=""> Zaporizhzhia Oblast</p>
 							</div>
 							<div class="area">
-								<span><img src="images/Group.png" alt="">4,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
+								<span><img src="images/Group.png" alt="">4,000 ha</span><span><img src="images/coins.png" alt="">5000 $/ha</span>
 							</div>
 						</div>
 					</a></div>
 					<div class="col col-12 col-sm-6 col-lg-3 col-xxl-3 card-container">
-						<a href="./auction-card.html"><div class="card">
+						<a href="./sale-card_en.html"><div class="card">
 							<div class="imgbox">
 								<img src="images/img-4.png" alt="">
 							</div>
 							<div class="price">
-								<span>Продаж</span>
+								<span>Sale</span>
 								<span class="sale">10000$</span>
 							</div>
 							<div class="region">
-								<p><img src="images/map-marker.png" alt=""> Луганська область</p>
+								<p><img src="images/map-marker.png" alt=""> Luhansk Oblast</p>
 							</div>
 							<div class="area">
-								<span><img src="images/Group.png" alt="">2,000 га</span><span><img src="images/coins.png" alt="">5000 $/га</span>
+								<span><img src="images/Group.png" alt="">2,000 ha</span><span><img src="images/coins.png" alt="">5000 $/ha</span>
 							</div>
 						</div>
 					</a></div>
@@ -261,18 +258,18 @@
 			  <div class="row">
 					<div class="col col-12 col-sm-4 col-lg-4 col-xl-3 col-xxl-3 left">
 						<div class="logo">
-							<a href="./index.html"><img src="images/logo.png" alt="img"></a>
+							<a href="./index_en.html"><img src="images/logo.png" alt="img"></a>
 						</div>
-						<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
+						<div class="title"><a href="./index_en.html"><h1>terra aucti</h1></a></div>
 						<p class="copiryght">Terra Auction © 2021</p>
 					</div>
 					<div class="col col-12 col-sm-4 col-lg-6 col-xl-5 col-xxl-6 center">
 						<nav>
 							<ul>
-								<li><a href="./auction.html">Аукціон</a></li>
-								<li><a href="./sale.html">Продаж</a></li>
+								<li><a href="./auction_en.html">Auction</a></li>
+								<li><a href="./sale_en.html">Sale</a></li>
 								<li class="btn">
-									<button type="button" data-bs-toggle="modal" data-bs-target=".modal">ДОДАТИ ОГОЛОШЕННЯ</button>
+									<button type="button" data-bs-toggle="modal" data-bs-target=".modal">Add advertisemend</button>
 								</li>
 							</ul>
 						</nav>
@@ -299,7 +296,6 @@
 		  </div>		
 	  </footer>
 
-	<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
