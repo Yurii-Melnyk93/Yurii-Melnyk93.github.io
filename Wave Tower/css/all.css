@@ -396,7 +396,7 @@ main #scrollNav a.active .txt {
 main .video-bg {
   display: block;
   padding-top: 80px;
-  background-image: url("/images/bg-video.png");
+  background-image: url("./images/bg-video.png");
   background-color: #212832;
   background-position: top center;
   background-size: contain;
@@ -570,12 +570,12 @@ main .video-bg .specifications .container .checkList .check {
 }
 
 main .video-bg .specifications .container .checkList .check::before {
-  content: url("/images/checkmark.png");
+  content: url("./images/checkmark.png");
   margin-right: 14px;
 }
 
 main .panorama {
-  background-image: url("/images/panorama.png");
+  background-image: url("./images/panorama.png");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
