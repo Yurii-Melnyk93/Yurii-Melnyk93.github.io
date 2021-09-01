@@ -189,7 +189,7 @@ input:focus::-webkit-input-placeholder {
   padding: 0 20px;
 }
 
-header {
+header.home {
   position: absolute;
   height: 80px;
   left: 0px;
@@ -199,7 +199,7 @@ header {
   background-color: rgba(33, 40, 50, 0.39);
 }
 
-header .row {
+header.home .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -207,12 +207,12 @@ header .row {
   padding-bottom: 15px;
 }
 
-header .logo {
+header.home .logo {
   position: relative;
   opacity: 1;
 }
 
-header nav {
+header.home nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +221,7 @@ header nav {
           align-items: center;
 }
 
-header nav ul {
+header.home nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +230,7 @@ header nav ul {
   margin-bottom: 0;
 }
 
-header nav ul li {
+header.home nav ul li {
   margin: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,15 +240,25 @@ header nav ul li {
           align-items: center;
 }
 
-header nav ul li:hover {
+header.home nav ul li:hover {
   color: #F1D0B5;
 }
 
-header nav ul li:active {
+header.home nav ul li:active {
   color: #FFFFFF;
 }
 
-header nav ul li a {
+header.home nav ul li .active::after {
+  content: '';
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  background-color: #F5984C;
+}
+
+header.home nav ul li a {
   text-decoration: none;
   text-transform: capitalize;
   font-family: 'Work Sans', sans-serif;
@@ -261,11 +271,11 @@ header nav ul li a {
   padding: 8px 0;
 }
 
-header nav ul li a:hover {
+header.home nav ul li a:hover {
   color: #F1D0B5;
 }
 
-header nav ul li a:hover::after {
+header.home nav ul li a:hover::after {
   content: '';
   width: 50%;
   position: absolute;
@@ -275,27 +285,27 @@ header nav ul li a:hover::after {
   background-color: #F5984C;
 }
 
-header nav ul li a:active {
+header.home nav ul li a:active {
   color: #FFFFFF;
 }
 
-header nav ul .lang {
+header.home nav ul .lang {
   position: relative;
   display: inline-block;
 }
 
-header nav ul .lang .box {
+header.home nav ul .lang .box {
   position: absolute;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 4px;
   padding: 8px 25px 8px 15px;
 }
 
-header nav ul .lang .box:hover .dropbtn {
+header.home nav ul .lang .box:hover .dropbtn {
   color: #F1D0B5;
 }
 
-header nav ul .lang .box a.dropbtn::after {
+header.home nav ul .lang .box a.dropbtn::after {
   content: '▼';
   position: absolute;
   display: inline-block;
@@ -303,20 +313,20 @@ header nav ul .lang .box a.dropbtn::after {
   top: 5px;
 }
 
-header nav ul .lang .box a.dropbtn:hover, header nav ul .lang .box a.dropbtn:active {
+header.home nav ul .lang .box a.dropbtn:hover, header.home nav ul .lang .box a.dropbtn:active {
   color: #F1D0B5;
 }
 
-header nav ul .lang .box a.dropbtn:hover::after, header nav ul .lang .box a.dropbtn:active::after {
+header.home nav ul .lang .box a.dropbtn:hover::after, header.home nav ul .lang .box a.dropbtn:active::after {
   background-color: transparent;
 }
 
-header nav ul .lang .box:hover .dropdown-content {
+header.home nav ul .lang .box:hover .dropdown-content {
   display: block;
   position: relative;
 }
 
-header nav ul .lang .box .dropdown-content {
+header.home nav ul .lang .box .dropdown-content {
   display: none;
   position: relative;
   padding-left: 0;
@@ -324,7 +334,7 @@ header nav ul .lang .box .dropdown-content {
   z-index: 1;
 }
 
-header nav ul .lang .box .dropdown-content a::after {
+header.home nav ul .lang .box .dropdown-content a::after {
   display: none;
 }
 
@@ -442,7 +452,7 @@ main .video-bg .heading .looking {
   border: none;
   padding: 32px 22px;
   border-radius: 4px;
-  font-family: Rubik;
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
