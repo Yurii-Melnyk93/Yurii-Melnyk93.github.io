@@ -1,16 +1,17 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?6ln6yw');
-  src:  url('../fonts/icomoon.eot?6ln6yw#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?6ln6yw') format('truetype'),
-    url('../fonts/icomoon.woff?6ln6yw') format('woff'),
-    url('../fonts/icomoon.svg?6ln6yw#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?mca9dk');
+  src: url('../fonts/icomoon.eot?mca9dk#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?mca9dk') format('truetype'),
+    url('../fonts/icomoon.woff?mca9dk') format('woff'),
+    url('../fonts/icomoon.svg?mca9dk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -25,7 +26,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-right-arrow:before {
+.icon-marker:before {
   content: "\e900";
-  color: #fff;
+  
+}
+
+.icon-phone:before {
+  content: "\e901";
+  
+}
+
+.icon-right-arrow:before {
+  content: "\e902";
 }
