@@ -27,10 +27,34 @@ $(function() {
 //       }
 //     }
 //   ]
+
+
+
+
 });
 	////////////////////
+////////////
+
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 10,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: false,
+  focusOnSelect: true
+});
+
+//////////////////////
 
 
+/////////////////////
 	
 jQuery(window).scroll(function(){
          var $sections = $('section');
@@ -63,3 +87,28 @@ $("#scrollNav").on("click","a", function (event) {
 	
 });
 
+
+//////////////////////////////
+
+window.setInterval(function(){
+    $(".looking").toggleClass("looking-anim");
+    },1000);
+
+////////////////////////////////
+
+// var bg_Offset = 0;
+// function scroll_bg(){
+//     bg_Offset = bg_Offset + 1;
+//     if (bg_Offset > 1440) bg_Offset = 0;
+//     $(".panorama").css("backgroundPosition", bg_Offset + "px 0px");
+// }
+// $(document).ready(function(){
+//     $(".panRight").hover(function(){
+//         setInterval("scroll_bg()",50)
+//     })});
+   
+
+
+// $(".panRight").mouseenter(function(){
+//    setInterval("scroll_bg()",50); 
+// });
