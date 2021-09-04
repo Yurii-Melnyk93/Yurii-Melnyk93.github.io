@@ -26,30 +26,30 @@
     <title>WAVE TOWER</title>
   </head>
   <body>
-    <header>
-      <div class="layout header">
-        <div class="container">
+    <header class="home-header">
+      <div class="layout">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col col-3">
+            <div class="col col-2 p-0">
               <div class="logo">
                 <a href="./index.html">
                   <img src="./images/logo.png" alt="logo">
                 </a>
               </div>
             </div>
-            <div class="col col-9">
-              <nav>
+            <div class="col col-10">
+              <nav class="headNav">
                 <ul>
                   <li><a href="./index.html" >Головна</a></li>
                   <li><a href="./busines-center.html" >Бізнес-центр </a></li>
                   <li><a href="./rent.html">Оренда</a></li>
                   <li><a href="./conferenc.html">Конференц-зали</a></li>
-                  <li><a href="./infrastructure.html" >Інфраструктура</a></li>
-                  <li><a href="./news.html"class="active">Новини</a></li>
+                  <li><a href="./infrastructure.html">Інфраструктура</a></li>
+                  <li><a href="./news.html" class="active">Новини</a></li>
                   <li><a href="./contact.html">Контакти</a></li>
                   <li class="lang ">
                     <span class="box">
-                      <a href="#" class="dropbtn">УКР 
+                      <a class="dropbtn" href="#">УКР 
                         <ul class="dropdown-content">
                           <a href="#">ENG</a>
                           <a href="#">РУС</a>
@@ -59,15 +59,47 @@
                   </li>
                 </ul>
               </nav>
+
+						<div class="hamburger-menu">
+							<input id="menu__toggle" type="checkbox" >
+							<label class="menu__btn" for="menu__toggle">
+							<span></span>
+							</label>
+
+							<ul class="menu__box">
+								<!-- <li class="col left">
+									<div class="logo">
+										<a href="./index.html"><img src="images/logo.png" alt="img"></a>
+									</div>
+									<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
+								</li> -->
+								<li><a class="menu__item " href="./index.html">Головна</a></li>
+                <li><a class="menu__item " href="./busines-center.html">Бізнес-центр </a></li>
+                <li><a class="menu__item" href="./rent.html">Оренда</a></li>
+                <li><a class="menu__item" href="./conferenc.html">Конференц-зали</a></li>
+                <li><a class="menu__item" href="./infrastructure.html">Інфраструктура</a></li>
+                <li><a class="menu__item active" href="./news.html">Новини</a></li>
+                <li><a class="menu__item" href="./contact.html">Контакти</a></li>
+                <li class="langMob ">
+                  <span class="box">
+                    <a class="dropbtn" href="#">УКР 
+                      <ul class="dropdown-content">
+                        <a href="#">ENG</a>
+                        <a href="#">РУС</a>
+                      </ul>
+                    </a>
+                  </span>
+                </li>
+							</ul>
+						</div>
+
             </div>
           </div>
-          <div class="row">
-            <h1>Новини</h1>
-          </div>
+          
         </div>
       </div>
     </header>
-    <main>
+    <main class="home-main">
       <div class="layout">
         <!-- <div id="scrollNav">
           <a href="#heading" class="active"><p class="txt">Wave tower</p><span></span></a>
@@ -76,15 +108,22 @@
           <a href="#news"><p class="txt">новини</p><span></span></a>
           <a href="#map"><p class="txt">карта</p><span></span></a>
         </div> -->
+        <div class="firstBlock">
+          <div class="container">
+           <div class="row">
+            <h1>Новини</h1>
+          </div>
+          </div>
+          </div>
         <div class="container padBot-80">
           <div class="row p-0">
             <ul class="newsList">
               <li>
-                <a href="#" class="row p-0">
-                  <div class="col col-6 newsImgBox">
+                <a href="./newsPage.html" class="row p-0">
+                  <div class="col-xs-12 col-sm-12 col-lg-6 newsImgBox">
                     <img src="./images/news-img-1.png" alt="">
                   </div>
-                  <div class="col col-6 descriptionNews">
+                  <div class="col-xs-12 col-sm-12 col-lg-6 descriptionNews">
                       <span class="date">01.08.2021</span>
                       <h2>Бізнес-Центр «Wave Tower» починає здавати в оренду нові приміщення.</h2>
                       <p>Стартує процес укладання угод про короткочасну та довготривалу оренду. 
@@ -94,11 +133,11 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="row p-0">
-                  <div class="col col-6 newsImgBox">
+                <a href="./newsPage.html" class="row p-0">
+                  <div class="col-xs-12 col-sm-12 col-lg-6 newsImgBox">
                     <img src="./images/news-img-2.png" alt="">
                   </div>
-                  <div class="col col-6 descriptionNews">
+                  <div class="col-xs-12 col-sm-12 col-lg-6 descriptionNews">
                       <span class="date">01.08.2021</span>
                       <h2>Бізнес-Центр «Wave Tower» починає здавати в оренду нові приміщення.</h2>
                       <p>Стартує процес укладання угод про короткочасну та довготривалу оренду. 
@@ -115,30 +154,30 @@
       </div>
     </main>
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col col-3">
+      <div class="container-fluid">
+        <div class="row mobFooter">
+          <div class="col col-xs-12 col-sm-12 col-md-3">
             <div class="logo">
               <a href="./index.html">
-                <img src="./images/logo.png" alt="logo">
+                <img src="./images/footerLogo.png" alt="logo">
               </a>
             </div>
           </div>
-          <div class="col col-6 footerNav">
+          <div class="col-xs-12 col-sm-12 col-md-6 footerNav">
             <div class="row">
-              <div class="col">
+              <div class="col col-xs-12 col-sm-12 col-md-6">
                 <a href="./busines-center.html">Бізнес-центр </a>
                 <a href="./rent.html">Оренда</a>
                 <a href="./conferenc.html">Конференц-зали</a>
               </div>
-              <div class="col">
+              <div class="col-xs-12 col-sm-12 col-md-6">
                 <a href="./infrastructure.html">Інфраструктура</a>
                 <a href="./news.html">Новини</a>
                 <a href="./contact.html">Контакти</a>
               </div>
             </div>
           </div>
-          <div class="col col-3">
+          <div class="col col-xs-12 col-sm-12 col-md-3">
             <p class="number">+380(63)02-11-822 </p>
             <p class="adress">М. КИЇВ, пр-т Степана Бандери 9Б</p>
           </div>

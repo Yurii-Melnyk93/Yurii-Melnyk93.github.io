@@ -28,17 +28,17 @@
   <body>
     <header class="home-header">
       <div class="layout">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col col-3">
+            <div class="col col-2 p-0">
               <div class="logo">
                 <a href="./index.html">
                   <img src="./images/logo.png" alt="logo">
                 </a>
               </div>
             </div>
-            <div class="col col-9">
-              <nav>
+            <div class="col col-10">
+              <nav class="headNav">
                 <ul>
                   <li><a href="./index.html" class="active">Головна</a></li>
                   <li><a href="./busines-center.html">Бізнес-центр </a></li>
@@ -59,6 +59,40 @@
                   </li>
                 </ul>
               </nav>
+
+						<div class="hamburger-menu">
+							<input id="menu__toggle" type="checkbox" >
+							<label class="menu__btn" for="menu__toggle">
+							<span></span>
+							</label>
+
+							<ul class="menu__box">
+								<!-- <li class="col left">
+									<div class="logo">
+										<a href="./index.html"><img src="images/logo.png" alt="img"></a>
+									</div>
+									<div class="title"><a href="./index.html"><h1>terra aucti</h1></a></div>
+								</li> -->
+								<li><a class="menu__item active" href="./index.html">Головна</a></li>
+                <li><a class="menu__item" href="./busines-center.html">Бізнес-центр </a></li>
+                <li><a class="menu__item" href="./rent.html">Оренда</a></li>
+                <li><a class="menu__item" href="./conferenc.html">Конференц-зали</a></li>
+                <li><a class="menu__item" href="./infrastructure.html">Інфраструктура</a></li>
+                <li><a class="menu__item" href="./news.html">Новини</a></li>
+                <li><a class="menu__item" href="./contact.html">Контакти</a></li>
+                <li class="langMob ">
+                  <span class="box">
+                    <a class="dropbtn" href="#">УКР 
+                      <ul class="dropdown-content">
+                        <a href="#">ENG</a>
+                        <a href="#">РУС</a>
+                      </ul>
+                    </a>
+                  </span>
+                </li>
+							</ul>
+						</div>
+
             </div>
           </div>
           
@@ -75,6 +109,9 @@
           <a href="#map"><p class="txt">карта</p><span></span></a>
         </div>
         <div class="video-bg">
+          <div class="backVideo">
+              <video class="video" src="./video/busCentrVideo.mp4" autoplay muted loop></video>
+          </div>
           <section class="heading" id="heading">
             <h1>WAVE TOWER</h1>
             <p>
@@ -87,20 +124,21 @@
               <img class="first" src="./images/bg-1.png" alt="">
               <img class="second" src="./images/bg-2.png" alt="">
             </div>
-            <div class="container">
+            <div class="container-fluid specifCheck">
               <div class="row">
-                <div class="col col-6">
+                <div class="col col-xs-12 col-sm-12 col-md-6">
+                  <h2 class="mobSpecif">Характеристики</h2>
                   <img src="./images/img-specif.png" alt="">
                 </div>
-                <div class="col col-6">
+                <div class="col col-xs-12 col-sm-12 col-md-6">
                   <h2>Характеристики</h2>
                   <div class="row p-0">
-                    <div class="col col-4 left">
+                    <div class="col col-lg-6 col-6 left">
                       <p>Площа будівлі</p>
                       <p>Корисна площа</p>
                       <p>Поверховість </p>
                     </div>
-                    <div class="col col-4 right">
+                    <div class="col col-lg-6 col-6 right">
                       <p>22 000 м2</p>
                       <p>18 000 м2</p>
                       <p>22 поверхи</p>
@@ -129,11 +167,11 @@
       <div class="layout">
         <section  id="panorama">
           <div class="panNav">
-                <img class="panLeft" src="./images/panLeft.png" alt="">
-                <img class="panRight"  src="./images/panRight.png" alt="">
+                <sapn class="icon-navLeft"></sapn>
+                <span class="icon-navRight"></span>
               </div>
           <div class="panorama">
-            <div class="container">
+            <div class="container-fluid">
               <h2>ПАНОРАМА</h2>
               
             </div>
@@ -141,10 +179,10 @@
         </section>
         <section class="news" id="news">
           <div class="row rowSlider">
-            <div class="col col-4">
+            <div class="col col-xs-12 col-sm-12 col-md-4">
               <h2>НОВИНИ</h2>
             </div>
-            <div class="col col-8">
+            <div class="col col-xs-12 col-sm-12 col-md-8">
               <ul class="slider">
                 <li class="newsItem">
                   <img src="./images/imgSlide.png" alt="" class="bgImage">
@@ -183,30 +221,30 @@
       </section>
     </main>
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col col-3">
+      <div class="container-fluid">
+        <div class="row mobFooter">
+          <div class="col col-xs-12 col-sm-12 col-md-3">
             <div class="logo">
               <a href="./index.html">
-                <img src="./images/logo.png" alt="logo">
+                <img src="./images/footerLogo.png" alt="logo">
               </a>
             </div>
           </div>
-          <div class="col col-6 footerNav">
+          <div class="col-xs-12 col-sm-12 col-md-6 footerNav">
             <div class="row">
-              <div class="col">
+              <div class="col col-xs-12 col-sm-12 col-md-6">
                 <a href="./busines-center.html">Бізнес-центр </a>
                 <a href="./rent.html">Оренда</a>
                 <a href="./conferenc.html">Конференц-зали</a>
               </div>
-              <div class="col">
+              <div class="col-xs-12 col-sm-12 col-md-6">
                 <a href="./infrastructure.html">Інфраструктура</a>
                 <a href="./news.html">Новини</a>
                 <a href="./contact.html">Контакти</a>
               </div>
             </div>
           </div>
-          <div class="col col-3">
+          <div class="col col-xs-12 col-sm-12 col-md-3">
             <p class="number">+380(63)02-11-822 </p>
             <p class="adress">М. КИЇВ, пр-т Степана Бандери 9Б</p>
           </div>
