@@ -794,6 +794,8 @@ header.home-header .hamburger-menu .menu__item:hover {
   font-size: 91px;
   line-height: 143.52%;
   margin-bottom: 90px;
+  position: relative;
+  z-index: 22;
 }
 
 @media (min-width: 768px) and (max-width: 1151px) {
@@ -820,6 +822,8 @@ header.home-header .hamburger-menu .menu__item:hover {
   line-height: 143.52%;
   color: white;
   margin-bottom: 35px;
+  position: relative;
+  z-index: 22;
 }
 
 @media (min-width: 320px) and (max-width: 1151px) {
@@ -905,6 +909,14 @@ header.home-header .hamburger-menu .menu__item:hover {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.home-main .video-bg .specifications .specifCheck .specifImgbox img:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 @media (min-width: 768px) and (max-width: 1152px) {
