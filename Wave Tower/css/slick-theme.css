@@ -2,7 +2,7 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
+    background: #fff url('../images/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -12,29 +12,23 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
-.slick-disabled {
-    display: none;
-    visibility: hidden;
-}
 .slick-prev,
 .slick-next
 {
     font-size: 0;
     line-height: 0;
-    background-image: url('../images/next.png');
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-position: center;
+
     position: absolute;
-    top: 50%;
+    bottom: -24px;
+
     display: block;
-    margin: 0;
-    width: 26px;
-    height: 26px;
+
+    width: 20px;
+    height: 20px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -45,7 +39,11 @@
     color: transparent;
     border: none;
     outline: none;
-    /* background: transparent; */
+    background: transparent;
+    border: 3px solid #F5984C;
+    height: 0;
+    width: 35px;
+    border-radius: 3px;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -85,9 +83,7 @@
 
 .slick-prev
 {
-    left: 25px;
-    z-index: 9;
-    background-image: url('../images/prev.png');
+    left: 35%;
     
 }
 [dir='rtl'] .slick-prev
@@ -95,33 +91,32 @@
     right: -25px;
     left: auto;
 }
-/* .slick-prev:before
+.slick-prev:before
 {
-    content: '←';
+    /* content: '←'; */
 }
 [dir='rtl'] .slick-prev:before
 {
     content: '→';
-} */
+}
 
 .slick-next
 {
-    right: 25px;
-    z-index: 9;
+    right: 35%;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
     left: -25px;
 }
-/* .slick-next:before
+.slick-next:before
 {
-    content: '→';
+    /* content: '→'; */
 }
 [dir='rtl'] .slick-next:before
 {
     content: '←';
-} */
+}
 
 /* Dots */
 .slick-dotted.slick-slider
