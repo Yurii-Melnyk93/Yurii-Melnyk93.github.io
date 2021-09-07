@@ -293,7 +293,7 @@ main .breadcrumb .active::before {
 }
 
 main .firstSection {
-  background-image: url("/images/img-1.png");
+  background-image: url("../images/img-1.png");
   background-repeat: no-repeat;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -425,9 +425,6 @@ main .secondSection .imgbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
 }
 
@@ -667,6 +664,12 @@ main .formBg .formBox .text .social a .fab:hover {
   display: none;
 }
 
+.aboutAs .secondSection .imgbox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .aboutAs .secondSection .row:nth-child(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -747,6 +750,12 @@ main .formBg .formBox .text .social a .fab:hover {
   background-image: url("../images/img-3.png");
   padding-top: 20px;
   background-size: cover;
+}
+
+.stockExchange .secondSection .imgbox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .stockExchange .secondSection .row:nth-child(2n) {
@@ -921,6 +930,12 @@ main .formBg .formBox .text .social a .fab:hover {
   background-image: url("../images/img-4.png");
   padding-top: 20px;
   background-size: cover;
+}
+
+.cryptocurrency .secondSection .imgbox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cryptocurrency .secondSection .row:nth-child(2n) {
