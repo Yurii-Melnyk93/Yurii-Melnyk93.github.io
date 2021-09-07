@@ -1,0 +1,1368 @@
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input,
+textarea,
+select {
+  vertical-align: middle;
+  color: #000;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+  color: #ebedec;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #ebedec;
+}
+
+/*@media*/
+/* @media (min-width: 1921px){} 													QHD \ UHD
+@media (min-width: 1600px) and (max-width: 1919px) {}	HD +
+@media (min-width: 1440px) and (max-width: 1599px) {}	macbook
+@media (min-width: 1360px) and (max-width: 1439px) {}	HD
+@media (min-width: 1280px) and (max-width: 1359px) {} IPAD2
+@media (min-width: 1024px) and (max-width: 1279px) {} IPAD
+@media (min-width: 896px) and (max-width: 1023px) {}	Ip Xs max horizontal
+@media (min-width: 812px) and (max-width: 895px) {}		Ip Xs horizontal
+@media (min-width: 768px) and (max-width: 811px) {}		Tablet
+@media (min-width: 736px) and (max-width: 767px) {}		Ip 6,7,8 Plus horizontal
+@media (min-width: 667px) and (max-width: 735px) {}		Ip 6,7,8 horizontal
+@media (min-width: 568px) and (max-width: 666px) {}		Ip 5 horizontal
+@media (min-width: 480px) and (max-width: 567px) {}		Ip 4 horizontal
+@media (min-width: 414px) and (max-width: 479px) {}		Ip 6,7,8
+@media (min-width: 320px) and (max-width: 413px) {}		Ip 4,5 */
+.layout {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.row {
+  padding: 0 100px;
+  max-width: 100%;
+  margin: 0;
+}
+
+header {
+  margin: 0 auto;
+  padding: 15px 0;
+  -webkit-box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.08);
+}
+
+header .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .row .headNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+header .row .headNav ul li {
+  padding: 0 40px;
+}
+
+header .row .headNav ul li a {
+  text-decoration: none;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+header .row .headNav ul li a:hover {
+  color: #01D957;
+}
+
+header .row .recall {
+  padding: 13px 30px;
+  border: none;
+  background-color: #01D957;
+  color: #ffffff;
+  border-radius: 27px;
+  float: right;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+}
+
+main {
+  padding: 0;
+}
+
+main .breadcrumb {
+  padding-bottom: 110px;
+  margin: 0;
+}
+
+main .breadcrumb .breadcrumb-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+main .breadcrumb .active {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+main .breadcrumb .active::before {
+  content: '>';
+  color: #ffffff;
+}
+
+main .firstSection {
+  background-image: url("../images/img-1.png");
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin: 0;
+}
+
+main .firstSection h2 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+main .firstSection p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  width: 50%;
+  margin-bottom: 35px;
+}
+
+main .firstSection .more {
+  padding: 16px 30px;
+  border: none;
+  background-color: #01D957;
+  color: #ffffff;
+  border-radius: 27px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+}
+
+main .secondSection {
+  background-image: url("../images/img-bg.png");
+  background-repeat: no-repeat;
+  background-position: left 50%;
+}
+
+main .secondSection section {
+  display: block;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+main .secondSection .name {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.075em;
+  color: #D2D2D2;
+  padding: 0;
+}
+
+main .secondSection h3 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #000000;
+  position: relative;
+}
+
+main .secondSection h3::before {
+  content: '';
+  border: 2px solid #01D957;
+  height: 2px;
+  width: 52px;
+  position: absolute;
+  top: 45%;
+  left: -80px;
+}
+
+main .secondSection h3 .green {
+  color: #01D957;
+  text-decoration: none;
+}
+
+main .secondSection p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+  padding-bottom: 30px;
+}
+
+main .secondSection .textLeft {
+  padding-left: 90px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .secondSection .textLeft .more {
+  padding: 16px 40px;
+  border: none;
+  background-color: #01D957;
+  color: #ffffff;
+  border-radius: 27px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+main .secondSection .imgbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+main .secondSection .imgbox .firstImg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  float: right;
+}
+
+main .secondSection .box {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  padding: 30px;
+  background-repeat: no-repeat;
+  background-position: right 20px;
+}
+
+main .secondSection .box h4 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  padding-top: 20%;
+  color: #01D957;
+}
+
+main .secondSection .box p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+  width: 75%;
+}
+
+main .secondSection .left {
+  background-image: url("../images/img-man.png");
+}
+
+main .secondSection .right {
+  background-image: url("../images/img-coins.png");
+}
+
+main .formBg {
+  background-color: #F8F8F8;
+  padding: 75px 0;
+}
+
+main .formBg .formBox {
+  background-image: url("../images/form-Bg.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+main .formBg .formBox .form {
+  width: 50%;
+  padding-left: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .formBg .formBox .form h3 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #000000;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+main .formBg .formBox .form h3::before {
+  content: '';
+  border: 2px solid #01D957;
+  height: 2px;
+  width: 52px;
+  position: absolute;
+  top: 45%;
+  left: -80px;
+}
+
+main .formBg .formBox .form p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+  padding-bottom: 30px;
+  width: 55%;
+  margin-bottom: 0;
+}
+
+main .formBg .formBox .form input {
+  width: 60%;
+  background: #FBFBFB;
+  border: 1px solid #EEEDED;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+  padding: 15px;
+}
+
+main .formBg .formBox .form input::-webkit-input-placeholder {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+main .formBg .formBox .form input:-ms-input-placeholder {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+main .formBg .formBox .form input::-ms-input-placeholder {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+main .formBg .formBox .form input::placeholder {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+main .formBg .formBox .form .submit {
+  margin-top: 5px;
+  background: #01D957;
+  border-radius: 27px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+main .formBg .formBox .text {
+  padding-left: 90px;
+  width: 50%;
+}
+
+main .formBg .formBox .text p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+  padding-bottom: 20px;
+  margin-left: 90px;
+  position: relative;
+}
+
+main .formBg .formBox .text p::before {
+  content: '';
+  border: 2px solid #01D957;
+  height: 2px;
+  width: 52px;
+  position: absolute;
+  top: 25%;
+  left: -80px;
+}
+
+main .formBg .formBox .text .social {
+  margin-left: 90px;
+}
+
+main .formBg .formBox .text .social a {
+  text-decoration: none;
+}
+
+main .formBg .formBox .text .social a .fab {
+  color: #01D957;
+  border: 1px solid #01D957;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+main .formBg .formBox .text .social a .fab:hover {
+  color: #ffffff;
+  background-color: #01D957;
+}
+
+.aboutAs .firstSection {
+  background-image: url("../images/img-2.png");
+  padding-top: 20px;
+  background-size: cover;
+}
+
+.aboutAs .firstSection .more {
+  display: none;
+}
+
+.aboutAs .secondSection .imgbox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutAs .secondSection .row:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.aboutAs .secondSection .row .padTop {
+  padding-top: 20px;
+}
+
+.aboutAs .secondSection .row .experienceText {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.aboutAs .secondSection .row .experienceText p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  color: #FFFFFF;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.aboutAs .secondSection .row .experienceText span {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.aboutAs .secondSection .row .experienceText .expLeft {
+  margin-left: -70px;
+  border-radius: 80px 0px 80px 80px;
+  background-color: #01D957;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 50px;
+  margin-top: 45px;
+  margin-right: 20px;
+}
+
+.aboutAs .secondSection .row .experienceText .expRight {
+  border-radius: 80px 80px 80px 0px;
+  background-color: #01D957;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 50px;
+  margin-bottom: 25px;
+}
+
+.aboutAs .secondSection .row .experienceText .lastExp {
+  padding-bottom: 25px;
+}
+
+.stockExchange .firstSection {
+  background-image: url("../images/img-3.png");
+  padding-top: 20px;
+  background-size: cover;
+}
+
+.stockExchange .secondSection .imgbox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stockExchange .secondSection .row:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.stockExchange .secondSection .row .padTop {
+  padding-top: 20px;
+}
+
+.stockExchange .secondSection .row .experienceText {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.stockExchange .secondSection .row .experienceText p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  color: #FFFFFF;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.stockExchange .secondSection .row .experienceText span {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.stockExchange .secondSection .row .experienceText .expLeft {
+  margin-left: -70px;
+  border-radius: 80px 0px 80px 80px;
+  background-color: #01D957;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 50px;
+  margin-top: 45px;
+  margin-right: 20px;
+}
+
+.stockExchange .secondSection .row .experienceText .expRight {
+  border-radius: 80px 80px 80px 0px;
+  background-color: #01D957;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 50px;
+  margin-bottom: 25px;
+}
+
+.stockExchange .secondSection .row .experienceText .lastExp {
+  padding-bottom: 25px;
+}
+
+.stockExchange .questions {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.stockExchange .questions .name {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.075em;
+  color: #D2D2D2;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.stockExchange .questions h3 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #000000;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.stockExchange .questions .accordion .accordion-item {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.stockExchange .questions .accordion .accordion-item .accordion-header .accordion-button {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+.stockExchange .questions .accordion .accordion-item .accordion-header .accordion-button::after {
+  content: '+';
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #01D957;
+  font-size: 28px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.stockExchange .questions .accordion .accordion-item .accordion-header .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+}
+
+.stockExchange .questions .accordion .accordion-item .accordion-header .collapsed::after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.stockExchange .questions .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.stockExchange .questions .accordion .accordion-item .accordion-collapse .accordion-body {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+.cryptocurrency .firstSection {
+  background-image: url("../images/img-4.png");
+  padding-top: 20px;
+  background-size: cover;
+}
+
+.cryptocurrency .secondSection .imgbox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cryptocurrency .secondSection .row:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.cryptocurrency .secondSection .row .padTop {
+  padding-top: 20px;
+}
+
+.cryptocurrency .secondSection .row .experienceText {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cryptocurrency .secondSection .row .experienceText p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  color: #FFFFFF;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.cryptocurrency .secondSection .row .experienceText span {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.cryptocurrency .secondSection .row .experienceText .expLeft {
+  margin-left: -70px;
+  border-radius: 80px 0px 80px 80px;
+  background-color: #01D957;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 50px;
+  margin-top: 45px;
+  margin-right: 20px;
+}
+
+.cryptocurrency .secondSection .row .experienceText .expRight {
+  border-radius: 80px 80px 80px 0px;
+  background-color: #01D957;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 50px;
+  margin-bottom: 25px;
+}
+
+.cryptocurrency .secondSection .row .experienceText .lastExp {
+  padding-bottom: 25px;
+}
+
+.cryptocurrency .questions {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.cryptocurrency .questions .name {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.075em;
+  color: #D2D2D2;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.cryptocurrency .questions h3 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #000000;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.cryptocurrency .questions .accordion .accordion-item {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.cryptocurrency .questions .accordion .accordion-item .accordion-header .accordion-button {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+.cryptocurrency .questions .accordion .accordion-item .accordion-header .accordion-button::after {
+  content: '+';
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #01D957;
+  font-size: 28px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.cryptocurrency .questions .accordion .accordion-item .accordion-header .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+}
+
+.cryptocurrency .questions .accordion .accordion-item .accordion-header .collapsed::after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.cryptocurrency .questions .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.cryptocurrency .questions .accordion .accordion-item .accordion-collapse .accordion-body {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+.contact .row .contactFormBox h3 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #000000;
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 80px;
+}
+
+.contact .row .contactFormBox h3::before {
+  content: '';
+  border: 2px solid #01D957;
+  height: 2px;
+  width: 52px;
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+.contact .row .contactFormBox .adress {
+  margin: 0;
+  margin-bottom: 90px;
+}
+
+.contact .row .contactFormBox .adress .col-4 {
+  padding-left: 0;
+}
+
+.contact .row .contactFormBox .adress .name {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.075em;
+  color: #D2D2D2;
+  padding: 0;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.contact .row .contactFormBox .adress p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+.contact .row .contactFormBox .adress .social a {
+  text-decoration: none;
+}
+
+.contact .row .contactFormBox .adress .social a .fab {
+  color: #01D957;
+  border: 1px solid #01D957;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact .row .contactFormBox .adress .social a .fab:hover {
+  color: #ffffff;
+  background-color: #01D957;
+}
+
+.contact .row .contactFormBox .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .row .contactFormBox .form p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+  padding-left: 90px;
+  padding-bottom: 30px;
+  width: 70%;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.contact .row .contactFormBox .form p::before {
+  content: '';
+  border: 2px solid #01D957;
+  height: 2px;
+  width: 52px;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+.contact .row .contactFormBox .form input {
+  width: 70%;
+  background: #FBFBFB;
+  border: 1px solid #EEEDED;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+  padding: 15px;
+}
+
+.contact .row .contactFormBox .form input::-webkit-input-placeholder {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+.contact .row .contactFormBox .form input:-ms-input-placeholder {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+.contact .row .contactFormBox .form input::-ms-input-placeholder {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+.contact .row .contactFormBox .form input::placeholder {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+.contact .row .contactFormBox .form .submit {
+  margin-top: 5px;
+  background: #01D957;
+  border-radius: 27px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+footer {
+  padding: 15px 0;
+  background-color: #F8F8F8;
+}
+
+footer .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .row ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+footer .row ul li {
+  padding: 0 20px;
+}
+
+footer .row ul li a {
+  text-decoration: none;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #1D1B1B;
+}
+
+footer .row ul li a:hover {
+  color: #01D957;
+}
+
+footer .row .social {
+  text-align: right;
+}
+
+footer .row .social a {
+  text-decoration: none;
+}
+
+footer .row .social a .fab {
+  color: #01D957;
+  border: 1px solid #01D957;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+footer .row .social a .fab:hover {
+  color: #ffffff;
+  background-color: #01D957;
+}
+
+footer .copyrights {
+  margin-top: 40px;
+  padding: 40px;
+  text-align: center;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 114.8%;
+  letter-spacing: 0.01em;
+  color: #6F6E6E;
+  border-top: 1px solid #CFCFCF;
+}
+/*# sourceMappingURL=all.css.map */
