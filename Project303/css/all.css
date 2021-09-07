@@ -374,8 +374,9 @@ main .secondSection h3 {
 
 main .secondSection h3::before {
   content: '';
-  border: 2px solid #01D957;
-  height: 2px;
+  border: 1px solid #01D957;
+  background-color: #01D957;
+  height: 1px;
   width: 52px;
   position: absolute;
   top: 45%;
@@ -512,8 +513,9 @@ main .formBg .formBox .form h3 {
 
 main .formBg .formBox .form h3::before {
   content: '';
-  border: 2px solid #01D957;
-  height: 2px;
+  border: 1px solid #01D957;
+  background-color: #01D957;
+  height: 1px;
   width: 52px;
   position: absolute;
   top: 45%;
@@ -624,8 +626,9 @@ main .formBg .formBox .text p {
 
 main .formBg .formBox .text p::before {
   content: '';
-  border: 2px solid #01D957;
-  height: 2px;
+  border: 1px solid #01D957;
+  background-color: #01D957;
+  height: 1px;
   width: 52px;
   position: absolute;
   top: 25%;
@@ -1121,8 +1124,9 @@ main .formBg .formBox .text .social a .fab:hover {
 
 .contact .row .contactFormBox h3::before {
   content: '';
-  border: 2px solid #01D957;
-  height: 2px;
+  border: 1px solid #01D957;
+  background-color: #01D957;
+  height: 1px;
   width: 52px;
   position: absolute;
   top: 45%;
@@ -1209,8 +1213,9 @@ main .formBg .formBox .text .social a .fab:hover {
 
 .contact .row .contactFormBox .form p::before {
   content: '';
-  border: 2px solid #01D957;
-  height: 2px;
+  border: 1px solid #01D957;
+  background-color: #01D957;
+  height: 1px;
   width: 52px;
   position: absolute;
   top: 10%;
