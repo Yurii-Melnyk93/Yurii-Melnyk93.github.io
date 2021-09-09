@@ -30,9 +30,8 @@ $(function() {
 function checkParams() {
     var name = $('#name').val();
     var email = $('#mail').val();
-    var phone = $('#phone').val();
 
-    if(name.length != 0 && email.length != 0 && phone.length != 0) {
+    if(name.length != 0 && email.length != 0) {
         $('#submit-btn').removeAttr('disabled');
     } else {
         $('#submit-btn').attr('disabled', 'disabled');
