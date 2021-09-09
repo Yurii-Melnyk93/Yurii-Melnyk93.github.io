@@ -228,7 +228,7 @@ header .row {
 }
 
 @media (max-width: 767px) {
-  header .row .col-5, header .row .col-sm-4 {
+  header .row .col-4, header .row .col-sm-3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -241,7 +241,7 @@ header .row {
   }
 }
 
-header .row .col-5 .mobRecall, header .row .col-sm-4 .mobRecall {
+header .row .col-4 .mobRecall, header .row .col-sm-3 .mobRecall {
   background-color: #01D957;
   border-radius: 50%;
   border: none;
@@ -257,16 +257,16 @@ header .row .col-5 .mobRecall, header .row .col-sm-4 .mobRecall {
           justify-content: center;
   margin: 0;
   position: relative;
-  z-index: 9999;
+  z-index: 99;
 }
 
-header .row .col-5 .mobRecall .fa-phone-alt, header .row .col-sm-4 .mobRecall .fa-phone-alt {
+header .row .col-4 .mobRecall .fa-phone-alt, header .row .col-sm-3 .mobRecall .fa-phone-alt {
   color: white;
   font-size: 20px;
 }
 
 @media (min-width: 768px) {
-  header .row .col-5 .mobRecall, header .row .col-sm-4 .mobRecall {
+  header .row .col-4 .mobRecall, header .row .col-sm-3 .mobRecall {
     display: none;
   }
 }
@@ -644,7 +644,7 @@ header .hamburger-menu .menu__box {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 5px;
+  padding: 0;
   list-style: none;
   overflow: scroll;
   background-color: #F2F2F2;
@@ -654,12 +654,46 @@ header .hamburger-menu .menu__box {
 
 header .hamburger-menu .menu__box .head {
   margin-bottom: 120px;
-  padding-right: 80px;
+  padding-right: 100px;
   padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .hamburger-menu .menu__box .head .logo {
   float: left;
+}
+
+header .hamburger-menu .menu__box .head .mobRecall-1 {
+  background-color: #01D957;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  margin-top: 8px;
+  position: relative;
+  z-index: 99;
+}
+
+header .hamburger-menu .menu__box .head .mobRecall-1 .fa-phone-alt {
+  color: white;
+  font-size: 20px;
 }
 
 header .hamburger-menu .menu__box li {
