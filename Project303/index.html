@@ -8,7 +8,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
+	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
     <title>EVEREST</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
 		  <div class="container-fluid">
 			  <div class="layout">
 				  <div class="row">
-					  <div class=" col-2">
+					  <div class="col-3 col-md-2">
 						  <a href="./index.html">
 							  <img src="./images/logo.png" alt="logo">
 						  </a>
@@ -31,33 +32,79 @@
 							  </ul>
 						  </nav>
 					  </div>
-					  <div class=" col-3">
+					  <div class="col-5 col-sm-4 col-md-3">
 						  <button type="button" class="recall" data-bs-toggle="modal" data-bs-target="#recallModal">Обратный звонок</button>
-						  <!-- Modal -->
-						  <div class="modal fade" id="recallModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						  <div class="modal-dialog modal-dialog-centered">
-							  <div class="modal-content">
-							  <div class="modal-header">
-								  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-								  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							  </div>
-							  <div class="modal-body">
-								  ...
-							  </div>
-							  <div class="modal-footer">
-								  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-								  <button type="button" class="btn btn-primary">Save changes</button>
-							  </div>
-							  </div>
-						  </div>
-						  </div>
+							<button type="button" class="mobRecall" data-bs-toggle="modal" data-bs-target="#recallModal"><i class="fas fa-phone-alt"></i></button>
+
+						  <div class="hamburger-menu">
+							<input id="menu__toggle" type="checkbox" >
+							<label class="menu__btn" for="menu__toggle">
+							<span></span>
+							</label>
+
+							<ul class="menu__box">
+								<li class="col head">
+									<div class="logo">
+										<a href="./index.html"><img src="images/logo.png" alt="img"></a>	
+									</div>
+									<!-- <button type="button" class="mobRecall" data-bs-toggle="modal" data-bs-target="#recallModal"><i class="fas fa-phone-alt"></i></button> -->
+								</li>
+								<li><a class="menu__item" href="./index.html">Главная</a></li>
+								<li><a class="menu__item" href="./aboutAs.html">О нас</a></li>
+								<li><a class="menu__item" href="#services">Услуги</a></li>
+								<li><a class="menu__item" href="./contact.html">Контакты</a></li>
+								<li class="socMob">
+									<a href="">
+										<i class="fab fa-telegram-plane"></i>
+									</a>
+									<a href="">
+										<i class="fab fa-whatsapp"></i>
+									</a>
+								</li>								
+							</ul>
+						</div>
 					  </div>
+					  
 				  </div>
 			  </div>	
 		  </div>
+		  <!-- Modal -->
+			<div class="modal fade" id="recallModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Обратный звонок</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<form id="form">
+								<input type="text" name="name" id="name" placeholder="Ваше имя" onkeyup="checkParams()" required>
+								<input type="email" name="mail" id="mail" placeholder="Почта" onkeyup="checkParams()" required>
+								<input type="tel" name="phone" id="phone" placeholder="Телефон  (необязательно)" onkeyup="checkParams()" required>
+
+								<input type="submit" id="submit-btn" class="btn btn-primary" value="Отправить" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target=".modal-1"  disabled>
+							</form>	
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal modal-1" tabindex="-1">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Вы успешно отправили заявку
+								на обратный звонок. 
+								Мы вас наберем в 
+								ближайшее время!</h5>
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+				</div>
+			</div>
 	  </header>
 	  <main>
-		<div class="container-fluid">
+		<div class="container-fluid p-0">
 			<div class="layout">
 				<div class="row firstSection">
 					<div class="col">
@@ -73,8 +120,12 @@
 					<section>
 						<span class="name">О НАС</span>
 						<div class="row p-0">
-							<div class=" col-6 textLeft">
+							<div class="col-12 col-lg-6 textLeft">
 								<h3>Everest Finance</h3>
+								<div class="imgbox">
+									<img class="firstImg" src="./images/image-1-1.png" alt="">
+									<!-- <img class="secondImg" src="./images/image-1-2.png" alt=""> -->
+								</div>
 								<p>Хорошо продуманный функционал программы позволяет настроить торговую систему 
 									согласно Вашим задачам — внешний вид программы, отсортировать и выбрать 
 									необходимые инструменты для торговли, сделать оценку портфеля.
@@ -91,7 +142,7 @@
 								</p>
 								<a class="more" href="#">Читать больше</a>
 							</div>
-							<div class=" col-6">
+							<div class="col-lg-6 textRight">
 								<div class="imgbox">
 									<img class="firstImg" src="./images/image-1-1.png" alt="">
 									<!-- <img class="secondImg" src="./images/image-1-2.png" alt=""> -->
@@ -103,7 +154,7 @@
 						<span class="name">МЫ ПРЕДЛАГАЕМ</span>
 						<div class="row p-0">
 							<h3>Наши услуги: <a href="./stockExchange.html" class="green">Фондовая биржа</a> и <a href="./cryptocurrency.html" class="green">Криптовалюта</a></h3>
-							<div class="col col-6">
+							<div class="col-12 col-lg-6">
 								<div class="box left">
 									<div class="imgbox">
 										<img src="./images/logo.png" alt="">
@@ -118,7 +169,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="col col-6">
+							<div class=" col-12 col-lg-6">
 								<div class="box right">
 									<div class="imgbox">
 										<img src="./images/logo.png" alt="">
@@ -142,12 +193,12 @@
 	  <footer>
 		<div class="layout">
 			<div class="row">
-				<div class=" col-2">
+				<div class="col-12 col-md-2">
 					<a href="./index.html">
 						<img src="./images/logo.png" alt="logo">
 					</a>
 				</div>
-				<div class=" col-8">
+				<div class="col-12 col-md-8 footerNav">
 						<ul>
 							<li><a href="./index.html">Главная</a></li>
 							<li><a href="./aboutAs.html">О нас</a></li>
@@ -156,7 +207,7 @@
 							<li><a href="./copyrights.html">Политика конфиденциальности</a></li>
 						</ul>
 				</div>
-				<div class=" col-2 social">
+				<div class="col-12 col-md-2 social">
 					<a href="">
 						<i class="fab fa-telegram-plane"></i>
 					</a>
