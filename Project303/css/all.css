@@ -933,13 +933,14 @@ main .secondSection h3::before {
   height: 1px;
   width: 52px;
   position: absolute;
-  top: 35%;
+  top: 16px;
   left: -80px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
   main .secondSection h3::before {
     left: 0;
+    top: 12px;
   }
 }
 
@@ -1204,13 +1205,14 @@ main .formBg .formBox .form h3::before {
   height: 1px;
   width: 52px;
   position: absolute;
-  top: 45%;
+  top: 16px;
   left: -80px;
 }
 
 @media (min-width: 320px) and (max-width: 1023px) {
   main .formBg .formBox .form h3::before {
     left: 0;
+    top: 12px;
   }
 }
 
@@ -1235,7 +1237,7 @@ main .formBg .formBox .form p {
   line-height: 114.8%;
   letter-spacing: 0.01em;
   color: #1D1B1B;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   width: 55%;
   margin-bottom: 0;
 }
@@ -1383,6 +1385,7 @@ main .formBg .formBox .text p {
   letter-spacing: 0.01em;
   color: #1D1B1B;
   padding-bottom: 20px;
+  margin-bottom: 0;
   margin-left: 90px;
   position: relative;
 }
@@ -1681,6 +1684,7 @@ main .formBg .formBox .text .social a .fab:hover {
   line-height: 114.8%;
   letter-spacing: 0.01em;
   color: #1D1B1B;
+  text-align: left;
 }
 
 .cryptocurrency .firstSection {
@@ -1796,6 +1800,7 @@ main .formBg .formBox .text .social a .fab:hover {
   line-height: 114.8%;
   letter-spacing: 0.01em;
   color: #1D1B1B;
+  text-align: left;
 }
 
 .contact .row {
@@ -1858,7 +1863,7 @@ main .formBg .formBox .text .social a .fab:hover {
   height: 1px;
   width: 52px;
   position: absolute;
-  top: 45%;
+  top: 16px;
   left: 0;
 }
 
