@@ -228,7 +228,8 @@ header .row {
 }
 
 @media (max-width: 767px) {
-  header .row .col-4, header .row .col-sm-3 {
+  header .row .col-4,
+  header .row .col-sm-3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -241,7 +242,8 @@ header .row {
   }
 }
 
-header .row .col-4 .mobRecall, header .row .col-sm-3 .mobRecall {
+header .row .col-4 .mobRecall,
+header .row .col-sm-3 .mobRecall {
   background-color: #01D957;
   border-radius: 50%;
   border: none;
@@ -260,13 +262,15 @@ header .row .col-4 .mobRecall, header .row .col-sm-3 .mobRecall {
   z-index: 99;
 }
 
-header .row .col-4 .mobRecall .fa-phone-alt, header .row .col-sm-3 .mobRecall .fa-phone-alt {
+header .row .col-4 .mobRecall .fa-phone-alt,
+header .row .col-sm-3 .mobRecall .fa-phone-alt {
   color: white;
   font-size: 20px;
 }
 
 @media (min-width: 768px) {
-  header .row .col-4 .mobRecall, header .row .col-sm-3 .mobRecall {
+  header .row .col-4 .mobRecall,
+  header .row .col-sm-3 .mobRecall {
     display: none;
   }
 }
@@ -923,7 +927,7 @@ main .secondSection h3 {
   letter-spacing: 0.01em;
   color: #000000;
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 main .secondSection h3::before {
@@ -1112,10 +1116,21 @@ main .secondSection .left {
   background-position: 88% 30px;
 }
 
+main .secondSection .left:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   main .secondSection .left {
     background-position: center 20px;
   }
+}
+
+main .secondSection .left a {
+  text-decoration: none;
 }
 
 main .secondSection .right {
@@ -1123,10 +1138,21 @@ main .secondSection .right {
   background-position: 95% 30px;
 }
 
+main .secondSection .right:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   main .secondSection .right {
     background-position: center 20px;
   }
+}
+
+main .secondSection .right a {
+  text-decoration: none;
 }
 
 main .formBg {
