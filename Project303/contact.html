@@ -76,13 +76,13 @@
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body">
-							<form id="form">
-								<input type="text" name="name" id="name" placeholder="Ваше имя" onkeyup="checkParams()" required>
-								<input type="email" name="mail" id="mail" placeholder="Почта" onkeyup="checkParams()" required>
-								<input type="tel" name="phone" id="phone" placeholder="Телефон  (необязательно)" >
+							<form id="headForm">
+								<input type="text" name="headName" id="headName" placeholder="Ваше имя" onkeyup="checkParamsHead()" required>
+								<input type="email" name="headMail" id="headMail" placeholder="Почта" onkeyup="checkParamsHead()" required>
+								<input type="tel" name="headPhone" id="headPhone" placeholder="Телефон  (необязательно)" >
 
-								<input type="submit" id="submit-btn" class="btn btn-primary" value="Отправить" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target=".modal-1"  disabled>
-							</form>	
+								<input type="submit" id="headSubmit-btn" class="btn btn-primary" value="Отправить" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target=".modal-1"  disabled>
+							</form>
 						</div>
 
 					</div>
@@ -142,12 +142,12 @@
 								</div>
 								</div>
 							</div>
-							<form class="form">
+							<form class="form" id="form">
 								<p>Оставьте заявку и наш менеджер свяжется с Вами 
 									в течении нескольких часов</p>
-								<input type="text" name="name" id="" placeholder="Ваше имя" required>
-								<input type="email" name="mail" id="" placeholder="Почта" required>
-								<input type="tel" name="phone" id="" placeholder="Телефон (необязательно)">
+								<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+								<input type="email" name="mail" id="mail" placeholder="Почта" required>
+								<input type="tel" name="phone" id="phone" placeholder="Телефон (необязательно)">
 								<input type="submit" class="submit" value="Отправить">
 							</form>
 							

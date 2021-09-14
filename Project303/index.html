@@ -77,19 +77,19 @@
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body">
-							<form id="form">
-								<input type="text" name="name" id="name" placeholder="Ваше имя" onkeyup="checkParams()" required>
-								<input type="email" name="mail" id="mail" placeholder="Почта" onkeyup="checkParams()" required>
-								<input type="tel" name="phone" id="phone" placeholder="Телефон  (необязательно)" >
+							<form id="headForm">
+								<input type="text" name="headName" id="headName" placeholder="Ваше имя" onkeyup="checkParamsHead()" required>
+								<input type="email" name="headMail" id="headMail" placeholder="Почта" onkeyup="checkParamsHead()" required>
+								<input type="tel" name="headPhone" id="headPhone" placeholder="Телефон  (необязательно)" >
 
-								<input type="submit" id="submit-btn" class="btn btn-primary" value="Отправить" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target=".modal-1"  disabled>
+								<input type="submit" id="headSubmit-btn" class="btn btn-primary" value="Отправить" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target=".modal-1"  disabled>
 							</form>	
 						</div>
 
 					</div>
 				</div>
 			</div>
-			<div class="modal modal-1" tabindex="-1">
+			<div class="modal modal-1" id="headThanks" tabindex="-1">
 				<div class="modal-dialog modal-dialog-centered">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -156,32 +156,38 @@
 							<h3>Наши услуги: <a href="./stockExchange.html" class="green">Фондовая биржа</a> и <a href="./cryptocurrency.html" class="green">Криптовалюта</a></h3>
 							<div class="col-12 col-lg-6">
 								<div class="box left">
-									<div class="imgbox">
-										<img src="./images/logo.png" alt="">
-									</div>
-									<h4>
-										Фондовая биржа
-									</h4>
-									<p>
-										При инвестировании средств через ИИС вы не просто 
-										освободитесь от уплаты НДФЛ, но и сможете претендовать 
-										на возврат 13% от уплаченного ранее налога.
-									</p>
+									<a href="./stockExchange.html">
+									
+										<div class="imgbox">
+											<img src="./images/logo.png" alt="">
+										</div>
+										<h4>
+											Фондовая биржа
+										</h4>
+										<p>
+											При инвестировании средств через ИИС вы не просто 
+											освободитесь от уплаты НДФЛ, но и сможете претендовать 
+											на возврат 13% от уплаченного ранее налога.
+										</p>
+									</a>
 								</div>
 							</div>
 							<div class=" col-12 col-lg-6">
 								<div class="box right">
-									<div class="imgbox">
-										<img src="./images/logo.png" alt="">
-									</div>
-									<h4>
-										Криптовалюта
-									</h4>
-									<p>
-										При инвестировании средств через ИИС вы не просто 
-										освободитесь от уплаты НДФЛ, но и сможете претендовать 
-										на возврат 13% от уплаченного ранее налога.
-									</p>
+									<a href="./cryptocurrency.html">
+									
+										<div class="imgbox">
+											<img src="./images/logo.png" alt="">
+										</div>
+										<h4>
+											Криптовалюта
+										</h4>
+										<p>
+											При инвестировании средств через ИИС вы не просто 
+											освободитесь от уплаты НДФЛ, но и сможете претендовать 
+											на возврат 13% от уплаченного ранее налога.
+										</p>
+									</a>
 								</div>
 							</div>
 						</div>
